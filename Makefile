@@ -1,5 +1,6 @@
 obj-m := lsm9ds1.o
 
+KERNEL_SRC := /lib/modules/$(shell uname -r)/build
 SRC := $(shell pwd)
 
 all:
