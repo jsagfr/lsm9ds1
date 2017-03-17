@@ -1,0 +1,10 @@
+*.cmd
+.tmp_versions/
+Module.symvers
+*.o
+*.ko
+*.mod.c
+modules.order
+oe-logs
+oe-workdir
+
