@@ -1,6 +1,6 @@
 /******************************************************************************
  *
- *   Copyright (C) 2011  Intel Corporation. All rights reserved.
+ *   Copyright Jérôme Guéry. All rights reserved.
  *
  *   This program is free software;  you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -17,69 +17,13 @@
  *
  *****************************************************************************/
 
+
 #include <linux/device.h>
 #include <linux/module.h>
 #include <linux/i2c.h>
 #include <linux/iio/iio.h>
 #include <linux/iio/sysfs.h>
-
-/* registers */
-#define LSM9DS1_REG_ACT_THS          0x04
-#define LSM9DS1_REG_ACT_DUR          0x05
-#define LSM9DS1_REG_INT_GEN_CFG_XL   0x06
-#define LSM9DS1_REG_INT_GEN_THS_X_XL 0x07
-#define LSM9DS1_REG_INT_GEN_THS_Y_XL 0x08
-#define LSM9DS1_REG_INT_GEN_THS_Z_XL 0x09
-#define LSM9DS1_REG_INT_GEN_DUR_XL   0x0A
-#define LSM9DS1_REG_REFERENCE_G      0x0B
-#define LSM9DS1_REG_INT1_CTRL        0x0C
-#define LSM9DS1_REG_INT2_CTRL        0x0D
-#define LSM9DS1_REG_WHO_AM_I         0x0F
-#define LSM9DS1_REG_CTRL_REG1_G      0x10
-#define LSM9DS1_REG_CTRL_REG2_G      0x11
-#define LSM9DS1_REG_CTRL_REG3_G      0x12
-#define LSM9DS1_REG_ORIENT_CFG_G     0x13
-#define LSM9DS1_REG_INT_GEN_SRC_G    0x14
-#define LSM9DS1_REG_OUT_TEMP         0x15
-#define LSM9DS1_REG_STATUS_REG       0x17
-#define LSM9DS1_REG_OUT_X_G          0x18
-#define LSM9DS1_REG_OUT_Y_G          0x1A
-#define LSM9DS1_REG_OUT_Z_G          0x1C
-#define LSM9DS1_REG_CTRL_REG4        0x1E
-#define LSM9DS1_REG_CTRL_REG5_XL     0x1F
-#define LSM9DS1_REG_CTRL_REG6_XL     0x20
-#define LSM9DS1_REG_CTRL_REG7_XL     0x21
-#define LSM9DS1_REG_CTRL_REG8        0x22
-#define LSM9DS1_REG_CTRL_REG9        0x23
-#define LSM9DS1_REG_CTRL_REG10       0x24
-#define LSM9DS1_REG_INT_GEN_SRC_XL   0x26
-#define LSM9DS1_REG_STATUS_REG_BIS   0x27
-#define LSM9DS1_REG_OUT_X_XL         0x28
-#define LSM9DS1_REG_OUT_Y_XL         0x2A
-#define LSM9DS1_REG_OUT_Z_XL         0x2C
-#define LSM9DS1_REG_FIFO_CTRL        0x2E
-#define LSM9DS1_REG_FIFO_SRC         0x2F
-#define LSM9DS1_REG_INT_GEN_CFG_G    0x30
-#define LSM9DS1_REG_INT_GEN_THS_X_G  0x31
-#define LSM9DS1_REG_INT_GEN_THS_Y_G  0x33
-#define LSM9DS1_REG_INT_GEN_THS_Z_G  0x35
-#define LSM9DS1_REG_INT_GEN_DUR_G    0x37
-#define LSM9DS1_REG_OFFSET_X_REG_M   0x05
-#define LSM9DS1_REG_OFFSET_Y_REG_M   0x07
-#define LSM9DS1_REG_OFFSET_Z_REG_M   0x09
-#define LSM9DS1_REG_WHO_AM_I_M       0x0F
-#define LSM9DS1_REG_CTRL_REG1_M      0x20
-#define LSM9DS1_REG_CTRL_REG2_M      0x21
-#define LSM9DS1_REG_CTRL_REG3_M      0x22
-#define LSM9DS1_REG_CTRL_REG4_M      0x23
-#define LSM9DS1_REG_CTRL_REG5_M      0x24
-#define LSM9DS1_REG_STATUS_REG_M     0x27
-#define LSM9DS1_REG_OUT_X_M          0x28
-#define LSM9DS1_REG_OUT_Y_M          0x2A
-#define LSM9DS1_REG_OUT_Z_M          0x2C
-#define LSM9DS1_REG_INT_CFG_M        0x30
-#define LSM9DS1_REG_INT_SRC_M        0x31
-#define LSM9DS1_REG_INT_THS_M        0x32
+#include "lsm9ds1.h"
 
 /* bits */
 #define LSM9DS1_I_AM         0b01101000
