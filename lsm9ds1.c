@@ -192,8 +192,8 @@ static const struct iio_chan_spec lsm9ds1_channels[] = {
 	LSM9DS1_CHANNEL_G(LSM9DS1_REG_OUT_Z_G, Z),
 };
 
-static int lsm9ds1_register_mask_write(struct i2c_client *client, u16 addr,
-                                       u8 mask, u8 data)
+int lsm9ds1_register_mask_write(struct i2c_client *client, u16 addr,
+                                u8 mask, u8 data)
 {
         int ret;
         u8 tmp_data = 0;
@@ -207,25 +207,25 @@ static int lsm9ds1_register_mask_write(struct i2c_client *client, u16 addr,
         return i2c_smbus_write_byte_data(client, addr, tmp_data);
 }
 
-static int lsm9ds1_register_set_bit(struct i2c_client *client, u16 addr,
-                                    u8 mask)
+int lsm9ds1_register_set_bit(struct i2c_client *client, u16 addr,
+                             u8 bit)
 {
-        return lsm9ds1_register_mask_write(client, addr, mask, mask);
+        return lsm9ds1_register_mask_write(client, addr, bit, bit);
 }
 
-static int lsm9ds1_register_reset_bit(struct i2c_client *client, u16 addr,
-                                      u8 mask)
+int lsm9ds1_register_reset_bit(struct i2c_client *client, u16 addr,
+                               u8 bit)
 {
-        return lsm9ds1_register_mask_write(client, addr, 0, mask);
+        return lsm9ds1_register_mask_write(client, addr, bit, 0);
 }
 
-static int lsm9ds1_reset(struct i2c_client *client)
+int lsm9ds1_reset(struct i2c_client *client)
 {
         return lsm9ds1_register_set_bit(client, LSM9DS1_REG_CTRL_REG8,
                                         LSM9DS1_SW_RESET);
 }
 
-static int lsm9ds1_enable(struct i2c_client *client, bool enable)
+int lsm9ds1_enable(struct i2c_client *client, bool enable)
 {
         int ret;
         
@@ -245,8 +245,8 @@ static int lsm9ds1_enable(struct i2c_client *client, bool enable)
 
 static ssize_t
 lsm9ds1_show_accel_max_g(struct device *dev,
-                                struct device_attribute *attr,
-                                char *buf)
+                         struct device_attribute *attr,
+                         char *buf)
 {
         struct iio_dev *indio_dev = dev_to_iio_dev(dev);
         struct lsm9ds1_data *data = iio_priv(indio_dev);
