@@ -136,37 +136,11 @@ static const struct iio_chan_spec lsm9ds1_ag_channels[] = {
 	LSM9DS1_AG_CHANNEL_G(LSM9DS1_REG_OUT_Z_G, Z),
 };
 
-int lsm9ds1_ag_register_mask_write(struct i2c_client *client, u16 addr,
-                                   u8 mask, u8 data)
-{
-        int ret;
-        u8 tmp_data = 0;
-        
-        ret = i2c_smbus_read_byte_data(client, addr);
-        if (ret < 0)
-                return ret;
-
-        tmp_data = ret & ~mask;
-        tmp_data |= data & mask;
-        return i2c_smbus_write_byte_data(client, addr, tmp_data);
-}
-
-int lsm9ds1_ag_register_set_bit(struct i2c_client *client, u16 addr,
-                                u8 bit)
-{
-        return lsm9ds1_ag_register_mask_write(client, addr, bit, bit);
-}
-
-int lsm9ds1_ag_register_reset_bit(struct i2c_client *client, u16 addr,
-                                  u8 bit)
-{
-        return lsm9ds1_ag_register_mask_write(client, addr, bit, 0);
-}
 
 int lsm9ds1_ag_reset(struct i2c_client *client)
 {
-        return lsm9ds1_ag_register_set_bit(client, LSM9DS1_REG_CTRL_REG8,
-                                           LSM9DS1_AG_SW_RESET);
+        return lsm9ds1_register_set_bit(client, LSM9DS1_REG_CTRL_REG8,
+                                        LSM9DS1_AG_SW_RESET);
 }
 
 int lsm9ds1_ag_enable(struct i2c_client *client, bool enable)
@@ -174,16 +148,19 @@ int lsm9ds1_ag_enable(struct i2c_client *client, bool enable)
         int ret;
         
         if (enable)
-                return lsm9ds1_ag_register_mask_write(client, LSM9DS1_REG_CTRL_REG1_G,
-                                                      LSM9DS1_AG_ODR_G_MASK, LSM9DS1_AG_ODR_G_59_9);
+                return lsm9ds1_register_mask_write(
+                        client, LSM9DS1_REG_CTRL_REG1_G,
+                        LSM9DS1_AG_ODR_G_MASK, LSM9DS1_AG_ODR_G_59_9);
         
-        ret = lsm9ds1_ag_register_mask_write(client, LSM9DS1_REG_CTRL_REG1_G,
-                                             LSM9DS1_AG_ODR_G_MASK, LSM9DS1_AG_ODR_G_PD);
+        ret = lsm9ds1_register_mask_write(
+                client, LSM9DS1_REG_CTRL_REG1_G,
+                LSM9DS1_AG_ODR_G_MASK, LSM9DS1_AG_ODR_G_PD);
         if (ret < 0)
                 return ret;
 
-	return lsm9ds1_ag_register_mask_write(client, LSM9DS1_REG_CTRL_REG6_XL,
-                                              LSM9DS1_AG_ODR_XL_MASK, LSM9DS1_AG_ODR_XL_PD);
+	return lsm9ds1_register_mask_write(
+                client, LSM9DS1_REG_CTRL_REG6_XL,
+                LSM9DS1_AG_ODR_XL_MASK, LSM9DS1_AG_ODR_XL_PD);
 }
 
 
@@ -238,22 +215,22 @@ lsm9ds1_ag_store_accel_max_g(struct device *dev,
 
         switch (val) {
         case 2:
-                ret = lsm9ds1_ag_register_mask_write(
+                ret = lsm9ds1_register_mask_write(
                         data->client, LSM9DS1_REG_CTRL_REG6_XL,
                         LSM9DS1_AG_FS_XL_MASK, LSM9DS1_AG_FS_XL_2G);
                 break;
         case 4:
-                ret = lsm9ds1_ag_register_mask_write(
+                ret = lsm9ds1_register_mask_write(
                         data->client, LSM9DS1_REG_CTRL_REG6_XL,
                         LSM9DS1_AG_FS_XL_MASK, LSM9DS1_AG_FS_XL_4G);
                 break;
         case 8:
-                ret = lsm9ds1_ag_register_mask_write(
+                ret = lsm9ds1_register_mask_write(
                         data->client, LSM9DS1_REG_CTRL_REG6_XL,
                         LSM9DS1_AG_FS_XL_MASK, LSM9DS1_AG_FS_XL_8G);
                 break;
         case 16:
-                ret = lsm9ds1_ag_register_mask_write(
+                ret = lsm9ds1_register_mask_write(
                         data->client, LSM9DS1_REG_CTRL_REG6_XL,
                         LSM9DS1_AG_FS_XL_MASK, LSM9DS1_AG_FS_XL_16G);
                 break;

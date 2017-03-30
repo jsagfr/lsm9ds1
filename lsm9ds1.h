@@ -17,6 +17,9 @@
  *
  *****************************************************************************/
 
+#ifndef LSM9DS1_H_
+#define LSM9DS1_H_
+
 /* registers */
 #define LSM9DS1_REG_ACT_THS          0x04
 #define LSM9DS1_REG_ACT_DUR          0x05
@@ -74,3 +77,15 @@
 #define LSM9DS1_REG_INT_CFG_M        0x30
 #define LSM9DS1_REG_INT_SRC_M        0x31
 #define LSM9DS1_REG_INT_THS_M        0x32
+
+#include <linux/i2c.h>
+
+extern int lsm9ds1_register_mask_write(struct i2c_client *client, u16 addr,
+                                       u8 mask, u8 data);
+extern int lsm9ds1_register_set_bit(struct i2c_client *client, u16 addr,
+                                    u8 bit);
+extern int lsm9ds1_register_reset_bit(struct i2c_client *client, u16 addr,
+                                      u8 bit);
+
+
+#endif /* LSM9DS1_H_ */
