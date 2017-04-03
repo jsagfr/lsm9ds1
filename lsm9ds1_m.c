@@ -45,15 +45,10 @@
 #define LSM9DS1_M_ODR_80    7 << 2
 
 #define LSM9DS1_M_FS_4GAUSS   0
-#define LSM9DS1_M_FS_8GAUSS   1 << 3
-#define LSM9DS1_M_FS_12GAUSS  2 << 3
-#define LSM9DS1_M_FS_16GAUSS  3 << 3
-#define LSM9DS1_M_FS_XL_MASK  0b01100000
-
-/* #define LSM9DS1_M_FS_XL_SCALE_2G  IIO_G_TO_M_S_2( 2000000000ULL / S16_MAX) */
-/* #define LSM9DS1_M_FS_XL_SCALE_4G  IIO_G_TO_M_S_2( 4000000000ULL / S16_MAX) */
-/* #define LSM9DS1_M_FS_XL_SCALE_8G  IIO_G_TO_M_S_2( 8000000000ULL / S16_MAX) */
-/* #define LSM9DS1_M_FS_XL_SCALE_16G IIO_G_TO_M_S_2(16000000000ULL / S16_MAX) */
+#define LSM9DS1_M_FS_8GAUSS   1 << 5
+#define LSM9DS1_M_FS_12GAUSS  2 << 5
+#define LSM9DS1_M_FS_16GAUSS  3 << 5
+#define LSM9DS1_M_FS_MASK     0b01100000
 
 #define LSM9DS1_M_SW_RESET 1 << 2
 
@@ -69,7 +64,7 @@ struct lsm9ds1_m_data {
 };
 
 #define LSM9DS1_M_CHANNEL_M(reg, axis) {                                \
-                .type = IIO_ACCEL,                                      \
+                .type = IIO_MAGN,                                       \
                         .address = reg,                                 \
                         .modified = 1,                                  \
                         .channel2 = IIO_MOD_##axis,                     \
@@ -107,6 +102,100 @@ int lsm9ds1_m_enable(struct i2c_client *client, bool enable)
 }
 
 
+static ssize_t
+lsm9ds1_m_show_magn_max_gauss(struct device *dev,
+                              struct device_attribute *attr,
+                              char *buf)
+{
+        struct iio_dev *indio_dev = dev_to_iio_dev(dev);
+        struct lsm9ds1_m_data *data = iio_priv(indio_dev);
+        /* struct lsm9ds1_m_state *st = iio_priv(indio_dev); */
+        // TODO: spinlock
+        int len = 0, ret;
+
+        ret = i2c_smbus_read_word_data(data->client, LSM9DS1_REG_CTRL_REG2_M);
+        if (ret < 0)
+                return ret;
+
+        switch ((u8)ret & LSM9DS1_M_FS_MASK) {
+        case LSM9DS1_M_FS_4GAUSS:
+                len += sprintf(buf + len, "4\n");
+                break;
+        case LSM9DS1_M_FS_8GAUSS:
+                len += sprintf(buf + len, "8\n");
+                break;
+        case LSM9DS1_M_FS_12GAUSS:
+                len += sprintf(buf + len, "12\n");
+                break;
+        case LSM9DS1_M_FS_16GAUSS:
+                len += sprintf(buf + len, "16\n");
+                break;
+        default:
+                return -ENODEV;
+        }
+        return len;
+}
+
+static ssize_t
+lsm9ds1_m_store_magn_max_gauss(struct device *dev,
+                               struct device_attribute *attr,
+                               const char *buf,
+                               size_t len)
+{
+        struct iio_dev *indio_dev = dev_to_iio_dev(dev);
+        struct lsm9ds1_m_data *data = iio_priv(indio_dev);
+        int ret;
+        u8 val;
+
+        ret = kstrtou8(buf, 10, &val);
+        if (ret < 0)
+                return ret;
+
+        switch (val) {
+        case 4:
+                ret = lsm9ds1_register_mask_write(
+                        data->client, LSM9DS1_REG_CTRL_REG2_M,
+                        LSM9DS1_M_FS_MASK, LSM9DS1_M_FS_4GAUSS);
+                break;
+        case 8:
+                ret = lsm9ds1_register_mask_write(
+                        data->client, LSM9DS1_REG_CTRL_REG2_M,
+                        LSM9DS1_M_FS_MASK, LSM9DS1_M_FS_8GAUSS);
+                break;
+        case 12:
+                ret = lsm9ds1_register_mask_write(
+                        data->client, LSM9DS1_REG_CTRL_REG2_M,
+                        LSM9DS1_M_FS_MASK, LSM9DS1_M_FS_12GAUSS);
+                break;
+        case 16:
+                ret = lsm9ds1_register_mask_write(
+                        data->client, LSM9DS1_REG_CTRL_REG2_M,
+                        LSM9DS1_M_FS_MASK, LSM9DS1_M_FS_16GAUSS);
+                break;
+        default:
+                return -EINVAL;
+        }
+        return (ret ? ret : len);
+}
+
+static IIO_CONST_ATTR(in_magn_max_gauss_available, "4 8 12 16");
+
+static IIO_DEVICE_ATTR(magn_max_gauss, S_IRUGO | S_IWUSR,
+                       lsm9ds1_m_show_magn_max_gauss,
+                       lsm9ds1_m_store_magn_max_gauss,
+                       0);
+
+
+static struct attribute *lsm9ds1_m_attributes[] = {
+        &iio_const_attr_in_magn_max_gauss_available.dev_attr.attr,
+        &iio_dev_attr_magn_max_gauss.dev_attr.attr,
+        NULL,
+};
+
+static const struct attribute_group lsm9ds1_m_attribute_group = {
+        .attrs = lsm9ds1_m_attributes,
+};
+
 static int lsm9ds1_m_read_raw(struct iio_dev *indio_dev,
                               struct iio_chan_spec const *chan,
                               int *val, int *val2, long mask)
@@ -130,6 +219,7 @@ static int lsm9ds1_m_read_raw(struct iio_dev *indio_dev,
 
 static const struct iio_info lsm9ds1_m_info = {
 	.driver_module	= THIS_MODULE,
+        .attrs          = &lsm9ds1_m_attribute_group,
 	.read_raw	= lsm9ds1_m_read_raw,
 };
 
