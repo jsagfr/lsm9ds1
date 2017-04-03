@@ -75,9 +75,9 @@
 /*         LSM9DS1 */
 /* }; */
 
-        struct lsm9ds1_ag_data {
-                struct i2c_client *client;
-        };
+struct lsm9ds1_ag_data {
+        struct i2c_client *client;
+};
 
 #define LSM9DS1_AG_CHANNEL_TEMP(reg) {                                  \
                 .type = IIO_TEMP,                                       \
