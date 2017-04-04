@@ -61,6 +61,7 @@
 
 struct lsm9ds1_m_data {
         struct i2c_client *client;
+        struct mutex       buf_lock;
 };
 
 #define LSM9DS1_M_CHANNEL_M(reg, axis) {                                \
@@ -83,22 +84,35 @@ static const struct iio_chan_spec lsm9ds1_m_channels[] = {
 	LSM9DS1_M_CHANNEL_M(LSM9DS1_REG_OUT_Z_M, Z),
 };
 
-int lsm9ds1_m_reset(struct i2c_client *client)
+int lsm9ds1_m_reset(struct iio_dev *indio_dev)
 {
-        return lsm9ds1_register_set_bit(client, LSM9DS1_REG_CTRL_REG2_M,
-                                        LSM9DS1_M_SW_RESET);
+        struct lsm9ds1_m_data *data = iio_priv(indio_dev);
+        int ret;
+        
+        mutex_lock(&indio_dev->mlock);
+        ret = lsm9ds1_register_set_bit(
+                data->client, LSM9DS1_REG_CTRL_REG2_M,
+                LSM9DS1_M_SW_RESET);
+        mutex_unlock(&indio_dev->mlock);
+        return ret;
 }
 
-int lsm9ds1_m_enable(struct i2c_client *client, bool enable)
+int lsm9ds1_m_enable(struct iio_dev *indio_dev, bool enable)
 {
-        if (enable)
-                return lsm9ds1_register_mask_write(
-                        client, LSM9DS1_REG_CTRL_REG3_M,
-                        LSM9DS1_M_MD_MASK, LSM9DS1_M_MD_POWER_DOWN);
+        struct lsm9ds1_m_data *data = iio_priv(indio_dev);
+        int ret;
         
-	return lsm9ds1_register_mask_write(
-                client, LSM9DS1_REG_CTRL_REG3_M,
-                LSM9DS1_M_MD_MASK, LSM9DS1_M_MD_CONT_CONV);
+        mutex_lock(&indio_dev->mlock);
+        if (enable)
+                ret = lsm9ds1_register_mask_write(
+                        data->client, LSM9DS1_REG_CTRL_REG3_M,
+                        LSM9DS1_M_MD_MASK, LSM9DS1_M_MD_POWER_DOWN);
+        else
+                ret = lsm9ds1_register_mask_write(
+                        data->client, LSM9DS1_REG_CTRL_REG3_M,
+                        LSM9DS1_M_MD_MASK, LSM9DS1_M_MD_CONT_CONV);
+        mutex_unlock(&indio_dev->mlock);
+        return ret;
 }
 
 
@@ -113,7 +127,9 @@ lsm9ds1_m_show_magn_max_gauss(struct device *dev,
         // TODO: spinlock
         int len = 0, ret;
 
+        mutex_lock(&indio_dev->mlock);
         ret = i2c_smbus_read_word_data(data->client, LSM9DS1_REG_CTRL_REG2_M);
+        mutex_unlock(&indio_dev->mlock);
         if (ret < 0)
                 return ret;
 
@@ -151,6 +167,7 @@ lsm9ds1_m_store_magn_max_gauss(struct device *dev,
         if (ret < 0)
                 return ret;
 
+        mutex_lock(&indio_dev->mlock);
         switch (val) {
         case 4:
                 ret = lsm9ds1_register_mask_write(
@@ -175,6 +192,7 @@ lsm9ds1_m_store_magn_max_gauss(struct device *dev,
         default:
                 return -EINVAL;
         }
+        mutex_unlock(&indio_dev->mlock);
         return (ret ? ret : len);
 }
 
@@ -205,7 +223,9 @@ static int lsm9ds1_m_read_raw(struct iio_dev *indio_dev,
 
 	switch (mask) {
 	case IIO_CHAN_INFO_RAW:
+                mutex_lock(&indio_dev->mlock);
 		ret = i2c_smbus_read_word_data(data->client, chan->address);
+                mutex_unlock(&indio_dev->mlock);
 		if (ret < 0)
 			return ret;
 		*val = (s16) ret;
@@ -249,18 +269,18 @@ static int lsm9ds1_m_probe(struct i2c_client *client,
 	indio_dev->channels = lsm9ds1_m_channels;
         indio_dev->num_channels = ARRAY_SIZE(lsm9ds1_m_channels);
 
-        ret = lsm9ds1_m_reset(client);
+        ret = lsm9ds1_m_reset(indio_dev);
 	if (ret < 0)
                 return ret;
 
-	ret = lsm9ds1_m_enable(client, true);
+	ret = lsm9ds1_m_enable(indio_dev, true);
 	if (ret < 0)
 		return ret;
 
 	ret = iio_device_register(indio_dev);
 	if (ret < 0) {
 		dev_err(&client->dev, "device_register failed\n");
-		lsm9ds1_m_enable(client, false);
+		lsm9ds1_m_enable(indio_dev, false);
 	}
 
 	return ret;
@@ -272,7 +292,7 @@ static int lsm9ds1_m_remove(struct i2c_client *client)
 
 	iio_device_unregister(indio_dev);
 
-	return lsm9ds1_m_enable(client, false);
+	return lsm9ds1_m_enable(indio_dev, false);
 }
 
 static struct i2c_device_id lsm9ds1_m_i2c_ids[] = {
