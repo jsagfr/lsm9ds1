@@ -79,61 +79,57 @@ struct lsm9ds1_ag_data {
         struct i2c_client *client;
 };
 
-#define LSM9DS1_AG_CHANNEL_TEMP(reg) {                                  \
-                .type = IIO_TEMP,                                       \
-                        .address = reg,                                 \
-                        .channel = 0,                                   \
-                        .scan_type = {                                  \
-                        .sign = 's',                                    \
-                        .realbits = 12,                                 \
-                        .storagebits = 16,                              \
-                        .endianness = IIO_LE,                           \
-                },                                                      \
-                        .info_mask_separate = BIT(IIO_CHAN_INFO_RAW) |  \
-                        BIT(IIO_CHAN_INFO_PROCESSED),                   \
-                        .info_mask_shared_by_type = BIT(IIO_CHAN_INFO_SCALE) | \
-                        BIT(IIO_CHAN_INFO_OFFSET) |                     \
-                        BIT(IIO_CHAN_INFO_SAMP_FREQ),                   \
-                        }
+#define LSM9DS1_AG_CHANNEL_TEMP(reg) {                          \
+        .type = IIO_TEMP,                                       \
+        .address = reg,                                         \
+        .channel = 0,                                           \
+        .info_mask_separate = BIT(IIO_CHAN_INFO_RAW) |          \
+                BIT(IIO_CHAN_INFO_PROCESSED),                   \
+        .info_mask_shared_by_type = BIT(IIO_CHAN_INFO_SCALE) |  \
+                BIT(IIO_CHAN_INFO_OFFSET) |                     \
+                BIT(IIO_CHAN_INFO_SAMP_FREQ),                   \
+}
 
-#define LSM9DS1_AG_CHANNEL_XL(reg, axis) {                              \
-                .type = IIO_ACCEL,                                      \
-                        .address = reg,                                 \
-                        .modified = 1,                                  \
-                        .channel2 = IIO_MOD_##axis,                     \
-                        .scan_type = {                                  \
-                        .sign = 's',                                    \
-                        .realbits = 16,                                 \
-                        .storagebits = 16,                              \
-                        .endianness = IIO_LE,                           \
-                },                                                      \
-                        .info_mask_separate = BIT(IIO_CHAN_INFO_RAW),   \
-                        .info_mask_shared_by_type = BIT(IIO_CHAN_INFO_SCALE), \
-                        }
+#define LSM9DS1_AG_CHANNEL_XL(reg, axis, index) {             \
+        .type = IIO_ACCEL,                                    \
+        .address = reg,                                       \
+        .modified = 1,                                        \
+        .channel2 = IIO_MOD_##axis,                           \
+        .scan_index = index,                                  \
+        .scan_type = {                                        \
+                .sign = 's',                                  \
+                .realbits = 16,                               \
+                .storagebits = 16,                            \
+                .endianness = IIO_LE,                         \
+        },                                                    \
+        .info_mask_separate = BIT(IIO_CHAN_INFO_RAW),         \
+        .info_mask_shared_by_type = BIT(IIO_CHAN_INFO_SCALE), \
+}
 
-#define LSM9DS1_AG_CHANNEL_G(reg, axis) {                               \
-                .type = IIO_ANGL_VEL,                                   \
-                        .address = reg,                                 \
-                        .modified = 1,                                  \
-                        .channel2 = IIO_MOD_##axis,                     \
-                        .scan_type = {                                  \
-                        .sign = 's',                                    \
-                        .realbits = 16,                                 \
-                        .storagebits = 16,                              \
-                        .endianness = IIO_LE,                           \
-                },                                                      \
-                        .info_mask_separate = BIT(IIO_CHAN_INFO_RAW),	\
-                        .info_mask_shared_by_type = BIT(IIO_CHAN_INFO_SCALE), \
-                        }
+#define LSM9DS1_AG_CHANNEL_G(reg, axis, index) {              \
+        .type = IIO_ANGL_VEL,                                 \
+        .address = reg,                                       \
+        .modified = 1,                                        \
+        .channel2 = IIO_MOD_##axis,                           \
+        .scan_index = index,                                  \
+        .scan_type = {                                        \
+                .sign = 's',                                  \
+                .realbits = 16,                               \
+                .storagebits = 16,                            \
+                .endianness = IIO_LE,                         \
+        },                                                    \
+        .info_mask_separate = BIT(IIO_CHAN_INFO_RAW),	      \
+        .info_mask_shared_by_type = BIT(IIO_CHAN_INFO_SCALE), \
+}
 
 static const struct iio_chan_spec lsm9ds1_ag_channels[] = {
         LSM9DS1_AG_CHANNEL_TEMP(LSM9DS1_REG_OUT_TEMP),
-	LSM9DS1_AG_CHANNEL_XL(LSM9DS1_REG_OUT_X_XL, X),
-	LSM9DS1_AG_CHANNEL_XL(LSM9DS1_REG_OUT_Y_XL, Y),
-	LSM9DS1_AG_CHANNEL_XL(LSM9DS1_REG_OUT_Z_XL, Z),
-	LSM9DS1_AG_CHANNEL_G(LSM9DS1_REG_OUT_X_G, X),
-	LSM9DS1_AG_CHANNEL_G(LSM9DS1_REG_OUT_Y_G, Y),
-	LSM9DS1_AG_CHANNEL_G(LSM9DS1_REG_OUT_Z_G, Z),
+	LSM9DS1_AG_CHANNEL_XL(LSM9DS1_REG_OUT_X_XL, X, 0),
+	LSM9DS1_AG_CHANNEL_XL(LSM9DS1_REG_OUT_Y_XL, Y, 1),
+	LSM9DS1_AG_CHANNEL_XL(LSM9DS1_REG_OUT_Z_XL, Z, 2),
+	LSM9DS1_AG_CHANNEL_G(LSM9DS1_REG_OUT_X_G, X, 3),
+	LSM9DS1_AG_CHANNEL_G(LSM9DS1_REG_OUT_Y_G, Y, 4),
+	LSM9DS1_AG_CHANNEL_G(LSM9DS1_REG_OUT_Z_G, Z, 5),
 };
 
 
