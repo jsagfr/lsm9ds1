@@ -82,7 +82,9 @@ struct lsm9ds1_ag_data {
 #define LSM9DS1_AG_CHANNEL_TEMP(reg) {                          \
         .type = IIO_TEMP,                                       \
         .address = reg,                                         \
+        .indexed = 0,                                           \
         .channel = 0,                                           \
+        .scan_index = -1,                                       \
         .info_mask_separate = BIT(IIO_CHAN_INFO_RAW) |          \
                 BIT(IIO_CHAN_INFO_PROCESSED),                   \
         .info_mask_shared_by_type = BIT(IIO_CHAN_INFO_SCALE) |  \
@@ -94,6 +96,7 @@ struct lsm9ds1_ag_data {
         .type = IIO_ACCEL,                                    \
         .address = reg,                                       \
         .modified = 1,                                        \
+        .indexed = 1,                                         \
         .channel2 = IIO_MOD_##axis,                           \
         .scan_index = index,                                  \
         .scan_type = {                                        \
@@ -110,6 +113,7 @@ struct lsm9ds1_ag_data {
         .type = IIO_ANGL_VEL,                                 \
         .address = reg,                                       \
         .modified = 1,                                        \
+        .indexed = 1,                                         \
         .channel2 = IIO_MOD_##axis,                           \
         .scan_index = index,                                  \
         .scan_type = {                                        \
