@@ -20,6 +20,9 @@
 #ifndef LSM9DS1_H_
 #define LSM9DS1_H_
 
+#include <linux/i2c.h>
+#include <linux/iio/iio.h>
+
 /* registers */
 #define LSM9DS1_REG_ACT_THS          0x04
 #define LSM9DS1_REG_ACT_DUR          0x05
@@ -78,14 +81,20 @@
 #define LSM9DS1_REG_INT_SRC_M        0x31
 #define LSM9DS1_REG_INT_THS_M        0x32
 
-#include <linux/i2c.h>
+struct lsm9ds1_data {
+        struct spi_device *spi;
+        struct i2c_client *i2c;
+        int               (*read_reg)(struct iio_dev *indio_dev, u8 addr, u8 len, u8 *data);
+        int               (*read_reg_8)(struct iio_dev *indio_dev, u8 addr, u8 *data);
+        int               (*read_reg_16)(struct iio_dev *indio_dev, u8 addr, s16 *data);
+        int               (*write_reg_8)(struct iio_dev *indio_dev, u8 addr, u8 data);
+        int               (*write_reg_mask_8)(struct iio_dev *indio_dev, u8 addr, u8 data, u8 mask);
+};
 
-extern int lsm9ds1_register_mask_write(struct i2c_client *client, u16 addr,
-                                       u8 mask, u8 data);
-extern int lsm9ds1_register_set_bit(struct i2c_client *client, u16 addr,
-                                    u8 bit);
-extern int lsm9ds1_register_reset_bit(struct i2c_client *client, u16 addr,
-                                      u8 bit);
+#define lsm9ds1_set_bit_reg(ldata, indio_dev, addr, bit)        \
+        ldata->write_reg_mask_8(indio_dev, addr, bit, bit)
 
+#define lsm9ds1_reset_bit_reg(ldata, indio_dev, addr, bit)      \
+        ldata->write_reg_mask_8(indio_dev, addr, 0, bit)
 
 #endif /* LSM9DS1_H_ */
