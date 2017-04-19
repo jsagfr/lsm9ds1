@@ -357,7 +357,7 @@ int lsm9ds1_ag_remove(struct iio_dev *indio_dev)
 {
 	iio_device_unregister(indio_dev);
 
-	return lsm9ds1_ag_enable(indio_dev, false);
+	return lsm9ds1_ag_reset(indio_dev);
 }
 EXPORT_SYMBOL(lsm9ds1_ag_remove);
 
