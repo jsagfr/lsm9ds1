@@ -110,16 +110,16 @@ int lsm9ds1_ag_enable(struct iio_dev *indio_dev, bool enable)
         if (enable) {
                 ret = ldata->write_reg_mask_8(
                         indio_dev, LSM9DS1_REG_CTRL_REG1_G,
-                        LSM9DS1_AG_ODR_G_MASK, LSM9DS1_AG_ODR_G_59_9);
+                        LSM9DS1_AG_ODR_G_59_9, LSM9DS1_AG_ODR_G_MASK);
         } else {
                 ret = ldata->write_reg_mask_8(
                         indio_dev, LSM9DS1_REG_CTRL_REG1_G,
-                        LSM9DS1_AG_ODR_G_MASK, LSM9DS1_AG_ODR_G_PD);
+                        LSM9DS1_AG_ODR_G_PD, LSM9DS1_AG_ODR_G_MASK);
                 if (ret < 0)
                         return ret;
                 ret = ldata->write_reg_mask_8(
                         indio_dev, LSM9DS1_REG_CTRL_REG6_XL,
-                        LSM9DS1_AG_ODR_XL_MASK, LSM9DS1_AG_ODR_XL_PD);
+                        LSM9DS1_AG_ODR_XL_PD, LSM9DS1_AG_ODR_XL_MASK);
         }
         
         return ret;
@@ -179,22 +179,22 @@ lsm9ds1_ag_store_accel_max_g(struct device *dev,
         case 2:
                 ret = ldata->write_reg_mask_8(
                         indio_dev, LSM9DS1_REG_CTRL_REG6_XL,
-                        LSM9DS1_AG_FS_XL_MASK, LSM9DS1_AG_FS_XL_2G);
+                        LSM9DS1_AG_FS_XL_2G, LSM9DS1_AG_FS_XL_MASK);
                 break;
         case 4:
                 ret = ldata->write_reg_mask_8(
                         indio_dev, LSM9DS1_REG_CTRL_REG6_XL,
-                        LSM9DS1_AG_FS_XL_MASK, LSM9DS1_AG_FS_XL_4G);
+                        LSM9DS1_AG_FS_XL_4G, LSM9DS1_AG_FS_XL_MASK);
                 break;
         case 8:
                 ret = ldata->write_reg_mask_8(
                         indio_dev, LSM9DS1_REG_CTRL_REG6_XL,
-                        LSM9DS1_AG_FS_XL_MASK, LSM9DS1_AG_FS_XL_8G);
+                        LSM9DS1_AG_FS_XL_8G, LSM9DS1_AG_FS_XL_MASK);
                 break;
         case 16:
                 ret = ldata->write_reg_mask_8(
                         indio_dev, LSM9DS1_REG_CTRL_REG6_XL,
-                        LSM9DS1_AG_FS_XL_MASK, LSM9DS1_AG_FS_XL_16G);
+                        LSM9DS1_AG_FS_XL_16G, LSM9DS1_AG_FS_XL_MASK);
                 break;
         default:
                 return -EINVAL;

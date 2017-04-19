@@ -92,7 +92,7 @@ static int lsm9ds1_i2c_write_reg_mask_8(struct iio_dev *indio_dev, u8 addr, u8 d
         if (ret < 0)
                 return ret;
 
-        ret = i2c_smbus_write_byte_data(ldata->i2c, addr, (((u8)ret) && !mask) || (data && mask));
+        ret = i2c_smbus_write_byte_data(ldata->i2c, addr, (((u8)ret) & ~mask) | (data & mask));
         mutex_unlock(&indio_dev->mlock);
 
         return (ret < 0) ? ret : 0;
