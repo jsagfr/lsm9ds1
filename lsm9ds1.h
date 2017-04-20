@@ -22,6 +22,7 @@
 
 #include <linux/i2c.h>
 #include <linux/iio/iio.h>
+#include <linux/irq.h>
 
 /* registers */
 #define LSM9DS1_REG_ACT_THS          0x04
@@ -84,11 +85,11 @@
 struct lsm9ds1_data {
         struct spi_device *spi;
         struct i2c_client *i2c;
-        int               (*read_reg)(struct iio_dev *indio_dev, u8 addr, u8 len, u8 *data);
-        int               (*read_reg_8)(struct iio_dev *indio_dev, u8 addr, u8 *data);
-        int               (*read_reg_16)(struct iio_dev *indio_dev, u8 addr, s16 *data);
-        int               (*write_reg_8)(struct iio_dev *indio_dev, u8 addr, u8 data);
-        int               (*write_reg_mask_8)(struct iio_dev *indio_dev, u8 addr, u8 data, u8 mask);
+        int               (*read_reg)(struct iio_dev *indio_dev, u8 len, u8 addr, s16 *data);
+        int               (*read_reg_8)(struct iio_dev *, u8, u8 *);
+        int               (*read_reg_16)(struct iio_dev *, u8, s16 *);
+        int               (*write_reg_8)(struct iio_dev *, u8, u8);
+        int               (*write_reg_mask_8)(struct iio_dev *, u8, u8, u8);
 };
 
 #define lsm9ds1_set_bit_reg(ldata, indio_dev, addr, bit)        \
@@ -96,5 +97,15 @@ struct lsm9ds1_data {
 
 #define lsm9ds1_reset_bit_reg(ldata, indio_dev, addr, bit)      \
         ldata->write_reg_mask_8(indio_dev, addr, 0, bit)
+
+
+int mread_reg_8(struct iio_dev *indio_dev, u8 addr, u8 *data);
+int mread_reg_16(struct iio_dev *indio_dev, u8 addr, s16 *data);
+int mwrite_reg_8(struct iio_dev *indio_dev, u8 addr, u8 data);
+int mwrite_reg_mask_8(struct iio_dev *indio_dev, u8 addr, u8 data, u8 mask);
+
+
+/* static irqreturn_t lsm9ds1_ag_trigger_handler(int irq, void *p); */
+/* const struct iio_buffer_setup_ops lsm9ds1_ag_buffer_setup_ops; */
 
 #endif /* LSM9DS1_H_ */

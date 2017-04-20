@@ -48,7 +48,7 @@ MODULE_DEVICE_TABLE(i2c, lsm9ds1_ag_i2c_ids);
 
 static struct i2c_driver lsm9ds1_ag_driver = {
 	.driver = {
-		.name = "lsm9ds1_ag",
+		.name = "lsm9ds1_ag_i2c",
 		.pm = NULL,
 	},
 	.probe		= lsm9ds1_ag_i2c_probe,

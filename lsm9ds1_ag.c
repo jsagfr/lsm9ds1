@@ -23,6 +23,7 @@
 #include <linux/i2c.h>
 #include <linux/iio/iio.h>
 #include <linux/iio/sysfs.h>
+#include <linux/iio/triggered_buffer.h>
 #include "lsm9ds1.h"
 #include "lsm9ds1_ag.h"
 
@@ -104,20 +105,19 @@ int lsm9ds1_ag_reset(struct iio_dev *indio_dev)
 
 int lsm9ds1_ag_enable(struct iio_dev *indio_dev, bool enable)
 {
-	struct lsm9ds1_data *ldata = iio_priv(indio_dev);
         int ret;
 
         if (enable) {
-                ret = ldata->write_reg_mask_8(
+                ret = mwrite_reg_mask_8(
                         indio_dev, LSM9DS1_REG_CTRL_REG1_G,
                         LSM9DS1_AG_ODR_G_59_9, LSM9DS1_AG_ODR_G_MASK);
         } else {
-                ret = ldata->write_reg_mask_8(
+                ret = mwrite_reg_mask_8(
                         indio_dev, LSM9DS1_REG_CTRL_REG1_G,
                         LSM9DS1_AG_ODR_G_PD, LSM9DS1_AG_ODR_G_MASK);
                 if (ret < 0)
                         return ret;
-                ret = ldata->write_reg_mask_8(
+                ret = mwrite_reg_mask_8(
                         indio_dev, LSM9DS1_REG_CTRL_REG6_XL,
                         LSM9DS1_AG_ODR_XL_PD, LSM9DS1_AG_ODR_XL_MASK);
         }
@@ -132,11 +132,10 @@ lsm9ds1_ag_show_accel_max_g(struct device *dev,
                             char *buf)
 {
         struct iio_dev *indio_dev = dev_to_iio_dev(dev);
-        struct lsm9ds1_data *ldata = iio_priv(indio_dev);
         u8 data;
         int len = 0, ret;
 
-        ret = ldata->read_reg_8(indio_dev, LSM9DS1_REG_CTRL_REG6_XL, &data);
+        ret = mread_reg_8(indio_dev, LSM9DS1_REG_CTRL_REG6_XL, &data);
 
         if (ret < 0)
                 return ret;
@@ -167,7 +166,6 @@ lsm9ds1_ag_store_accel_max_g(struct device *dev,
                              size_t len)
 {
         struct iio_dev *indio_dev = dev_to_iio_dev(dev);
-        struct lsm9ds1_data *ldata = iio_priv(indio_dev);
         int ret;
         u8 data;
 
@@ -177,22 +175,22 @@ lsm9ds1_ag_store_accel_max_g(struct device *dev,
 
         switch (data) {
         case 2:
-                ret = ldata->write_reg_mask_8(
+                ret = mwrite_reg_mask_8(
                         indio_dev, LSM9DS1_REG_CTRL_REG6_XL,
                         LSM9DS1_AG_FS_XL_2G, LSM9DS1_AG_FS_XL_MASK);
                 break;
         case 4:
-                ret = ldata->write_reg_mask_8(
+                ret = mwrite_reg_mask_8(
                         indio_dev, LSM9DS1_REG_CTRL_REG6_XL,
                         LSM9DS1_AG_FS_XL_4G, LSM9DS1_AG_FS_XL_MASK);
                 break;
         case 8:
-                ret = ldata->write_reg_mask_8(
+                ret = mwrite_reg_mask_8(
                         indio_dev, LSM9DS1_REG_CTRL_REG6_XL,
                         LSM9DS1_AG_FS_XL_8G, LSM9DS1_AG_FS_XL_MASK);
                 break;
         case 16:
-                ret = ldata->write_reg_mask_8(
+                ret = mwrite_reg_mask_8(
                         indio_dev, LSM9DS1_REG_CTRL_REG6_XL,
                         LSM9DS1_AG_FS_XL_16G, LSM9DS1_AG_FS_XL_MASK);
                 break;
@@ -225,14 +223,15 @@ static int lsm9ds1_ag_read_raw(struct iio_dev *indio_dev,
                                struct iio_chan_spec const *chan,
                                int *val, int *val2, long mask)
 {
-	struct lsm9ds1_data *ldata = iio_priv(indio_dev);
 	int ret;
         s16 data16;
         u8 data8;
 
 	switch (mask) {
 	case IIO_CHAN_INFO_RAW:
-                ret = ldata->read_reg_16(indio_dev, chan->address, &data16);
+                if (chan->type != IIO_TEMP && iio_buffer_enabled(indio_dev))
+                        return -EBUSY;
+                ret = mread_reg_16(indio_dev, chan->address, &data16);
 		if (ret < 0)
 			return ret;
 		*val = data16;
@@ -245,7 +244,7 @@ static int lsm9ds1_ag_read_raw(struct iio_dev *indio_dev,
                         *val2 = 1000000 / 16;
                         return IIO_VAL_INT_PLUS_MICRO;
                 case IIO_ACCEL:
-                        ret = ldata->read_reg_8(indio_dev, LSM9DS1_REG_CTRL_REG6_XL, &data8);
+                        ret = mread_reg_8(indio_dev, LSM9DS1_REG_CTRL_REG6_XL, &data8);
                         if (ret < 0)
                                 return ret;
 
@@ -265,7 +264,7 @@ static int lsm9ds1_ag_read_raw(struct iio_dev *indio_dev,
                                 return IIO_VAL_INT_PLUS_NANO;
                         }
                 case IIO_ANGL_VEL:
-                        ret = ldata->read_reg_8(indio_dev, LSM9DS1_REG_CTRL_REG1_G, &data8);
+                        ret = mread_reg_8(indio_dev, LSM9DS1_REG_CTRL_REG1_G, &data8);
                         if (ret < 0)
                                 return ret;
 
@@ -294,7 +293,7 @@ static int lsm9ds1_ag_read_raw(struct iio_dev *indio_dev,
                         return -EINVAL;
                 }
 	case IIO_CHAN_INFO_PROCESSED:
-                ret = ldata->read_reg_16(indio_dev, chan->address, &data16);
+                ret = mread_reg_16(indio_dev, chan->address, &data16);
                 if (ret < 0)
                         return ret;
                 switch (chan->type) {
@@ -345,9 +344,24 @@ int lsm9ds1_ag_probe(struct iio_dev *indio_dev, struct device *dev)
 	if (ret < 0)
 		return ret;
 
+        /* ret = iio_triggered_buffer_setup(indio_dev, NULL, */
+        /*                                  lsm9ds1_ag_trigger_handler, */
+        /*                                  &lsm9ds1_ag_buffer_setup_ops); */
+	/* if (ret < 0) { */
+        /*         printk(KERN_ALERT "%s:%d: lsm9ds1_ag_configure_buffer = %i\n",__FUNCTION__,__LINE__, ret); */
+        /*         goto error_buffer_cleanup; */
+        /* } */
+        /* printk(KERN_ALERT "%s:%d: %i\n",__FUNCTION__,__LINE__, ret); */
+
 	ret = iio_device_register(indio_dev);
 	if (ret < 0)
                 return ret;
+
+/* error_buffer_cleanup: */
+/*         printk(KERN_ALERT "%s:%d: error_unconfigure_buffer\n",__FUNCTION__,__LINE__); */
+/*         iio_triggered_buffer_cleanup(indio_dev); */
+        lsm9ds1_ag_reset(indio_dev);
+        dev_err(dev, "device_register failed\n");
 
 	return ret;
 }

@@ -23,7 +23,7 @@
 
 #include <linux/iio/iio.h>
 
-int lsm9ds1_i2c_read_reg(struct iio_dev *indio_dev, u8 addr, u8 len, u8 *data);
+int lsm9ds1_i2c_read_reg(struct iio_dev *indio_dev, u8 len, u8 addr, s16 *data);
 int lsm9ds1_i2c_read_reg_8(struct iio_dev *indio_dev, u8 addr, u8 *data);
 int lsm9ds1_i2c_read_reg_16(struct iio_dev *indio_dev, u8 addr, s16 *data);
 int lsm9ds1_i2c_write_reg_8(struct iio_dev *indio_dev, u8 addr, u8 data);
