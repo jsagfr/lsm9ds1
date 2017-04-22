@@ -99,10 +99,56 @@ struct lsm9ds1_data {
         ldata->write_reg_mask_8(indio_dev, addr, 0, bit)
 
 
-int mread_reg_8(struct iio_dev *indio_dev, u8 addr, u8 *data);
-int mread_reg_16(struct iio_dev *indio_dev, u8 addr, s16 *data);
-int mwrite_reg_8(struct iio_dev *indio_dev, u8 addr, u8 data);
-int mwrite_reg_mask_8(struct iio_dev *indio_dev, u8 addr, u8 data, u8 mask);
+static inline int mread_reg_8(struct iio_dev *indio_dev, u8 addr, u8 *data)
+{
+        struct lsm9ds1_data *ldata = iio_priv(indio_dev);
+        s32 ret;
+
+        mutex_lock(&indio_dev->mlock);
+        ret = ldata->read_reg_8(indio_dev, addr, data);
+        mutex_unlock(&indio_dev->mlock);
+
+        return ret;
+}
+
+
+static inline int mread_reg_16(struct iio_dev *indio_dev, u8 addr, s16 *data)
+{
+        struct lsm9ds1_data *ldata = iio_priv(indio_dev);
+        s32 ret;
+
+        mutex_lock(&indio_dev->mlock);
+        ret = ldata->read_reg_16(indio_dev, addr, data);
+        mutex_unlock(&indio_dev->mlock);
+
+        return ret;
+}
+
+
+static inline int mwrite_reg_8(struct iio_dev *indio_dev, u8 addr, u8 data)
+{
+        struct lsm9ds1_data *ldata = iio_priv(indio_dev);
+        s32 ret;
+
+        mutex_lock(&indio_dev->mlock);
+        ret = ldata->write_reg_8(indio_dev, addr, data);
+        mutex_unlock(&indio_dev->mlock);
+
+        return ret;
+}
+
+
+static inline int mwrite_reg_mask_8(struct iio_dev *indio_dev, u8 addr, u8 data, u8 mask)
+{
+        struct lsm9ds1_data *ldata = iio_priv(indio_dev);
+        s32 ret;
+
+        mutex_lock(&indio_dev->mlock);
+        ret = ldata->write_reg_mask_8(indio_dev, addr, data, mask);
+        mutex_unlock(&indio_dev->mlock);
+
+        return ret;
+}
 
 
 /* static irqreturn_t lsm9ds1_ag_trigger_handler(int irq, void *p); */

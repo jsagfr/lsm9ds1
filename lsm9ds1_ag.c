@@ -345,14 +345,14 @@ int lsm9ds1_ag_probe(struct iio_dev *indio_dev, struct device *dev)
 	if (ret < 0)
 		return ret;
 
-        ret = iio_triggered_buffer_setup(indio_dev, NULL,
-                                         lsm9ds1_ag_trigger_handler,
-                                         &lsm9ds1_ag_buffer_setup_ops);
-	if (ret < 0) {
-                printk(KERN_ALERT "%s:%d: lsm9ds1_ag_configure_buffer = %i\n",__FUNCTION__,__LINE__, ret);
-                goto error_buffer_cleanup;
-        }
-        printk(KERN_ALERT "%s:%d: %i\n",__FUNCTION__,__LINE__, ret);
+        /*  ret = iio_triggered_buffer_setup(indio_dev, NULL, */
+        /*                                  lsm9ds1_ag_trigger_handler, */
+        /*                                  &lsm9ds1_ag_buffer_setup_ops); */
+	/* if (ret < 0) { */
+        /*         printk(KERN_ALERT "%s:%d: lsm9ds1_ag_configure_buffer = %i\n",__FUNCTION__,__LINE__, ret); */
+        /*         goto error_buffer_cleanup; */
+        /* } */
+        /* printk(KERN_ALERT "%s:%d: %i\n",__FUNCTION__,__LINE__, ret); */
 
 	ret = iio_device_register(indio_dev);
 	if (ret < 0)
@@ -360,7 +360,7 @@ int lsm9ds1_ag_probe(struct iio_dev *indio_dev, struct device *dev)
 
 error_buffer_cleanup:
         printk(KERN_ALERT "%s:%d: error_unconfigure_buffer\n",__FUNCTION__,__LINE__);
-        iio_triggered_buffer_cleanup(indio_dev);
+        /* iio_triggered_buffer_cleanup(indio_dev); */
         lsm9ds1_ag_reset(indio_dev);
         dev_err(dev, "device_register failed\n");
 
