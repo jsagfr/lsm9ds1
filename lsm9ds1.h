@@ -20,6 +20,7 @@
 #ifndef LSM9DS1_H_
 #define LSM9DS1_H_
 
+#include <linux/mutex.h>
 #include <linux/i2c.h>
 #include <linux/iio/iio.h>
 #include <linux/irq.h>
@@ -85,6 +86,9 @@
 struct lsm9ds1_data {
         struct spi_device *spi;
         struct i2c_client *i2c;
+        struct mutex      lock;
+        u8                debug_reg;
+        u16               ag_buf[6];
         int               (*read_reg)(struct iio_dev *indio_dev, u8 len, u8 addr, s16 *data);
         int               (*read_reg_8)(struct iio_dev *, u8, u8 *);
         int               (*read_reg_16)(struct iio_dev *, u8, s16 *);
@@ -98,15 +102,21 @@ struct lsm9ds1_data {
 #define lsm9ds1_reset_bit_reg(ldata, indio_dev, addr, bit)      \
         ldata->write_reg_mask_8(indio_dev, addr, 0, bit)
 
+#define lsm9ds1_mset_bit_reg(indio_dev, addr, bit)        \
+        mwrite_reg_mask_8(indio_dev, addr, bit, bit)
+
+#define lsm9ds1_mreset_bit_reg(indio_dev, addr, bit)      \
+        mwrite_reg_mask_8(indio_dev, addr, 0, bit)
+
 
 static inline int mread_reg_8(struct iio_dev *indio_dev, u8 addr, u8 *data)
 {
         struct lsm9ds1_data *ldata = iio_priv(indio_dev);
         s32 ret;
 
-        mutex_lock(&indio_dev->mlock);
+        mutex_lock(&ldata->lock);
         ret = ldata->read_reg_8(indio_dev, addr, data);
-        mutex_unlock(&indio_dev->mlock);
+        mutex_unlock(&ldata->lock);
 
         return ret;
 }
@@ -117,9 +127,9 @@ static inline int mread_reg_16(struct iio_dev *indio_dev, u8 addr, s16 *data)
         struct lsm9ds1_data *ldata = iio_priv(indio_dev);
         s32 ret;
 
-        mutex_lock(&indio_dev->mlock);
+        mutex_lock(&ldata->lock);
         ret = ldata->read_reg_16(indio_dev, addr, data);
-        mutex_unlock(&indio_dev->mlock);
+        mutex_unlock(&ldata->lock);
 
         return ret;
 }
@@ -130,9 +140,9 @@ static inline int mwrite_reg_8(struct iio_dev *indio_dev, u8 addr, u8 data)
         struct lsm9ds1_data *ldata = iio_priv(indio_dev);
         s32 ret;
 
-        mutex_lock(&indio_dev->mlock);
+        mutex_lock(&ldata->lock);
         ret = ldata->write_reg_8(indio_dev, addr, data);
-        mutex_unlock(&indio_dev->mlock);
+        mutex_unlock(&ldata->lock);
 
         return ret;
 }
@@ -143,9 +153,9 @@ static inline int mwrite_reg_mask_8(struct iio_dev *indio_dev, u8 addr, u8 data,
         struct lsm9ds1_data *ldata = iio_priv(indio_dev);
         s32 ret;
 
-        mutex_lock(&indio_dev->mlock);
+        mutex_lock(&ldata->lock);
         ret = ldata->write_reg_mask_8(indio_dev, addr, data, mask);
-        mutex_unlock(&indio_dev->mlock);
+        mutex_unlock(&ldata->lock);
 
         return ret;
 }

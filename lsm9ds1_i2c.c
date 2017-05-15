@@ -21,49 +21,17 @@
 #include <linux/slab.h>
 #include "lsm9ds1.h"
 
-/* static int lsm9ds1_i2c_read_hw_buffer( */
-/*         struct iio_dev *indio_dev, */
-/*         u8 addr_nbsamples, u8 mask_nbsamples, u8 nb_channel, */
-/*         u8 addr_buffer, */
-/*         s16 *data) */
-/* { */
-/*         struct lsm9ds1_data *ldata = iio_priv(indio_dev); */
-/*         s32 ret; */
-/*         int len = 0; */
-
-/*         mutex_lock(&indio_dev->mlock); */
-        
-/*         ret = i2c_smbus_read_byte_data(ldata->i2c, addr_nbsamples); */
-/*         if (ret < 0) */
-/*                 goto done; */
-
-/*         len = (((u8)ret) & addr_buffer) * nb_channel * 2; */
-/*         data = kmalloc(len, GFP_KERNEL); */
-
-/*         if (!data) */
-/*                 goto done; */
-
-/*         ret = i2c_smbus_read_i2c_block_data( */
-/*                 ldata->i2c, nb_channel, addr_buffer, (u8 *)data); */
-
-/* done: */
-/*         mutex_unlock(&indio_dev->mlock); */
-
-/*         if (ret < 0) */
-/*                 return ret; */
-/*         if (ret != len) */
-/*                 return -EIO; */
-/*         return len / 2; */
-/* } */
-/* EXPORT_SYMBOL(lsm9ds1_i2c_read_hw_buffer); */
-
-static int lsm9ds1_i2c_read_reg(struct iio_dev *indio_dev, u8 len, u8 addr, s16 *data)
+static int lsm9ds1_i2c_read_reg(struct iio_dev *indio_dev, u8 addr, u8 len, s16 *data)
 {
         struct lsm9ds1_data *ldata = iio_priv(indio_dev);
         s32 ret;
 
+        printk(KERN_WARNING "%s:%d: addr=%x, len=%i\n",__FUNCTION__,__LINE__,addr,2*len);
+
         ret = i2c_smbus_read_i2c_block_data(
-                ldata->i2c, 2 * len, addr, (u8 *)data);
+                ldata->i2c, addr, 2 * len, (u8 *)data);
+
+        printk(KERN_WARNING "%s:%d: ret=%i\n",__FUNCTION__,__LINE__,ret);
 
         return (ret != 2 * len) ? -EIO : 0;
 }

@@ -1,5 +1,5 @@
-obj-m := lsm9ds1_i2c.o lsm9ds1_ag_i2c.o lsm9ds1_ag.o lsm9ds1_ag_buffer.o
-# lsm9ds1_m.o lsm9ds1_core.o 
+obj-m := lsm9ds1_i2c.o lsm9ds1_ag_i2c.o lsm9ds1_ag.o
+# lsm9ds1_m.o lsm9ds1_core.o  lsm9ds1_ag_buffer.o
 
 KERNEL_SRC := /lib/modules/$(shell uname -r)/build
 SRC := $(shell pwd)

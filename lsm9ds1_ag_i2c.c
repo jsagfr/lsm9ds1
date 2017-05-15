@@ -27,6 +27,7 @@ static int lsm9ds1_ag_i2c_probe(struct i2c_client *client,
         ldata->read_reg_16 = lsm9ds1_i2c_read_reg_16;
         ldata->write_reg_8 = lsm9ds1_i2c_write_reg_8;
         ldata->write_reg_mask_8 = lsm9ds1_i2c_write_reg_mask_8;
+        mutex_init(&ldata->lock);
 	i2c_set_clientdata(client, indio_dev);
 
         return lsm9ds1_ag_probe(indio_dev, &client->dev);

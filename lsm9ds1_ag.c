@@ -20,14 +20,34 @@
 
 #include <linux/device.h>
 #include <linux/module.h>
+#include <linux/irq.h>
+#include <linux/slab.h>
 #include <linux/i2c.h>
 #include <linux/iio/iio.h>
 #include <linux/iio/sysfs.h>
+#include <linux/iio/buffer.h>
 #include <linux/iio/triggered_buffer.h>
+#include <linux/iio/trigger_consumer.h>
 #include "lsm9ds1.h"
 #include "lsm9ds1_ag.h"
-#include "lsm9ds1_ag_buffer.h"
+/* #include "lsm9ds1_ag_buffer.h" */
 
+/* CTRL_REG9 */
+#define LSM9DS1_AG_FIFO_EN 0b00000010
+
+/* FIFO_CTRL */
+#define LSM9DS1_AG_FMOD_BYPASS         0
+#define LSM9DS1_AG_FMOD_FIFO           1 << 5
+#define LSM9DS1_AG_FMOD_RESERVED       2 << 5
+#define LSM9DS1_AG_FMOD_CONT_TG_FIFO   3 << 5
+#define LSM9DS1_AG_FMOD_BYPASS_TG_CONT 4 << 5
+#define LSM9DS1_AG_FMOD_CONTINOUS      5 << 5
+#define LSM9DS1_AG_FMOD_MASK           0b11100000
+
+#define LSM9DS1_AG_FTH 0b00011111
+
+/* FIFO_SRC */
+#define LSM9DS1_AG_FSS 0b00111111
 
 
 
@@ -97,10 +117,7 @@ static const struct iio_chan_spec lsm9ds1_ag_channels[] = {
 
 int lsm9ds1_ag_reset(struct iio_dev *indio_dev)
 {
-	struct lsm9ds1_data *ldata = iio_priv(indio_dev);
-        
-        return lsm9ds1_set_bit_reg(ldata,
-                indio_dev, LSM9DS1_REG_CTRL_REG8,
+        return lsm9ds1_mset_bit_reg(indio_dev, LSM9DS1_REG_CTRL_REG8,
                 LSM9DS1_AG_SW_RESET);
 }
 
@@ -209,10 +226,137 @@ static IIO_DEVICE_ATTR(accel_max_g, S_IRUGO | S_IWUSR,
                        lsm9ds1_ag_store_accel_max_g,
                        0);
 
+static ssize_t
+lsm9ds1_ag_show_debug_reg(struct device *dev,
+                          struct device_attribute *attr,
+                          char *buf)
+{
+        struct iio_dev *indio_dev = dev_to_iio_dev(dev);
+        struct lsm9ds1_data *ldata = iio_priv(indio_dev);
+        ssize_t len = 0;
+
+        len += sprintf(buf + len, "%#02x\n", ldata->debug_reg);
+
+        return len;
+}
+
+static ssize_t
+lsm9ds1_ag_store_debug_reg(struct device *dev,
+                           struct device_attribute *attr,
+                           const char *buf,
+                           size_t len)
+{
+        struct iio_dev *indio_dev = dev_to_iio_dev(dev);
+        struct lsm9ds1_data *ldata = iio_priv(indio_dev);
+        int ret;
+        u8 addr;
+        char end;
+
+        ret = sscanf(buf, "%hhx%c", &addr, &end);
+        dev_err(dev, "ret=%i\n", ret);
+        dev_err(dev, "end = '%c'\n", end);
+        if (ret < 1) {
+                dev_err(dev, "Can't parse I2C address\n");
+                return -EINVAL;
+        }
+        if (ret > 1  && end != '\n') {
+                dev_err(dev, "Extra parameters\n");
+                return -EINVAL;
+        }
+
+        dev_warn(dev, "Debug register: %#02x\n", addr);
+        ldata->debug_reg = addr;
+
+        return len;
+}
+
+static ssize_t
+lsm9ds1_ag_store_debug_val(struct device *dev,
+                           struct device_attribute *attr,
+                           const char *buf,
+                           size_t len)
+{
+        struct iio_dev *indio_dev = dev_to_iio_dev(dev);
+        struct lsm9ds1_data *ldata = iio_priv(indio_dev);
+        int ret;
+        u8 data8;
+        char end;
+
+        ret = sscanf(buf, "%hhx%c", &data8, &end);
+        dev_err(dev, "ret=%i\n", ret);
+        if (ret < 1) {
+                dev_err(dev, "Can't parse u8 data\n");
+                return -EINVAL;
+        }
+        if (ret > 1  && end != '\n') {
+                dev_err(dev, "Extra parameters\n");
+                return -EINVAL;
+        }
+
+        dev_warn(dev, "Write debug value: %#02x at address %#02x\n",
+                 data8, ldata->debug_reg);
+        mwrite_reg_8(indio_dev, ldata->debug_reg, data8);
+
+        return len;
+}
+
+static ssize_t
+lsm9ds1_ag_show_debug_h8(struct device *dev,
+                         struct device_attribute *attr,
+                         char *buf)
+{
+        struct iio_dev *indio_dev = dev_to_iio_dev(dev);
+        struct lsm9ds1_data *ldata = iio_priv(indio_dev);
+        u8 data8;
+        ssize_t len = 0;
+        int ret;
+
+        ret = mread_reg_8(indio_dev, ldata->debug_reg, &data8);
+
+        if (ret < 0)
+                return ret;
+
+        len += sprintf(buf + len, "%#02x\n", data8);
+
+        return len;
+}
+
+static ssize_t
+lsm9ds1_ag_show_debug_h16(struct device *dev,
+                          struct device_attribute *attr,
+                          char *buf)
+{
+        struct iio_dev *indio_dev = dev_to_iio_dev(dev);
+        struct lsm9ds1_data *ldata = iio_priv(indio_dev);
+        u16 data16;
+        ssize_t len = 0;
+        int ret;
+
+        ret = mread_reg_16(indio_dev, ldata->debug_reg, &data16);
+
+        if (ret < 0)
+                return ret;
+
+        len += sprintf(buf + len, "%#04x\n", data16);
+
+        return len;
+}
+
+static IIO_DEVICE_ATTR(debug_reg, S_IRUGO | S_IWUSR,
+                       lsm9ds1_ag_show_debug_reg,
+                       lsm9ds1_ag_store_debug_reg, 0);
+static IIO_DEVICE_ATTR(debug_val, S_IWUSR, NULL, lsm9ds1_ag_store_debug_val, 0);
+static IIO_DEVICE_ATTR(debug_h8, S_IRUGO, lsm9ds1_ag_show_debug_h8, NULL, 0);
+static IIO_DEVICE_ATTR(debug_h16, S_IRUGO, lsm9ds1_ag_show_debug_h16, NULL, 0);
+
 
 static struct attribute *lsm9ds1_ag_attributes[] = {
         &iio_const_attr_in_accel_max_g_available.dev_attr.attr,
         &iio_dev_attr_accel_max_g.dev_attr.attr,
+        &iio_dev_attr_debug_reg.dev_attr.attr,
+        &iio_dev_attr_debug_val.dev_attr.attr,
+        &iio_dev_attr_debug_h8.dev_attr.attr,
+        &iio_dev_attr_debug_h16.dev_attr.attr,
         NULL,
 };
 
@@ -319,6 +463,129 @@ static int lsm9ds1_ag_read_raw(struct iio_dev *indio_dev,
 	}
 }
 
+irqreturn_t lsm9ds1_ag_trigger_handler(int irq, void *p)
+{
+        struct iio_poll_func *pf = p;
+        struct iio_dev *indio_dev = pf->indio_dev;
+        struct lsm9ds1_data *ldata = iio_priv(indio_dev);
+        int scan_index, i = 0, j = 0;
+        int ret;
+        u8 len = 6, samples;
+        s16 *buffer_data;
+        s16 *i2c_data;
+
+        printk(KERN_WARNING "%s:%d\n",__FUNCTION__,__LINE__);
+        // TODO: skip all if there is no active scan index
+
+        mutex_lock(&ldata->lock);
+
+        ret = ldata->read_reg_8(indio_dev, LSM9DS1_REG_FIFO_SRC, &samples);
+        samples = samples & LSM9DS1_AG_FSS;
+        printk(KERN_WARNING "%s:%d: ret = %i, samples = %i\n",
+               __FUNCTION__,__LINE__, ret, samples);
+
+        if (ret < 0 || samples <= 0)
+                goto done;
+
+        i2c_data = kmalloc(2 * samples, GFP_KERNEL);
+        buffer_data = kmalloc(2 * samples * indio_dev->masklength, GFP_KERNEL);
+        printk(KERN_WARNING "%s:%d: kmalloc(%i, GFP_KERNEL);\n",
+               __FUNCTION__,__LINE__,samples * indio_dev->masklength);
+
+        if (!i2c_data || !buffer_data) {
+                printk(KERN_WARNING "%s:%d: kmalloc error\n",
+                       __FUNCTION__,__LINE__);
+                goto freebuf;
+        }
+
+        printk(KERN_WARNING "%s:%d: buf ok\n",__FUNCTION__,__LINE__);
+
+        for(i = 0; i < samples; i++) {
+                for_each_set_bit(scan_index, indio_dev->active_scan_mask,
+                                 indio_dev->masklength) {
+                        printk(KERN_WARNING "%s:%d: sample[%i], addr=%x, len=%i\n",__FUNCTION__,__LINE__,i, LSM9DS1_REG_OUT_X_XL, len);
+                        ret = ldata->read_reg(indio_dev, LSM9DS1_REG_OUT_X_XL, len, i2c_data);
+                        printk(KERN_WARNING "%s:%d: ret=%i\n",__FUNCTION__,__LINE__, ret);
+
+                        if (ret < 0)
+                                goto freebuf;
+
+                        buffer_data[i * samples + j] = i2c_data[scan_index];
+                        printk(KERN_WARNING "%s:%d: buffer_data[%i] = i2c_data[%i] = %i\n",
+                               __FUNCTION__,__LINE__,
+                               i * samples + j, scan_index, buffer_data[i * samples + j]);
+                        j++;
+                }
+        }
+
+        printk(KERN_WARNING "%s:%d: iio_push_to_buffers_with_timestamp\n",__FUNCTION__,__LINE__);
+        iio_push_to_buffers_with_timestamp(indio_dev, buffer_data,
+                                           iio_get_time_ns(indio_dev));
+
+
+freebuf:
+        kfree(buffer_data);
+        kfree(i2c_data);
+
+done:
+        iio_trigger_notify_done(indio_dev->trig);
+        mutex_unlock(&ldata->lock);
+ 
+        printk(KERN_WARNING "%s:%d\n",__FUNCTION__,__LINE__);
+        return IRQ_HANDLED;
+}
+
+static int lsm9ds1_ag_buffer_preenable(struct iio_dev *indio_dev)
+{
+        struct lsm9ds1_data *ldata = iio_priv(indio_dev);
+        int ret;
+
+        // TODO: Debug
+        u8 samples;
+
+        
+        printk(KERN_WARNING "%s:%d\n",__FUNCTION__,__LINE__);
+
+        mutex_lock(&ldata->lock);
+
+        ret = ldata->write_reg_8(indio_dev, LSM9DS1_REG_FIFO_CTRL,
+                           LSM9DS1_AG_FMOD_FIFO);
+        if (ret < 0)
+                return ret;
+
+        ret = ldata->write_reg_mask_8(indio_dev, LSM9DS1_REG_FIFO_CTRL, 31, LSM9DS1_AG_FTH);
+        if (ret < 0)
+                return ret;
+        
+        ret = lsm9ds1_set_bit_reg(
+                ldata, indio_dev, LSM9DS1_REG_CTRL_REG9,
+                LSM9DS1_AG_FIFO_EN);
+
+        mutex_unlock(&ldata->lock);
+
+        printk(KERN_WARNING "%s:%d:end\n",__FUNCTION__,__LINE__);
+        return ret;
+}
+
+static int lsm9ds1_ag_buffer_postdisable(struct iio_dev *indio_dev)
+{
+        struct lsm9ds1_data *ldata = iio_priv(indio_dev);
+        int ret;
+
+        printk(KERN_WARNING "%s:%d\n",__FUNCTION__,__LINE__);
+        ret = lsm9ds1_mreset_bit_reg(indio_dev, LSM9DS1_REG_CTRL_REG9,
+                LSM9DS1_AG_FIFO_EN);
+        printk(KERN_WARNING "%s:%d: ret = %i\n",__FUNCTION__,__LINE__, ret);
+        return ret;
+}
+
+const struct iio_buffer_setup_ops lsm9ds1_ag_buffer_setup_ops = {
+        .preenable = &lsm9ds1_ag_buffer_preenable,
+        .postenable = &iio_triggered_buffer_postenable,
+        .predisable = &iio_triggered_buffer_predisable,
+        .postdisable = &lsm9ds1_ag_buffer_postdisable,
+};
+
 
 static const struct iio_info lsm9ds1_ag_info = {
 	.driver_module	= THIS_MODULE,
@@ -345,21 +612,21 @@ int lsm9ds1_ag_probe(struct iio_dev *indio_dev, struct device *dev)
 	if (ret < 0)
 		return ret;
 
-        /*  ret = iio_triggered_buffer_setup(indio_dev, NULL, */
-        /*                                  lsm9ds1_ag_trigger_handler, */
-        /*                                  &lsm9ds1_ag_buffer_setup_ops); */
-	/* if (ret < 0) { */
-        /*         printk(KERN_ALERT "%s:%d: lsm9ds1_ag_configure_buffer = %i\n",__FUNCTION__,__LINE__, ret); */
-        /*         goto error_buffer_cleanup; */
-        /* } */
-        /* printk(KERN_ALERT "%s:%d: %i\n",__FUNCTION__,__LINE__, ret); */
+        ret = iio_triggered_buffer_setup(indio_dev, NULL,
+                                         &lsm9ds1_ag_trigger_handler,
+                                         &lsm9ds1_ag_buffer_setup_ops);
+	if (ret < 0) {
+                printk(KERN_WARNING "%s:%d: lsm9ds1_ag_configure_buffer = %i\n",__FUNCTION__,__LINE__, ret);
+                goto error_buffer_cleanup;
+        }
+        printk(KERN_WARNING "%s:%d: %i\n",__FUNCTION__,__LINE__, ret);
 
 	ret = iio_device_register(indio_dev);
-	if (ret < 0)
+	if (ret >= 0)
                 return ret;
 
 error_buffer_cleanup:
-        printk(KERN_ALERT "%s:%d: error_unconfigure_buffer\n",__FUNCTION__,__LINE__);
+        printk(KERN_WARNING "%s:%d: error_unconfigure_buffer\n",__FUNCTION__,__LINE__);
         /* iio_triggered_buffer_cleanup(indio_dev); */
         lsm9ds1_ag_reset(indio_dev);
         dev_err(dev, "device_register failed\n");
