@@ -41,7 +41,7 @@
 #define LSM9DS1_AG_FMOD_RESERVED       2 << 5
 #define LSM9DS1_AG_FMOD_CONT_TG_FIFO   3 << 5
 #define LSM9DS1_AG_FMOD_BYPASS_TG_CONT 4 << 5
-#define LSM9DS1_AG_FMOD_CONTINOUS      5 << 5
+#define LSM9DS1_AG_FMOD_CONTINOUS      6 << 5
 #define LSM9DS1_AG_FMOD_MASK           0b11100000
 
 #define LSM9DS1_AG_FTH 0b00011111
@@ -468,14 +468,14 @@ irqreturn_t lsm9ds1_ag_trigger_handler(int irq, void *p)
         struct iio_poll_func *pf = p;
         struct iio_dev *indio_dev = pf->indio_dev;
         struct lsm9ds1_data *ldata = iio_priv(indio_dev);
-        int scan_index, i = 0, j = 0;
+        int i = 0;
         int ret;
         u8 len = 6, samples;
-        s16 *buffer_data;
-        s16 *i2c_data;
+        u8 iio_buffer[32]; // 6 channels 16bits + padding + ts(64bits)
+        s64 delta_ts = 16807;
+        s64 ts;
 
         printk(KERN_WARNING "%s:%d\n",__FUNCTION__,__LINE__);
-        // TODO: skip all if there is no active scan index
 
         mutex_lock(&ldata->lock);
 
@@ -487,45 +487,26 @@ irqreturn_t lsm9ds1_ag_trigger_handler(int irq, void *p)
         if (ret < 0 || samples <= 0)
                 goto done;
 
-        i2c_data = kmalloc(2 * samples, GFP_KERNEL);
-        buffer_data = kmalloc(2 * samples * indio_dev->masklength, GFP_KERNEL);
-        printk(KERN_WARNING "%s:%d: kmalloc(%i, GFP_KERNEL);\n",
-               __FUNCTION__,__LINE__,samples * indio_dev->masklength);
-
-        if (!i2c_data || !buffer_data) {
-                printk(KERN_WARNING "%s:%d: kmalloc error\n",
-                       __FUNCTION__,__LINE__);
-                goto freebuf;
-        }
-
-        printk(KERN_WARNING "%s:%d: buf ok\n",__FUNCTION__,__LINE__);
+        ts = iio_get_time_ns(indio_dev) - samples * delta_ts;
 
         for(i = 0; i < samples; i++) {
-                for_each_set_bit(scan_index, indio_dev->active_scan_mask,
-                                 indio_dev->masklength) {
-                        printk(KERN_WARNING "%s:%d: sample[%i], addr=%x, len=%i\n",__FUNCTION__,__LINE__,i, LSM9DS1_REG_OUT_X_XL, len);
-                        ret = ldata->read_reg(indio_dev, LSM9DS1_REG_OUT_X_XL, len, i2c_data);
-                        printk(KERN_WARNING "%s:%d: ret=%i\n",__FUNCTION__,__LINE__, ret);
 
-                        if (ret < 0)
-                                goto freebuf;
+                printk(KERN_WARNING "%s:%d: sample[%i], addr=%x, len=%i\n",
+                       __FUNCTION__,__LINE__,i, LSM9DS1_REG_OUT_X_XL, len);
+                ret = ldata->read_reg(indio_dev, LSM9DS1_REG_OUT_X_XL, len, (s16 *) &iio_buffer);
+                printk(KERN_WARNING "%s:%d: ret=%i\n",__FUNCTION__,__LINE__, ret);
 
-                        buffer_data[i * samples + j] = i2c_data[scan_index];
-                        printk(KERN_WARNING "%s:%d: buffer_data[%i] = i2c_data[%i] = %i\n",
-                               __FUNCTION__,__LINE__,
-                               i * samples + j, scan_index, buffer_data[i * samples + j]);
-                        j++;
-                }
+                if (ret < 0)
+                        goto done;
+
+                /* printk(KERN_WARNING "%s:%d: iio_buffer[%i, %i, %i, %i, %i, %i]\n", */
+                /*        __FUNCTION__,__LINE__, */
+                /*        iio_buffer[0], iio_buffer[1], iio_buffer[2], */
+                /*        iio_buffer[3], iio_buffer[4], iio_buffer[5]); */
+
+                iio_push_to_buffers_with_timestamp(indio_dev, &iio_buffer, ts);
+                ts += delta_ts;
         }
-
-        printk(KERN_WARNING "%s:%d: iio_push_to_buffers_with_timestamp\n",__FUNCTION__,__LINE__);
-        iio_push_to_buffers_with_timestamp(indio_dev, buffer_data,
-                                           iio_get_time_ns(indio_dev));
-
-
-freebuf:
-        kfree(buffer_data);
-        kfree(i2c_data);
 
 done:
         iio_trigger_notify_done(indio_dev->trig);
@@ -549,11 +530,23 @@ static int lsm9ds1_ag_buffer_preenable(struct iio_dev *indio_dev)
         mutex_lock(&ldata->lock);
 
         ret = ldata->write_reg_8(indio_dev, LSM9DS1_REG_FIFO_CTRL,
-                           LSM9DS1_AG_FMOD_FIFO);
+                           LSM9DS1_AG_FMOD_CONTINOUS);
+        printk(KERN_WARNING "%s:%d: mode: ret = %i",
+               __FUNCTION__,__LINE__, ret);
+
         if (ret < 0)
                 return ret;
 
+        ret = ldata->read_reg_8(indio_dev, LSM9DS1_REG_FIFO_CTRL, &samples);
+        printk(KERN_WARNING "%s:%d: ret = %i, samples = %x = %i\n",
+               __FUNCTION__,__LINE__,
+               ret, samples, samples & LSM9DS1_AG_FTH);
+
         ret = ldata->write_reg_mask_8(indio_dev, LSM9DS1_REG_FIFO_CTRL, 31, LSM9DS1_AG_FTH);
+        ret = ldata->read_reg_8(indio_dev, LSM9DS1_REG_FIFO_CTRL, &samples);
+        printk(KERN_WARNING "%s:%d: ret = %i, samples = %x = %i\n",
+               __FUNCTION__,__LINE__,
+               ret, samples, samples & LSM9DS1_AG_FTH);
         if (ret < 0)
                 return ret;
         
