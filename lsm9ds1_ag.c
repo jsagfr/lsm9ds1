@@ -481,8 +481,8 @@ irqreturn_t lsm9ds1_ag_trigger_handler(int irq, void *p)
 
         ret = ldata->read_reg_8(indio_dev, LSM9DS1_REG_FIFO_SRC, &samples);
         samples = samples & LSM9DS1_AG_FSS;
-        printk(KERN_WARNING "%s:%d: ret = %i, samples = %i\n",
-               __FUNCTION__,__LINE__, ret, samples);
+        printk(KERN_WARNING "%s:%d: samples = %i\n",
+               __FUNCTION__,__LINE__, samples);
 
         if (ret < 0 || samples <= 0)
                 goto done;
@@ -491,18 +491,9 @@ irqreturn_t lsm9ds1_ag_trigger_handler(int irq, void *p)
 
         for(i = 0; i < samples; i++) {
 
-                printk(KERN_WARNING "%s:%d: sample[%i], addr=%x, len=%i\n",
-                       __FUNCTION__,__LINE__,i, LSM9DS1_REG_OUT_X_XL, len);
                 ret = ldata->read_reg(indio_dev, LSM9DS1_REG_OUT_X_XL, len, (s16 *) &iio_buffer);
-                printk(KERN_WARNING "%s:%d: ret=%i\n",__FUNCTION__,__LINE__, ret);
-
                 if (ret < 0)
                         goto done;
-
-                /* printk(KERN_WARNING "%s:%d: iio_buffer[%i, %i, %i, %i, %i, %i]\n", */
-                /*        __FUNCTION__,__LINE__, */
-                /*        iio_buffer[0], iio_buffer[1], iio_buffer[2], */
-                /*        iio_buffer[3], iio_buffer[4], iio_buffer[5]); */
 
                 iio_push_to_buffers_with_timestamp(indio_dev, &iio_buffer, ts);
                 ts += delta_ts;
@@ -521,9 +512,6 @@ static int lsm9ds1_ag_buffer_preenable(struct iio_dev *indio_dev)
         struct lsm9ds1_data *ldata = iio_priv(indio_dev);
         int ret;
 
-        // TODO: Debug
-        u8 samples;
-
         
         printk(KERN_WARNING "%s:%d\n",__FUNCTION__,__LINE__);
 
@@ -531,22 +519,10 @@ static int lsm9ds1_ag_buffer_preenable(struct iio_dev *indio_dev)
 
         ret = ldata->write_reg_8(indio_dev, LSM9DS1_REG_FIFO_CTRL,
                            LSM9DS1_AG_FMOD_CONTINOUS);
-        printk(KERN_WARNING "%s:%d: mode: ret = %i",
-               __FUNCTION__,__LINE__, ret);
-
         if (ret < 0)
                 return ret;
 
-        ret = ldata->read_reg_8(indio_dev, LSM9DS1_REG_FIFO_CTRL, &samples);
-        printk(KERN_WARNING "%s:%d: ret = %i, samples = %x = %i\n",
-               __FUNCTION__,__LINE__,
-               ret, samples, samples & LSM9DS1_AG_FTH);
-
         ret = ldata->write_reg_mask_8(indio_dev, LSM9DS1_REG_FIFO_CTRL, 31, LSM9DS1_AG_FTH);
-        ret = ldata->read_reg_8(indio_dev, LSM9DS1_REG_FIFO_CTRL, &samples);
-        printk(KERN_WARNING "%s:%d: ret = %i, samples = %x = %i\n",
-               __FUNCTION__,__LINE__,
-               ret, samples, samples & LSM9DS1_AG_FTH);
         if (ret < 0)
                 return ret;
         

@@ -26,12 +26,8 @@ static int lsm9ds1_i2c_read_reg(struct iio_dev *indio_dev, u8 addr, u8 len, s16 
         struct lsm9ds1_data *ldata = iio_priv(indio_dev);
         s32 ret;
 
-        printk(KERN_WARNING "%s:%d: addr=%x, len=%i\n",__FUNCTION__,__LINE__,addr,2*len);
-
         ret = i2c_smbus_read_i2c_block_data(
                 ldata->i2c, addr, 2 * len, (u8 *)data);
-
-        printk(KERN_WARNING "%s:%d: ret=%i\n",__FUNCTION__,__LINE__,ret);
 
         return (ret != 2 * len) ? -EIO : 0;
 }
