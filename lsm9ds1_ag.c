@@ -50,6 +50,8 @@
 #define LSM9DS1_AG_FSS 0b00111111
 
 
+#define LSM9DS1_AG_DATA_SIZE 6*2
+
 
 /* enum { */
 /*         LSM9DS0, */
@@ -472,7 +474,7 @@ irqreturn_t lsm9ds1_ag_trigger_handler(int irq, void *p)
         int i = 0;
         int ret;
         u8 len = 6, samples;
-        u8 iio_buffer[32]; // 6 channels 16bits + padding + ts(64bits)
+        u8 iio_buffer[ALIGN(LSM9DS1_AG_DATA_SIZE, sizeof(s64)) + sizeof(s64)]; // 6 channels 16bits + padding + ts(64bits)
         s64 delta_ts = 16807;
         s64 ts;
 
