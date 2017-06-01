@@ -112,6 +112,7 @@ static const struct iio_chan_spec lsm9ds1_ag_channels[] = {
 	LSM9DS1_AG_CHANNEL_G(LSM9DS1_REG_OUT_X_G, X, 3),
 	LSM9DS1_AG_CHANNEL_G(LSM9DS1_REG_OUT_Y_G, Y, 4),
 	LSM9DS1_AG_CHANNEL_G(LSM9DS1_REG_OUT_Z_G, Z, 5),
+        IIO_CHAN_SOFT_TIMESTAMP(6),
 };
 
 
