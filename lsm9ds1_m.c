@@ -20,38 +20,16 @@
 
 #include <linux/device.h>
 #include <linux/module.h>
+#include <linux/irq.h>
+#include <linux/slab.h>
 #include <linux/i2c.h>
 #include <linux/iio/iio.h>
 #include <linux/iio/sysfs.h>
+#include <linux/iio/buffer.h>
+#include <linux/iio/triggered_buffer.h>
+#include <linux/iio/trigger_consumer.h>
 #include "lsm9ds1.h"
-
-/* bits */
-#define LSM9DS1_M_I_AM       0b00111101
-
-#define LSM9DS1_M_MD_MASK        3
-#define LSM9DS1_M_MD_CONT_CONV   0
-#define LSM9DS1_M_MD_SINGLE_CONV 1
-#define LSM9DS1_M_MD_POWER_DOWN2 2
-#define LSM9DS1_M_MD_POWER_DOWN  3
-
-#define LSM9DS1_M_ODR_MASK  7 << 2
-#define LSM9DS1_M_ODR_0_625 0
-#define LSM9DS1_M_ODR_1_25  1 << 2
-#define LSM9DS1_M_ODR_2_5   2 << 2
-#define LSM9DS1_M_ODR_5     3 << 2
-#define LSM9DS1_M_ODR_10    4 << 2
-#define LSM9DS1_M_ODR_20    5 << 2
-#define LSM9DS1_M_ODR_40    6 << 2
-#define LSM9DS1_M_ODR_80    7 << 2
-
-#define LSM9DS1_M_FS_4GAUSS   0
-#define LSM9DS1_M_FS_8GAUSS   1 << 5
-#define LSM9DS1_M_FS_12GAUSS  2 << 5
-#define LSM9DS1_M_FS_16GAUSS  3 << 5
-#define LSM9DS1_M_FS_MASK     0b01100000
-
-#define LSM9DS1_M_SW_RESET 1 << 2
-
+#include "lsm9ds1_m.h"
 
 
 /* enum { */
@@ -59,59 +37,50 @@
 /*         LSM9DS1 */
 /* }; */
 
-struct lsm9ds1_m_data {
-        struct i2c_client *client;
-        struct mutex       buf_lock;
-};
-
-#define LSM9DS1_M_CHANNEL_M(reg, axis) {                                \
-                .type = IIO_MAGN,                                       \
-                        .address = reg,                                 \
-                        .modified = 1,                                  \
-                        .channel2 = IIO_MOD_##axis,                     \
-                        .scan_type = {                                  \
-                        .sign = 's',                                    \
-                        .realbits = 16,                                 \
-                        .storagebits = 16,                              \
-                        .endianness = IIO_LE,                           \
-                },                                                      \
-                        .info_mask_separate = BIT(IIO_CHAN_INFO_RAW),   \
-                        }
+#define LSM9DS1_M_CHANNEL_M(reg, axis, index) {               \
+        .type = IIO_MAGN,                                     \
+        .address = reg,                                       \
+        .modified = 1,                                        \
+        .indexed = 1,                                         \
+        .channel2 = IIO_MOD_##axis,                           \
+        .scan_index = index,                                  \
+        .scan_type = {                                        \
+                .sign = 's',                                  \
+                .realbits = 16,                               \
+                .storagebits = 16,                            \
+                .endianness = IIO_LE,                         \
+        },                                                    \
+        .info_mask_separate = BIT(IIO_CHAN_INFO_RAW),         \
+        .info_mask_shared_by_type = BIT(IIO_CHAN_INFO_SCALE), \
+}
 
 static const struct iio_chan_spec lsm9ds1_m_channels[] = {
-	LSM9DS1_M_CHANNEL_M(LSM9DS1_REG_OUT_X_M, X),
-	LSM9DS1_M_CHANNEL_M(LSM9DS1_REG_OUT_Y_M, Y),
-	LSM9DS1_M_CHANNEL_M(LSM9DS1_REG_OUT_Z_M, Z),
+	LSM9DS1_M_CHANNEL_M(LSM9DS1_REG_OUT_X_M, X, 0),
+	LSM9DS1_M_CHANNEL_M(LSM9DS1_REG_OUT_Y_M, Y, 1),
+	LSM9DS1_M_CHANNEL_M(LSM9DS1_REG_OUT_Z_M, Z, 2),
+        IIO_CHAN_SOFT_TIMESTAMP(4),
 };
 
 int lsm9ds1_m_reset(struct iio_dev *indio_dev)
 {
-        struct lsm9ds1_m_data *data = iio_priv(indio_dev);
-        int ret;
-        
-        mutex_lock(&indio_dev->mlock);
-        ret = lsm9ds1_register_set_bit(
-                data->client, LSM9DS1_REG_CTRL_REG2_M,
+        return lsm9ds1_mset_bit_reg(indio_dev, LSM9DS1_REG_CTRL_REG2_M,
                 LSM9DS1_M_SW_RESET);
-        mutex_unlock(&indio_dev->mlock);
-        return ret;
 }
 
 int lsm9ds1_m_enable(struct iio_dev *indio_dev, bool enable)
 {
-        struct lsm9ds1_m_data *data = iio_priv(indio_dev);
         int ret;
         
-        mutex_lock(&indio_dev->mlock);
-        if (enable)
-                ret = lsm9ds1_register_mask_write(
-                        data->client, LSM9DS1_REG_CTRL_REG3_M,
-                        LSM9DS1_M_MD_MASK, LSM9DS1_M_MD_POWER_DOWN);
-        else
-                ret = lsm9ds1_register_mask_write(
-                        data->client, LSM9DS1_REG_CTRL_REG3_M,
-                        LSM9DS1_M_MD_MASK, LSM9DS1_M_MD_CONT_CONV);
-        mutex_unlock(&indio_dev->mlock);
+        if (enable) {
+                ret = mwrite_reg_mask_8(
+                        indio_dev, LSM9DS1_REG_CTRL_REG3_M,
+                        LSM9DS1_M_MD_POWER_DOWN, LSM9DS1_M_MD_MASK);
+        } else {
+                ret = mwrite_reg_mask_8(
+                        indio_dev, LSM9DS1_REG_CTRL_REG3_M,
+                        LSM9DS1_M_MD_CONT_CONV, LSM9DS1_M_MD_MASK);
+        }
+
         return ret;
 }
 
@@ -122,14 +91,10 @@ lsm9ds1_m_show_magn_max_gauss(struct device *dev,
                               char *buf)
 {
         struct iio_dev *indio_dev = dev_to_iio_dev(dev);
-        struct lsm9ds1_m_data *data = iio_priv(indio_dev);
-        /* struct lsm9ds1_m_state *st = iio_priv(indio_dev); */
-        // TODO: spinlock
         int len = 0, ret;
+        u8 data;
 
-        mutex_lock(&indio_dev->mlock);
-        ret = i2c_smbus_read_word_data(data->client, LSM9DS1_REG_CTRL_REG2_M);
-        mutex_unlock(&indio_dev->mlock);
+        ret = mread_reg_8(indio_dev, LSM9DS1_REG_CTRL_REG6_XL, &data);
         if (ret < 0)
                 return ret;
 
@@ -159,7 +124,6 @@ lsm9ds1_m_store_magn_max_gauss(struct device *dev,
                                size_t len)
 {
         struct iio_dev *indio_dev = dev_to_iio_dev(dev);
-        struct lsm9ds1_m_data *data = iio_priv(indio_dev);
         int ret;
         u8 val;
 
@@ -170,24 +134,24 @@ lsm9ds1_m_store_magn_max_gauss(struct device *dev,
         mutex_lock(&indio_dev->mlock);
         switch (val) {
         case 4:
-                ret = lsm9ds1_register_mask_write(
-                        data->client, LSM9DS1_REG_CTRL_REG2_M,
-                        LSM9DS1_M_FS_MASK, LSM9DS1_M_FS_4GAUSS);
+                ret = mwrite_reg_mask_8(
+                        indio_dev, LSM9DS1_REG_CTRL_REG2_M,
+                        LSM9DS1_M_FS_4GAUSS, LSM9DS1_M_FS_MASK);
                 break;
         case 8:
-                ret = lsm9ds1_register_mask_write(
-                        data->client, LSM9DS1_REG_CTRL_REG2_M,
-                        LSM9DS1_M_FS_MASK, LSM9DS1_M_FS_8GAUSS);
+                ret = mwrite_reg_mask_8(
+                        indio_dev, LSM9DS1_REG_CTRL_REG2_M,
+                        LSM9DS1_M_FS_8GAUSS, LSM9DS1_M_FS_MASK);
                 break;
         case 12:
-                ret = lsm9ds1_register_mask_write(
-                        data->client, LSM9DS1_REG_CTRL_REG2_M,
-                        LSM9DS1_M_FS_MASK, LSM9DS1_M_FS_12GAUSS);
+                ret = mwrite_reg_mask_8(
+                        indio_dev, LSM9DS1_REG_CTRL_REG2_M,
+                        LSM9DS1_M_FS_12GAUSS, LSM9DS1_M_FS_MASK);
                 break;
         case 16:
-                ret = lsm9ds1_register_mask_write(
-                        data->client, LSM9DS1_REG_CTRL_REG2_M,
-                        LSM9DS1_M_FS_MASK, LSM9DS1_M_FS_16GAUSS);
+                ret = mwrite_reg_mask_8(
+                        indio_dev, LSM9DS1_REG_CTRL_REG2_M,
+                        LSM9DS1_M_FS_16GAUSS, LSM9DS1_M_FS_MASK);
                 break;
         default:
                 return -EINVAL;
@@ -218,23 +182,52 @@ static int lsm9ds1_m_read_raw(struct iio_dev *indio_dev,
                               struct iio_chan_spec const *chan,
                               int *val, int *val2, long mask)
 {
-	struct lsm9ds1_m_data *data = iio_priv(indio_dev);
 	int ret;
+        s16 data16;
 
 	switch (mask) {
 	case IIO_CHAN_INFO_RAW:
-                mutex_lock(&indio_dev->mlock);
-		ret = i2c_smbus_read_word_data(data->client, chan->address);
-                mutex_unlock(&indio_dev->mlock);
+                ret = mread_reg_16(indio_dev, chan->address, &data16);
 		if (ret < 0)
 			return ret;
-		*val = (s16) ret;
+		*val = data16;
                 *val2 = 0;
 		return IIO_VAL_INT;
 	default:
 		return -EINVAL;
 	}
 }
+
+irqreturn_t lsm9ds1_m_trigger_handler(int irq, void *p)
+{
+        struct iio_poll_func *pf = p;
+        struct iio_dev *indio_dev = pf->indio_dev;
+        struct lsm9ds1_data *ldata = iio_priv(indio_dev);
+        int ret;
+        u8 iio_buffer[ALIGN(LSM9DS1_M_DATA_SIZE, sizeof(s64)) + sizeof(s64)]; // 3 channels 16bits + ts(64bits) + padding
+
+        printk(KERN_WARNING "%s:%d\n",__FUNCTION__,__LINE__);
+
+        mutex_lock(&ldata->lock);
+
+        ret = ldata->read_reg(indio_dev, LSM9DS1_REG_OUT_X_M, 6, (s16 *) &iio_buffer);
+        if (ret < 0)
+                goto done;
+
+        iio_push_to_buffers_with_timestamp(indio_dev, &iio_buffer, iio_get_time_ns(indio_dev));
+
+done:
+        iio_trigger_notify_done(indio_dev->trig);
+        mutex_unlock(&ldata->lock);
+ 
+        printk(KERN_WARNING "%s:%d\n",__FUNCTION__,__LINE__);
+        return IRQ_HANDLED;
+}
+
+const struct iio_buffer_setup_ops lsm9ds1_m_buffer_setup_ops = {
+        .postenable = &iio_triggered_buffer_postenable,
+        .predisable = &iio_triggered_buffer_predisable,
+};
 
 
 static const struct iio_info lsm9ds1_m_info = {
@@ -243,26 +236,11 @@ static const struct iio_info lsm9ds1_m_info = {
 	.read_raw	= lsm9ds1_m_read_raw,
 };
 
-static int lsm9ds1_m_probe(struct i2c_client *client,
-                            const struct i2c_device_id *id)
+int lsm9ds1_m_probe(struct iio_dev *indio_dev, struct device *dev)
 {
-	int ret;
-	struct iio_dev *indio_dev;
-	struct lsm9ds1_m_data *data;
+        int ret;
 
-	ret = i2c_smbus_read_byte_data(client, LSM9DS1_REG_WHO_AM_I_M);
-	if (ret != LSM9DS1_M_I_AM)
-		return (ret < 0) ? ret : -ENODEV;
-        
-	indio_dev = devm_iio_device_alloc(&client->dev, sizeof(*data));
-	if (!indio_dev)
-		return -ENOMEM;
-
-	data = iio_priv(indio_dev);
-	data->client = client;
-	i2c_set_clientdata(client, indio_dev);
-
-	indio_dev->dev.parent = &client->dev;
+        indio_dev->dev.parent = dev;
 	indio_dev->info = &lsm9ds1_m_info;
         indio_dev->name = "lsm9ds1_m";
 	indio_dev->modes = INDIO_DIRECT_MODE;
@@ -277,42 +255,37 @@ static int lsm9ds1_m_probe(struct i2c_client *client,
 	if (ret < 0)
 		return ret;
 
-	ret = iio_device_register(indio_dev);
+        ret = iio_triggered_buffer_setup(indio_dev, NULL,
+                                         &lsm9ds1_m_trigger_handler,
+                                         &lsm9ds1_m_buffer_setup_ops);
 	if (ret < 0) {
-		dev_err(&client->dev, "device_register failed\n");
-		lsm9ds1_m_enable(indio_dev, false);
-	}
+                printk(KERN_WARNING "%s:%d: lsm9ds1_m_configure_buffer = %i\n",__FUNCTION__,__LINE__, ret);
+                goto error_buffer_cleanup;
+        }
+	indio_dev->modes |= INDIO_BUFFER_TRIGGERED;
+        printk(KERN_WARNING "%s:%d: %i\n",__FUNCTION__,__LINE__, ret);
+
+	ret = iio_device_register(indio_dev);
+	if (ret >= 0)
+                return ret;
+
+error_buffer_cleanup:
+        printk(KERN_WARNING "%s:%d: error_unconfigure_buffer\n",__FUNCTION__,__LINE__);
+        /* iio_triggered_buffer_cleanup(indio_dev); */
+        lsm9ds1_m_reset(indio_dev);
+        dev_err(dev, "device_register failed\n");
 
 	return ret;
 }
+EXPORT_SYMBOL(lsm9ds1_m_probe);
 
-static int lsm9ds1_m_remove(struct i2c_client *client)
+int lsm9ds1_m_remove(struct iio_dev *indio_dev)
 {
-	struct iio_dev *indio_dev = i2c_get_clientdata(client);
-
 	iio_device_unregister(indio_dev);
 
 	return lsm9ds1_m_enable(indio_dev, false);
 }
-
-static struct i2c_device_id lsm9ds1_m_i2c_ids[] = {
-        { "lsm9ds1_m", 0 },
-        { }
-};
-
-MODULE_DEVICE_TABLE(i2c, lsm9ds1_m_i2c_ids);
-
-static struct i2c_driver lsm9ds1_m_driver = {
-	.driver = {
-		.name = "lsm9ds1_m",
-		.pm = NULL,
-	},
-	.probe		= lsm9ds1_m_probe,
-	.remove		= lsm9ds1_m_remove,
-	.id_table	= lsm9ds1_m_i2c_ids,
-};
-
-module_i2c_driver(lsm9ds1_m_driver);
+EXPORT_SYMBOL(lsm9ds1_m_remove);
 
 MODULE_AUTHOR("Jérôme Guéry <jerome.guery@gmail.com>");
 MODULE_DESCRIPTION("magnetometer part of the IMU LSM9DS1");
