@@ -65,6 +65,34 @@
 
 #define LSM9DS1_AG_SW_RESET 1
 
+/* CTRL_REG9 */
+#define LSM9DS1_AG_FIFO_EN 0b00000010
+
+/* FIFO_CTRL */
+#define LSM9DS1_AG_FMOD_BYPASS         0
+#define LSM9DS1_AG_FMOD_FIFO           1 << 5
+#define LSM9DS1_AG_FMOD_RESERVED       2 << 5
+#define LSM9DS1_AG_FMOD_CONT_TG_FIFO   3 << 5
+#define LSM9DS1_AG_FMOD_BYPASS_TG_CONT 4 << 5
+#define LSM9DS1_AG_FMOD_CONTINOUS      6 << 5
+#define LSM9DS1_AG_FMOD_MASK           0b11100000
+
+#define LSM9DS1_AG_FTH 0b00011111
+
+/* FIFO_SRC */
+#define LSM9DS1_AG_FSS 0b00111111
+
+
+#define LSM9DS1_AG_DATA_SIZE 6*2
+
+
+#define LSM9DS1_AG_DATA_SIZE 6*2
+
+struct lsm9ds1_ag {
+        u8 iio_buffer[ALIGN(LSM9DS1_AG_DATA_SIZE, sizeof(s64)) + sizeof(s64)];
+        u16 delta_ts;
+};
+  
 int lsm9ds1_ag_probe(struct iio_dev *indio_dev, struct device *dev);
 int lsm9ds1_ag_remove(struct iio_dev *indio_dev);
 

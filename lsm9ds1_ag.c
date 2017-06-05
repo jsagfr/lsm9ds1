@@ -30,27 +30,6 @@
 #include <linux/iio/trigger_consumer.h>
 #include "lsm9ds1.h"
 #include "lsm9ds1_ag.h"
-/* #include "lsm9ds1_ag_buffer.h" */
-
-/* CTRL_REG9 */
-#define LSM9DS1_AG_FIFO_EN 0b00000010
-
-/* FIFO_CTRL */
-#define LSM9DS1_AG_FMOD_BYPASS         0
-#define LSM9DS1_AG_FMOD_FIFO           1 << 5
-#define LSM9DS1_AG_FMOD_RESERVED       2 << 5
-#define LSM9DS1_AG_FMOD_CONT_TG_FIFO   3 << 5
-#define LSM9DS1_AG_FMOD_BYPASS_TG_CONT 4 << 5
-#define LSM9DS1_AG_FMOD_CONTINOUS      6 << 5
-#define LSM9DS1_AG_FMOD_MASK           0b11100000
-
-#define LSM9DS1_AG_FTH 0b00011111
-
-/* FIFO_SRC */
-#define LSM9DS1_AG_FSS 0b00111111
-
-
-#define LSM9DS1_AG_DATA_SIZE 6*2
 
 
 /* enum { */
@@ -541,7 +520,6 @@ static int lsm9ds1_ag_buffer_preenable(struct iio_dev *indio_dev)
 
 static int lsm9ds1_ag_buffer_postdisable(struct iio_dev *indio_dev)
 {
-        struct lsm9ds1_data *ldata = iio_priv(indio_dev);
         int ret;
 
         printk(KERN_WARNING "%s:%d\n",__FUNCTION__,__LINE__);
@@ -591,6 +569,7 @@ int lsm9ds1_ag_probe(struct iio_dev *indio_dev, struct device *dev)
                 printk(KERN_WARNING "%s:%d: lsm9ds1_ag_configure_buffer = %i\n",__FUNCTION__,__LINE__, ret);
                 goto error_buffer_cleanup;
         }
+	indio_dev->modes |= INDIO_BUFFER_TRIGGERED;
         printk(KERN_WARNING "%s:%d: %i\n",__FUNCTION__,__LINE__, ret);
 
 	ret = iio_device_register(indio_dev);
@@ -599,7 +578,6 @@ int lsm9ds1_ag_probe(struct iio_dev *indio_dev, struct device *dev)
 
 error_buffer_cleanup:
         printk(KERN_WARNING "%s:%d: error_unconfigure_buffer\n",__FUNCTION__,__LINE__);
-        /* iio_triggered_buffer_cleanup(indio_dev); */
         lsm9ds1_ag_reset(indio_dev);
         dev_err(dev, "device_register failed\n");
 
