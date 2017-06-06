@@ -50,15 +50,15 @@ The accelerometer and gyroscope have:
 
 ## Basic *I2C* wiring ##
 
-![basic wiring](beaglebone_lsm9ds1_bb.svg "Basic wiring")
+![basic wiring](beaglebone_lsm9ds1_bb.png "Basic wiring")
 
 ### Device declaration in `sysfs` ###
 
 At each boot:
 
 ```shell
-root@beaglebone:~# echo lsm9ds1_ag 0x6b > /sys/bus/i2c/devices/i2c-2/new_device
-root@beaglebone:~# echo lsm9ds1_m 0x1e > /sys/bus/i2c/devices/i2c-2/new_device
+echo lsm9ds1_ag 0x6b > /sys/bus/i2c/devices/i2c-2/new_device
+echo lsm9ds1_m 0x1e > /sys/bus/i2c/devices/i2c-2/new_device
 ```
 
 ### Device declaration in device tree ###
@@ -82,13 +82,13 @@ Before compiling your `dtb`:
 ### Basic reading ###
 
 ```shell
-root@beaglebone:~# iio_info
+iio_info
 ```
 
 or 
 
 ```shell
-root@beaglebone:~# cat /sys/bus/iio/devices/iio\:device0/in_accel0_x_raw
+cat /sys/bus/iio/devices/iio\:device0/in_accel0_x_raw
 ```
 
 
@@ -97,18 +97,18 @@ root@beaglebone:~# cat /sys/bus/iio/devices/iio\:device0/in_accel0_x_raw
 Setting the iio software timer trigger at $2Hz$ for the `iio:device0`:
 
 ```shell
-3Broot@beaglebone:~# modprobe iio-trig-hrtimer
-root@beaglebone:~# mkdir /config
-root@beaglebone:~# mount -t configfs none /config/
-root@beaglebone:~# mkdir /config/iio/triggers/hrtimer/instance1
-root@beaglebone:~# echo 2 > /sys/bus/iio/devices/trigger0/sampling_frequency
-root@beaglebone:~# cat /sys/bus/iio/devices/trigger0/name > /sys/bus/iio/devices/iio\:device0/trigger/current_trigger
+modprobe iio-trig-hrtimer
+mkdir /config
+mount -t configfs none /config/
+mkdir /config/iio/triggers/hrtimer/instance1
+echo 2 > /sys/bus/iio/devices/trigger0/sampling_frequency
+cat /sys/bus/iio/devices/trigger0/name > /sys/bus/iio/devices/iio\:device0/trigger/current_trigger
 ```
 
 Enable and reading the buffer:
 
 ```shell
-root@beaglebone:~# for /sys/bus/iio/devices/iio\:device0/scan_elements/*_en; do echo 1 > $i; done
-root@beaglebone:~# echo 1 > /sys/bus/iio/devices/iio\:device0/buffer/enable
-root@beaglebone:~# cat /dev/iio\:device0
+for /sys/bus/iio/devices/iio\:device0/scan_elements/*_en; do echo 1 > $i; done
+echo 1 > /sys/bus/iio/devices/iio\:device0/buffer/enable
+cat /dev/iio\:device0
 ```
