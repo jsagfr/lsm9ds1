@@ -1,0 +1,2029 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!-- Created with Fritzing (http://www.fritzing.org/) -->
+<svg xmlns:svg='http://www.w3.org/2000/svg' xmlns='http://www.w3.org/2000/svg' version='1.2' baseProfile='tiny' x='0in' y='0in' width='4in' height='3.5in' viewBox='0 0 288 252' >
+<g partID='854102530'><g transform='translate(288,0)' ><g transform='matrix(2.22045e-16,1,-1,2.22045e-16,0,0)'  ><g id="breadboard">
+<path style="display:inline" id="path3254" d="M25.2,0C15.2589,0,7.2,8.05887,7.2,18L7.2,136.8c0,9.94113,8.05887,18,18,18l190.8,0c19.8822,0,36,-16.1178,36,-36L252,36C252,16.1178,235.882,0,216,0L25.2,0zm23.4,3.6c2.98234,0,5.4,2.41766,5.4,5.4C54,11.9823,51.5823,14.4,48.6,14.4,45.6177,14.4,43.2,11.9823,43.2,9,43.2,6.01766,45.6177,3.6,48.6,3.6zm187.2,9c2.98234,0,5.4,2.41766,5.4,5.4,0,2.98234,-2.41766,5.4,-5.4,5.4,-2.98234,0,-5.4,-2.41766,-5.4,-5.4,0,-2.98234,2.41766,-5.4,5.4,-5.4zm0,118.8c2.98234,0,5.4,2.41766,5.4,5.4,0,2.98234,-2.41766,5.4,-5.4,5.4,-2.98234,0,-5.4,-2.41766,-5.4,-5.4,0,-2.98234,2.41766,-5.4,5.4,-5.4zm-187.2,9c2.98234,0,5.4,2.41766,5.4,5.4,0,2.98234,-2.41766,5.4,-5.4,5.4,-2.98234,0,-5.4,-2.41766,-5.4,-5.4,0,-2.98234,2.41766,-5.4,5.4,-5.4z" stroke="none" fill="#1a1a1a"/>
+<rect y="93.6" fill-opacity="1" style="stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;display:inline" stroke-width="0.072" x="216" width="32.4" id="rect6104" stroke="#000000" height="28.8" stroke-opacity="1" fill="#dcdcdc"/>
+<g transform="matrix(1, 0, 0, 1, 43.2, -3.6)">
+<path style="stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;display:inline" stroke-width="1.8216" id="path3300" d="m10.8,149.4a5.4,5.4,0,1,1,-10.8,0,5.4,5.4,0,1,1,10.8,0z" stroke="#ffda69" stroke-opacity="1" fill="none"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 43.2, -140.4)">
+<path style="stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;display:inline" stroke-width="1.8216" id="path3302" d="m10.8,149.4a5.4,5.4,0,1,1,-10.8,0,5.4,5.4,0,1,1,10.8,0z" stroke="#ffda69" stroke-opacity="1" fill="none"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 230.4, -131.4)">
+<path style="stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;display:inline" stroke-width="1.8216" id="path3304" d="m10.8,149.4a5.4,5.4,0,1,1,-10.8,0,5.4,5.4,0,1,1,10.8,0z" stroke="#ffda69" stroke-opacity="1" fill="none"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 230.4, -12.6)">
+<path style="stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;display:inline" stroke-width="1.8216" id="path3306" d="m10.8,149.4a5.4,5.4,0,1,1,-10.8,0,5.4,5.4,0,1,1,10.8,0z" stroke="#ffda69" stroke-opacity="1" fill="none"/>
+</g>
+<rect y="100.8" fill-opacity="1" style="display:inline" x="64.8" width="18" id="rect5164" stroke="none" height="18" fill="url(#linearGradient8936)"/>
+<rect y="50.4" fill-opacity="1" style="display:inline" x="115.2" width="43.2" id="rect5166" stroke="none" height="43.2" fill="#333333"/>
+<rect y="50.4" fill-opacity="1" style="display:inline" x="115.2" width="43.2" id="rect5168" stroke="none" height="43.2" fill="url(#linearGradient8932)"/>
+<rect y="20.16" fill-opacity="1" style="display:inline" x="72" width="39.6" id="rect5186" stroke="none" height="32.4" fill="#333333"/>
+<rect y="20.16" fill-opacity="1" style="display:inline" x="72" width="39.6" id="rect5188" stroke="none" height="32.4" fill="url(#linearGradient8928)"/>
+<rect y="64.8" fill-opacity="1" style="display:inline" x="174.6" width="21.6" id="rect6054" stroke="none" height="39.6" fill="url(#linearGradient8925)"/>
+<rect y="28.8" fill-opacity="1" style="display:inline" x="172.8" width="25.2" id="rect6064" stroke="none" height="25.2" fill="#333333"/>
+<rect y="28.8" fill-opacity="1" style="display:inline" x="172.8" width="25.2" id="rect6074" stroke="none" height="25.2" fill="url(#linearGradient8921)"/>
+<path fill-opacity="1" style="display:inline" id="rect6084" d="m212.4,90,0,36,39.6,0,0,-36,-39.6,0zm21.6,3.6,14.4,1.8,0,7.2,-14.4,1.8,0,-1.8,10.8,-1.8,0,-3.6,-10.8,-1.8,0,-1.8zm0,18,14.4,1.8,0,7.2,-14.4,1.8,0,-1.8,10.8,-1.8,0,-3.6,-10.8,-1.8,0,-1.8z" stroke="none" fill="#b3b3b3"/>
+<path fill-opacity="1" style="display:inline" id="path6094" d="m212.4,90,0,36,39.6,0,0,-36,-39.6,0zm21.6,3.6,14.4,1.8,0,7.2,-14.4,1.8,0,-1.8,10.8,-1.8,0,-3.6,-10.8,-1.8,0,-1.8zm0,18,14.4,1.8,0,7.2,-14.4,1.8,0,-1.8,10.8,-1.8,0,-3.6,-10.8,-1.8,0,-1.8z" stroke="none" fill="url(#linearGradient8917)"/>
+<rect y="61.2" fill-opacity="1" style="stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;display:inline" stroke-width="0.072" x="79.2" width="12.6" id="rect6107" stroke="#000000" height="12.6" stroke-opacity="1" fill="#333333"/>
+<rect y="61.2" fill-opacity="1" style="stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;display:inline" stroke-width="0.072" x="79.2" width="12.6" id="rect6111" stroke="#000000" height="12.6" stroke-opacity="1" fill="url(#linearGradient8913)"/>
+<g transform="matrix(1, 0, 0, 1, 7.2, -205.2)">
+<g style="display:inline" id="g6131">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="131.4" fill-opacity="1" style="stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none" stroke-width="0.072" x="153" width="7.2" id="rect6123" stroke="#000000" rx="1.44" height="7.2" stroke-opacity="1" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="133.92" fill-opacity="1" x="155.52" width="2.15999" id="rect6125" stroke="none" height="2.15999" fill="#ffdc74"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.35449733" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path6127" d="m155.52,136.08,0,-2.16,2.16,0,-0.36,0.36,-1.44,0,0,1.44z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.21693121" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path6129" d="m157.68,339.12,0,2.16,-2.16,0,0.36,-0.36,1.44,0,0,-1.44z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, -0.022, -205.2)">
+<g style="display:inline" id="g6137">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="131.4" fill-opacity="1" style="stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none" stroke-width="0.072" x="153" width="7.2" id="rect6139" stroke="#000000" rx="1.44" height="7.2" stroke-opacity="1" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="133.92" fill-opacity="1" x="155.52" width="2.15999" id="rect6141" stroke="none" height="2.15999" fill="#ffdc74"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.35449733" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path6143" d="m155.52,136.08,0,-2.16,2.16,0,-0.36,0.36,-1.44,0,0,1.44z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.21693121" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path6145" d="m157.68,339.12,0,2.16,-2.16,0,0.36,-0.36,1.44,0,0,-1.44z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, -7.2, -205.2)">
+<g style="display:inline" id="g6147">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="131.4" fill-opacity="1" style="stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none" stroke-width="0.072" x="153" width="7.2" id="rect6149" stroke="#000000" rx="1.44" height="7.2" stroke-opacity="1" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="133.92" fill-opacity="1" x="155.52" width="2.15999" id="rect6151" stroke="none" height="2.15999" fill="#ffdc74"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.35449733" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path6153" d="m155.52,136.08,0,-2.16,2.16,0,-0.36,0.36,-1.44,0,0,1.44z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.21693121" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path6155" d="m157.68,339.12,0,2.16,-2.16,0,0.36,-0.36,1.44,0,0,-1.44z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, -14.422, -205.2)">
+<g style="display:inline" id="g6157">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="131.4" fill-opacity="1" style="stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none" stroke-width="0.072" x="153" width="7.2" id="rect6159" stroke="#000000" rx="1.44" height="7.2" stroke-opacity="1" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="133.92" fill-opacity="1" x="155.52" width="2.15999" id="rect6161" stroke="none" height="2.15999" fill="#ffdc74"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.35449733" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path6163" d="m155.52,136.08,0,-2.16,2.16,0,-0.36,0.36,-1.44,0,0,1.44z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.21693121" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path6165" d="m157.68,339.12,0,2.16,-2.16,0,0.36,-0.36,1.44,0,0,-1.44z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, -21.6, -205.2)">
+<g style="display:inline" id="g6167">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="131.4" fill-opacity="1" style="stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none" stroke-width="0.072" x="153" width="7.2" id="rect6169" stroke="#000000" rx="1.44" height="7.2" stroke-opacity="1" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="133.92" fill-opacity="1" x="155.52" width="2.15999" id="rect6171" stroke="none" height="2.15999" fill="#ffdc74"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.35449733" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path6173" d="m155.52,136.08,0,-2.16,2.16,0,-0.36,0.36,-1.44,0,0,1.44z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.21693121" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path6175" d="m157.68,339.12,0,2.16,-2.16,0,0.36,-0.36,1.44,0,0,-1.44z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, -28.822, -205.2)">
+<g style="display:inline" id="g6177">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="131.4" fill-opacity="1" style="stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none" stroke-width="0.072" x="153" width="7.2" id="rect6179" stroke="#000000" rx="1.44" height="7.2" stroke-opacity="1" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="133.92" fill-opacity="1" x="155.52" width="2.15999" id="rect6181" stroke="none" height="2.15999" fill="#ffdc74"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.35449733" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path6183" d="m155.52,136.08,0,-2.16,2.16,0,-0.36,0.36,-1.44,0,0,1.44z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.21693121" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path6185" d="m157.68,339.12,0,2.16,-2.16,0,0.36,-0.36,1.44,0,0,-1.44z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g fill-opacity="1" xmlns:xml="http://www.w3.org/XML/1998/namespace" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;display:inline;font-family:OCR A Std;-inkscape-font-specification:OCR A Std" id="text3667" stroke="none" font-size="0" xml:space="preserve" fill="#000000">
+<text y="137.88" x="58.68" id="tspan3669" font-size="0" fill="#4d4d4d">P9</text>
+</g>
+<g fill-opacity="1" xmlns:xml="http://www.w3.org/XML/1998/namespace" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;display:inline;font-family:OCR A Std;-inkscape-font-specification:OCR A Std" id="text3671" stroke="none" font-size="0" xml:space="preserve" fill="#000000">
+<text y="21.96" x="58.68" id="tspan3673" font-size="0" fill="#4d4d4d">P8</text>
+</g>
+<g fill-opacity="1" xmlns:xml="http://www.w3.org/XML/1998/namespace" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;display:inline;font-family:OCR A Std;-inkscape-font-specification:OCR A Std" id="text3675" stroke="none" font-size="0" xml:space="preserve" fill="#cccccc">
+<text y="152.64" x="56.16" id="tspan3677" fill="#cccccc">1</text>
+</g>
+<g fill-opacity="1" xmlns:xml="http://www.w3.org/XML/1998/namespace" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;display:inline;font-family:OCR A Std;-inkscape-font-specification:OCR A Std" id="text3679" stroke="none" font-size="0" xml:space="preserve" fill="#cccccc">
+<text y="141.48" x="56.16" id="tspan3681" fill="#cccccc">2</text>
+</g>
+<g fill-opacity="1" xmlns:xml="http://www.w3.org/XML/1998/namespace" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;display:inline;font-family:OCR A Std;-inkscape-font-specification:OCR A Std" id="text3683" stroke="none" font-size="0" xml:space="preserve" fill="#cccccc">
+<text y="150.84" x="225.72" id="tspan3685" fill="#cccccc">45</text>
+</g>
+<g fill-opacity="1" xmlns:xml="http://www.w3.org/XML/1998/namespace" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;display:inline;font-family:OCR A Std;-inkscape-font-specification:OCR A Std" id="text3687" stroke="none" font-size="0" xml:space="preserve" fill="#cccccc">
+<text y="143.638" x="225.72" id="tspan3689" fill="#cccccc">46</text>
+</g>
+<g fill-opacity="1" xmlns:xml="http://www.w3.org/XML/1998/namespace" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;display:inline;font-family:OCR A Std;-inkscape-font-specification:OCR A Std" id="text6770" stroke="none" font-size="0" xml:space="preserve" fill="#cccccc">
+<text y="15.8392" x="56.16" id="tspan6772" fill="#cccccc">1</text>
+</g>
+<g fill-opacity="1" xmlns:xml="http://www.w3.org/XML/1998/namespace" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;display:inline;font-family:OCR A Std;-inkscape-font-specification:OCR A Std" id="text6774" stroke="none" font-size="0" xml:space="preserve" fill="#cccccc">
+<text y="4.6792" x="56.16" id="tspan6776" fill="#cccccc">2</text>
+</g>
+<g fill-opacity="1" xmlns:xml="http://www.w3.org/XML/1998/namespace" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;display:inline;font-family:OCR A Std;-inkscape-font-specification:OCR A Std" id="text6778" stroke="none" font-size="0" xml:space="preserve" fill="#cccccc">
+<text y="14.0378" x="225.72" id="tspan6780" fill="#cccccc">45</text>
+</g>
+<g fill-opacity="1" xmlns:xml="http://www.w3.org/XML/1998/namespace" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;display:inline;font-family:OCR A Std;-inkscape-font-specification:OCR A Std" id="text6782" stroke="none" font-size="0" xml:space="preserve" fill="#cccccc">
+<text y="6.8385" x="225.72" id="tspan6784" fill="#cccccc">46</text>
+</g>
+<g transform="matrix(1, 0, 0, 1, 7.2, -205.2)">
+<g style="display:inline" id="g4159">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4149" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4151" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4153" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4155" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 14.4, -205.2)">
+<g style="display:inline" id="g4165">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4167" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4169" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4171" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4173" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 21.6, -205.2)">
+<g style="display:inline" id="g4175">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4177" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4179" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4181" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4183" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 28.8, -205.2)">
+<g style="display:inline" id="g4185">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4187" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4189" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4191" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4193" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 36, -205.2)">
+<g style="display:inline" id="g4195">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4197" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4199" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4201" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4203" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 43.2, -205.2)">
+<g style="display:inline" id="g4205">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4207" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4209" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4211" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4213" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 50.4, -205.2)">
+<g style="display:inline" id="g4215">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4217" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4219" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4221" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4223" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 57.6, -205.2)">
+<g style="display:inline" id="g4225">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4227" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4229" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4231" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4233" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 64.8, -205.2)">
+<g style="display:inline" id="g4235">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4237" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4239" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4241" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4243" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 72, -205.2)">
+<g style="display:inline" id="g4245">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4247" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4249" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4251" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4253" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 79.2, -205.2)">
+<g style="display:inline" id="g4255">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4257" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4259" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4261" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4263" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 86.4, -205.2)">
+<g style="display:inline" id="g4265">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4267" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4269" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4271" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4273" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 93.6, -205.2)">
+<g style="display:inline" id="g4275">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4277" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4279" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4281" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4283" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 100.8, -205.2)">
+<g style="display:inline" id="g4285">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4287" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4289" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4291" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4293" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 108, -205.2)">
+<g style="display:inline" id="g4295">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4297" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4299" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4301" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4303" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 115.2, -205.2)">
+<g style="display:inline" id="g4305">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4307" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4309" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4311" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4313" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 122.4, -205.2)">
+<g style="display:inline" id="g4315">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4317" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4319" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4321" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4323" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 129.6, -205.2)">
+<g style="display:inline" id="g4325">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4327" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4329" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4331" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4333" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 136.8, -205.2)">
+<g style="display:inline" id="g4335">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4337" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4339" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4341" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4343" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 144, -205.2)">
+<g style="display:inline" id="g4345">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4347" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4349" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4351" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4353" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 151.2, -205.2)">
+<g style="display:inline" id="g4355">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4357" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4359" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4361" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4363" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 158.4, -205.2)">
+<g style="display:inline" id="g4365">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4367" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4369" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4371" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4373" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 165.6, -205.2)">
+<g style="display:inline" id="g4375">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4377" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4379" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4381" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4383" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 7.2, -212.4)">
+<g style="display:inline" id="g4385">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4387" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4389" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4391" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4393" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 14.4, -212.4)">
+<g style="display:inline" id="g4395">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4397" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4399" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4401" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4403" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 21.6, -212.4)">
+<g style="display:inline" id="g4405">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4407" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4409" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4411" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4413" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 28.8, -212.4)">
+<g style="display:inline" id="g4415">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4417" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4419" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4421" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4423" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 36, -212.4)">
+<g style="display:inline" id="g4425">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4427" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4429" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4431" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4433" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 43.2, -212.4)">
+<g style="display:inline" id="g4435">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4437" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4439" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4441" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4443" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 50.4, -212.4)">
+<g style="display:inline" id="g4445">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4447" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4449" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4451" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4453" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 57.6, -212.4)">
+<g style="display:inline" id="g4455">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4457" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4459" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4461" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4463" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 64.8, -212.4)">
+<g style="display:inline" id="g4465">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4467" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4469" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4471" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4473" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 72, -212.4)">
+<g style="display:inline" id="g4475">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4477" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4479" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4481" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4483" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 79.2, -212.4)">
+<g style="display:inline" id="g4485">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4487" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4489" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4491" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4493" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 86.4, -212.4)">
+<g style="display:inline" id="g4495">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4497" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4499" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4501" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4503" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 93.6, -212.4)">
+<g style="display:inline" id="g4505">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4507" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4509" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4511" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4513" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 100.8, -212.4)">
+<g style="display:inline" id="g4515">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4517" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4519" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4521" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4523" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 108, -212.4)">
+<g style="display:inline" id="g4525">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4527" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4529" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4531" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4533" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 115.2, -212.4)">
+<g style="display:inline" id="g4535">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4537" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4539" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4541" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4543" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 122.4, -212.4)">
+<g style="display:inline" id="g4545">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4547" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4549" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4551" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4553" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 129.6, -212.4)">
+<g style="display:inline" id="g4555">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4557" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4559" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4561" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4563" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 136.8, -212.4)">
+<g style="display:inline" id="g4565">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4567" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4569" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4571" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4573" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 144, -212.4)">
+<g style="display:inline" id="g4575">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4577" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4579" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4581" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4583" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 151.2, -212.4)">
+<g style="display:inline" id="g4585">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4587" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4589" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4591" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4593" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 158.4, -212.4)">
+<g style="display:inline" id="g4595">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4597" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4599" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4601" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4603" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 165.6, -212.4)">
+<g style="display:inline" id="g4605">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4607" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4609" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4611" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4613" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 7.2, -342)">
+<g style="display:inline" id="g4615">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4617" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4619" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4621" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4623" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 14.4, -342)">
+<g style="display:inline" id="g4625">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4627" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4629" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4631" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4633" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 21.6, -342)">
+<g style="display:inline" id="g4635">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4637" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4639" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4641" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4643" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 28.8, -342)">
+<g style="display:inline" id="g4645">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4647" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4649" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4651" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4653" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 36, -342)">
+<g style="display:inline" id="g4655">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4657" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4659" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4661" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4663" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 43.2, -342)">
+<g style="display:inline" id="g4665">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4667" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4669" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4671" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4673" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 50.4, -342)">
+<g style="display:inline" id="g4675">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4677" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4679" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4681" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4683" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 57.6, -342)">
+<g style="display:inline" id="g4685">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4687" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4689" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4691" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4693" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 64.8, -342)">
+<g style="display:inline" id="g4695">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4697" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4699" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4701" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4703" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 72, -342)">
+<g style="display:inline" id="g4705">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4707" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4709" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4711" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4713" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 79.2, -342)">
+<g style="display:inline" id="g4715">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4717" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4719" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4721" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4723" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 86.4, -342)">
+<g style="display:inline" id="g4725">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4727" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4729" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4731" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4733" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 93.6, -342)">
+<g style="display:inline" id="g4735">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4737" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4739" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4741" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4743" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 100.8, -342)">
+<g style="display:inline" id="g4745">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4747" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4749" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4751" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4753" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 108, -342)">
+<g style="display:inline" id="g4755">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4757" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4759" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4761" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4763" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 115.2, -342)">
+<g style="display:inline" id="g4765">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4767" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4769" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4771" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4773" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 122.4, -342)">
+<g style="display:inline" id="g4775">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4777" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4779" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4781" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4783" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 129.6, -342)">
+<g style="display:inline" id="g4785">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4787" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4789" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4791" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4793" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 136.8, -342)">
+<g style="display:inline" id="g4795">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4797" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4799" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4801" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4803" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 144, -342)">
+<g style="display:inline" id="g4805">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4807" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4809" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4811" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4813" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 151.2, -342)">
+<g style="display:inline" id="g4815">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4817" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4819" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4821" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4823" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 158.4, -342)">
+<g style="display:inline" id="g4825">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4827" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4829" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4831" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4833" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 165.6, -342)">
+<g style="display:inline" id="g4835">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4837" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4839" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4841" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4843" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 7.2, -349.2)">
+<g style="display:inline" id="g4845">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4847" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4849" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4851" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4853" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 14.4, -349.2)">
+<g style="display:inline" id="g4855">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4857" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4859" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4861" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4863" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 21.6, -349.2)">
+<g style="display:inline" id="g4865">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4867" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4869" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4871" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4873" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 28.8, -349.2)">
+<g style="display:inline" id="g4875">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4877" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4879" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4881" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4883" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 36, -349.2)">
+<g style="display:inline" id="g4885">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4887" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4889" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4891" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4893" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 43.2, -349.2)">
+<g style="display:inline" id="g4895">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4897" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4899" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4901" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4903" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 50.4, -349.2)">
+<g style="display:inline" id="g4905">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4907" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4909" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4911" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4913" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 57.6, -349.2)">
+<g style="display:inline" id="g4915">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4917" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4919" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4921" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4923" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 64.8, -349.2)">
+<g style="display:inline" id="g4925">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4927" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4929" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4931" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4933" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 72, -349.2)">
+<g style="display:inline" id="g4935">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4937" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4939" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4941" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4943" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 79.2, -349.2)">
+<g style="display:inline" id="g4945">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4947" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4949" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4951" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4953" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 86.4, -349.2)">
+<g style="display:inline" id="g4955">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4957" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4959" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4961" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4963" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 93.6, -349.2)">
+<g style="display:inline" id="g4965">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4967" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4969" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4971" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4973" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 100.8, -349.2)">
+<g style="display:inline" id="g4975">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4977" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4979" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4981" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4983" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 108, -349.2)">
+<g style="display:inline" id="g4985">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4987" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4989" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4991" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path4993" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 115.2, -349.2)">
+<g style="display:inline" id="g4995">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect4997" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect4999" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path5001" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path5003" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 122.4, -349.2)">
+<g style="display:inline" id="g5005">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect5007" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect5009" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path5011" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path5013" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 129.6, -349.2)">
+<g style="display:inline" id="g5015">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect5017" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect5019" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path5021" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path5023" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 136.8, -349.2)">
+<g style="display:inline" id="g5025">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect5027" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect5029" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path5031" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path5033" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 144, -349.2)">
+<g style="display:inline" id="g5035">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect5037" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect5039" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path5041" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path5043" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 151.2, -349.2)">
+<g style="display:inline" id="g5045">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect5047" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect5049" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path5051" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path5053" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 158.4, -349.2)">
+<g style="display:inline" id="g5055">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect5057" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect5059" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path5061" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path5063" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 165.6, -349.2)">
+<g style="display:inline" id="g5065">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="145.8" style="display:inline" x="52.2" width="7.2" id="rect5067" stroke="none" height="7.2" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="148.32" fill-opacity="1" x="54.72" width="2.16" id="rect5069" stroke="none" height="2.16" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<path fill-opacity="0.11764706" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path5071" d="m53.28,151.92,1.44,-1.44,2.16,0,0,-2.16,1.44,-1.44,0,5.04z" stroke="none" fill="#ffffff"/>
+</g>
+<path fill-opacity="0.19576721" style="color:#000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" stroke-width="0.72" id="path5073" d="m58.32,352.08,-1.44,1.44,-2.16,0,0,2.16,-1.44,1.44,0,-5.04z" stroke="none" fill="#000000"/>
+</g>
+</g>
+<rect y="46.44" fill-opacity="1" style="display:inline" x="0" width="61.2" id="rect5075" stroke="none" rx="1.08" height="47.16" fill="url(#linearGradient8400)"/>
+<g transform="matrix(1, 0, 0, 0.9375, 7.2, -183.712)">
+<g style="display:inline" id="g5152">
+<rect y="315" fill-opacity="1" style="display:inline" x="-7.2" width="39.6" id="rect5089" stroke="none" height="28.8" fill="#333333"/>
+<rect y="315" fill-opacity="1" style="display:inline" x="-7.2" width="39.6" id="rect5091" stroke="none" rx="1.08" height="28.8" fill="url(#linearGradient8290)"/>
+<g style="display:inline" id="g5135">
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="109.8" fill-opacity="1" x="-7.2" width="2.16" id="rect5121" stroke="none" height="28.8" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="109.8" fill-opacity="1" x="-2.52" width="2.16" id="rect5123" stroke="none" height="28.8" fill="#333333"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="135" fill-opacity="1" x="-5.04" width="2.52" id="rect5125" stroke="none" height="3.59997" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="109.8" fill-opacity="1" x="-5.04" width="2.52" id="rect5127" stroke="none" height="3.6" fill="#000000"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 0, 205.2)">
+<rect y="113.4" fill-opacity="1" x="-5.04" width="2.52" id="rect5129" stroke="none" height="21.6" fill="#1a1a1a"/>
+</g>
+</g>
+</g>
+</g>
+<rect y="147.6" fill-opacity="0.21693121" x="61.2" width="3.6" id="connector1pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="140.4" fill-opacity="0.21693121" x="61.2" width="3.6" id="connector2pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="147.6" fill-opacity="0.21693121" x="68.4" width="3.6" id="connector3pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="140.4" fill-opacity="0.21693121" x="68.4" width="3.6" id="connector4pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="147.6" fill-opacity="0.21693121" x="75.6" width="3.6" id="connector5pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="140.4" fill-opacity="0.21693121" x="75.6" width="3.6" id="connector6pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="147.6" fill-opacity="0.21693121" x="82.8" width="3.6" id="connector7pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="140.4" fill-opacity="0.21693121" x="82.8" width="3.6" id="connector8pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="147.6" fill-opacity="0.21693121" x="90" width="3.6" id="connector9pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="140.4" fill-opacity="0.21693121" x="90" width="3.6" id="connector10pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="147.6" fill-opacity="0.21693121" x="97.2" width="3.6" id="connector11pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="140.4" fill-opacity="0.21693121" x="97.2" width="3.6" id="connector12pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="147.6" fill-opacity="0.21693121" x="104.4" width="3.6" id="connector13pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="140.4" fill-opacity="0.21693121" x="104.4" width="3.6" id="connector14pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="147.6" fill-opacity="0.21693121" x="111.6" width="3.6" id="connector15pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="140.4" fill-opacity="0.21693121" x="111.6" width="3.6" id="connector16pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="147.6" fill-opacity="0.21693121" x="118.8" width="3.6" id="connector17pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="140.4" fill-opacity="0.21693121" x="118.8" width="3.6" id="connector18pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="147.6" fill-opacity="0.21693121" x="126" width="3.6" id="connector19pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="140.4" fill-opacity="0.21693121" x="126" width="3.6" id="connector20pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="147.6" fill-opacity="0.21693121" x="133.2" width="3.6" id="connector21pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="140.4" fill-opacity="0.21693121" x="133.2" width="3.6" id="connector22pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="147.6" fill-opacity="0.21693121" x="140.4" width="3.6" id="connector23pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="140.4" fill-opacity="0.21693121" x="140.4" width="3.6" id="connector24pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="147.6" fill-opacity="0.21693121" x="147.6" width="3.6" id="connector25pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="140.4" fill-opacity="0.21693121" x="147.6" width="3.6" id="connector26pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="147.6" fill-opacity="0.21693121" x="154.8" width="3.6" id="connector27pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="140.4" fill-opacity="0.21693121" x="154.8" width="3.6" id="connector28pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="147.6" fill-opacity="0.21693121" x="162" width="3.6" id="connector29pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="140.4" fill-opacity="0.21693121" x="162" width="3.6" id="connector30pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="147.6" fill-opacity="0.21693121" x="169.2" width="3.6" id="connector31pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="140.4" fill-opacity="0.21693121" x="169.2" width="3.6" id="connector32pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="147.6" fill-opacity="0.21693121" x="176.4" width="3.6" id="connector33pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="140.4" fill-opacity="0.21693121" x="176.4" width="3.6" id="connector34pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="147.6" fill-opacity="0.21693121" x="183.6" width="3.6" id="connector35pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="140.4" fill-opacity="0.21693121" x="183.6" width="3.6" id="connector36pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="147.6" fill-opacity="0.21693121" x="190.8" width="3.6" id="connector37pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="140.4" fill-opacity="0.21693121" x="190.8" width="3.6" id="connector38pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="147.6" fill-opacity="0.21693121" x="198" width="3.6" id="connector39pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="140.4" fill-opacity="0.21693121" x="198" width="3.6" id="connector40pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="147.6" fill-opacity="0.21693121" x="205.2" width="3.6" id="connector41pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="140.4" fill-opacity="0.21693121" x="205.2" width="3.6" id="connector42pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="147.6" fill-opacity="0.21693121" x="212.4" width="3.6" id="connector43pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="140.4" fill-opacity="0.21693121" x="212.4" width="3.6" id="connector44pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="147.6" fill-opacity="0.21693121" x="219.6" width="3.6" id="connector45pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="140.4" fill-opacity="0.21693121" x="219.6" width="3.6" id="connector46pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="10.8" fill-opacity="0.21693121" x="61.2" width="3.6" id="connector101pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="3.6" fill-opacity="0.21693121" x="61.2" width="3.6" id="connector102pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="10.8" fill-opacity="0.21693121" x="68.4" width="3.6" id="connector103pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="3.6" fill-opacity="0.21693121" x="68.4" width="3.6" id="connector104pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="10.8" fill-opacity="0.21693121" x="75.6" width="3.6" id="connector105pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="3.6" fill-opacity="0.21693121" x="75.6" width="3.6" id="connector106pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="10.8" fill-opacity="0.21693121" x="82.8" width="3.6" id="connector107pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="3.6" fill-opacity="0.21693121" x="82.8" width="3.6" id="connector108pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="10.8" fill-opacity="0.21693121" x="90" width="3.6" id="connector109pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="3.6" fill-opacity="0.21693121" x="90" width="3.6" id="connector110pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="10.8" fill-opacity="0.21693121" x="97.2" width="3.6" id="connector111pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="3.6" fill-opacity="0.21693121" x="97.2" width="3.6" id="connector112pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="10.8" fill-opacity="0.21693121" x="104.4" width="3.6" id="connector113pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="3.6" fill-opacity="0.21693121" x="104.4" width="3.6" id="connector114pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="10.8" fill-opacity="0.21693121" x="111.6" width="3.6" id="connector115pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="3.6" fill-opacity="0.21693121" x="111.6" width="3.6" id="connector116pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="10.8" fill-opacity="0.21693121" x="118.8" width="3.6" id="connector117pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="3.6" fill-opacity="0.21693121" x="118.8" width="3.6" id="connector118pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="10.8" fill-opacity="0.21693121" x="126" width="3.6" id="connector119pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="3.6" fill-opacity="0.21693121" x="126" width="3.6" id="connector120pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="10.8" fill-opacity="0.21693121" x="133.2" width="3.6" id="connector121pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="3.6" fill-opacity="0.21693121" x="133.2" width="3.6" id="connector122pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="10.8" fill-opacity="0.21693121" x="140.4" width="3.6" id="connector123pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="3.6" fill-opacity="0.21693121" x="140.4" width="3.6" id="connector124pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="10.8" fill-opacity="0.21693121" x="147.6" width="3.6" id="connector125pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="3.6" fill-opacity="0.21693121" x="147.6" width="3.6" id="connector126pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="10.8" fill-opacity="0.21693121" x="154.8" width="3.6" id="connector127pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="3.6" fill-opacity="0.21693121" x="154.8" width="3.6" id="connector128pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="10.8" fill-opacity="0.21693121" x="162" width="3.6" id="connector129pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="3.6" fill-opacity="0.21693121" x="162" width="3.6" id="connector130pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="10.8" fill-opacity="0.21693121" x="169.2" width="3.6" id="connector131pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="3.6" fill-opacity="0.21693121" x="169.2" width="3.6" id="connector132pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="10.8" fill-opacity="0.21693121" x="176.4" width="3.6" id="connector133pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="3.6" fill-opacity="0.21693121" x="176.4" width="3.6" id="connector134pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="10.8" fill-opacity="0.21693121" x="183.6" width="3.6" id="connector135pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="3.6" fill-opacity="0.21693121" x="183.6" width="3.6" id="connector136pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="10.8" fill-opacity="0.21693121" x="190.8" width="3.6" id="connector137pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="3.6" fill-opacity="0.21693121" x="190.8" width="3.6" id="connector138pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="10.8" fill-opacity="0.21693121" x="198" width="3.6" id="connector139pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="3.6" fill-opacity="0.21693121" x="198" width="3.6" id="connector140pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="10.8" fill-opacity="0.21693121" x="205.2" width="3.6" id="connector141pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="3.6" fill-opacity="0.21693121" x="205.2" width="3.6" id="connector142pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="10.8" fill-opacity="0.21693121" x="212.4" width="3.6" id="connector143pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="3.6" fill-opacity="0.21693121" x="212.4" width="3.6" id="connector144pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="10.8" fill-opacity="0.21693121" x="219.6" width="3.6" id="connector145pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="3.6" fill-opacity="0.21693121" x="219.6" width="3.6" id="connector146pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="133.2" fill-opacity="0.21693121" x="126" width="3.6" id="connector201" stroke="none" height="3.6" fill="#808080"/>
+<rect y="133.2" fill-opacity="0.21693121" x="133.2" width="3.6" id="connector202pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="133.2" fill-opacity="0.21693121" x="140.4" width="3.6" id="connector203pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="133.2" fill-opacity="0.21693121" x="147.6" width="3.6" id="connector204pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="133.2" fill-opacity="0.21693121" x="154.8" width="3.6" id="connector205pin" stroke="none" height="3.6" fill="#808080"/>
+<rect y="133.2" fill-opacity="0.21693121" x="162" width="3.6" id="connector206pin" stroke="none" height="3.6" fill="#808080"/>
+<g transform="matrix(0,-1,1,0,0,0)">
+<g fill-opacity="1" xmlns:xml="http://www.w3.org/XML/1998/namespace" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;font-family:OCR A Std;-inkscape-font-specification:OCR A Std" id="text8944" stroke="none" font-size="0" xml:space="preserve" fill="#cccccc">
+<text y="167.76" x="-104.04" id="tspan8946">BeagleBone</text>
+</g>
+</g>
+</g>
+</g></g></g><g partID='854104240'><g transform='translate(64.8,172.8)' ><g transform='matrix(-1,0,0,-1,0,0)'  ><g  id="breadboard" gorn="0.1">
+ <g  id="icon" gorn="0.1.0">
+  <path  stroke-width="0" d="M64.8,0L0,0L0,64.8L64.8,64.8L64.8,0M13.32,7.2a4.68,4.68,0,1,1,9.36,0,4.68,4.68,0,1,1,-9.36,0zM42.12,57.6a4.68,4.68,0,1,1,9.36,0,4.68,4.68,0,1,1,-9.36,0zM42.12,7.2a4.68,4.68,0,1,1,9.36,0,4.68,4.68,0,1,1,-9.36,0zM13.32,57.6a4.68,4.68,0,1,1,9.36,0,4.68,4.68,0,1,1,-9.36,0zM2.16,25.2a1.44,1.44,0,1,1,2.88,0,1.44,1.44,0,1,1,-2.88,0zM2.16,32.4a1.44,1.44,0,1,1,2.88,0,1.44,1.44,0,1,1,-2.88,0zM2.16,39.6a1.44,1.44,0,1,1,2.88,0,1.44,1.44,0,1,1,-2.88,0zM2.16,46.8a1.44,1.44,0,1,1,2.88,0,1.44,1.44,0,1,1,-2.88,0zM59.76,61.2a1.44,1.44,0,1,1,2.88,0,1.44,1.44,0,1,1,-2.88,0zM59.76,54a1.44,1.44,0,1,1,2.88,0,1.44,1.44,0,1,1,-2.88,0zM59.76,46.8a1.44,1.44,0,1,1,2.88,0,1.44,1.44,0,1,1,-2.88,0zM59.76,39.6a1.44,1.44,0,1,1,2.88,0,1.44,1.44,0,1,1,-2.88,0zM59.76,32.4a1.44,1.44,0,1,1,2.88,0,1.44,1.44,0,1,1,-2.88,0zM59.76,25.2a1.44,1.44,0,1,1,2.88,0,1.44,1.44,0,1,1,-2.88,0zM59.76,18a1.44,1.44,0,1,1,2.88,0,1.44,1.44,0,1,1,-2.88,0zM59.76,10.8a1.44,1.44,0,1,1,2.88,0,1.44,1.44,0,1,1,-2.88,0zM59.76,3.6a1.44,1.44,0,1,1,2.88,0,1.44,1.44,0,1,1,-2.88,0z" stroke="none" fill="#E6321E"/>
+  <g >
+   <title >layer 21</title>
+   <path  stroke-width="0.72" d="M33.84,7.92A2.16,2.16,0,1,0,31.68,5.76" stroke="white" fill="none"/>
+   <line  stroke-width="0.72" stroke-linecap="round" y2="5.112" x1="31.68" stroke="white" y1="5.76" x2="32.616"/>
+   <line  stroke-width="0.72" stroke-linecap="round" y2="4.536" x1="32.616" stroke="white" y1="5.112" x2="31.32"/>
+   <line  stroke-width="0.72" stroke-linecap="round" y2="5.76" x1="31.32" stroke="white" y1="4.536" x2="31.68"/>
+   <line  stroke-width="0.36" stroke-linecap="round" y2="5.4" x1="32.04" stroke="white" y1="5.4" x2="31.68"/>
+   <line  stroke-width="0.72" stroke-linecap="round" y2="4.824" x1="31.968" stroke="white" y1="5.112" x2="31.752"/>
+   <path  stroke-width="0.72" d="M33.4439,11.5268A2.16,2.16,0,1,0,33.5452,14.5799" stroke="white" fill="none"/>
+   <line  stroke-width="0.72" stroke-linecap="round" y2="14.4135" x1="33.5452" stroke="white" y1="14.5799" x2="32.4189"/>
+   <line  stroke-width="0.72" stroke-linecap="round" y2="15.7195" x1="32.4189" stroke="white" y1="14.4135" x2="32.9717"/>
+   <line  stroke-width="0.72" stroke-linecap="round" y2="14.5799" x1="32.9717" stroke="white" y1="15.7195" x2="33.5452"/>
+   <line  stroke-width="0.72" stroke-linecap="round" y2="12.96" x1="27.72" stroke="white" y1="12.96" x2="36.36"/>
+   <line  stroke-width="0.72" stroke-linecap="round" y2="4.32" x1="27.72" stroke="white" y1="12.96" x2="27.72"/>
+   <line  stroke-width="0.72" stroke-linecap="round" y2="14.04" x1="36.36" stroke="white" y1="12.96" x2="35.28"/>
+   <line  stroke-width="0.72" stroke-linecap="round" y2="11.88" x1="35.28" stroke="white" y1="14.04" x2="35.28"/>
+   <line  stroke-width="0.72" stroke-linecap="round" y2="12.96" x1="35.28" stroke="white" y1="11.88" x2="36.36"/>
+   <line  stroke-width="0.72" stroke-linecap="round" y2="4.32" x1="26.64" stroke="white" y1="5.4" x2="27.72"/>
+   <line  stroke-width="0.72" stroke-linecap="round" y2="5.4" x1="28.8" stroke="white" y1="5.4" x2="26.64"/>
+   <line  stroke-width="0.72" stroke-linecap="round" y2="5.4" x1="27.72" stroke="white" y1="4.32" x2="28.8"/>
+   <path  stroke-width="0.72" d="M26.1428,6.87612A2.16,2.16,0,1,0,29.1959,6.77485" stroke="white" fill="none"/>
+   <line  stroke-width="0.72" stroke-linecap="round" y2="7.90106" x1="29.1959" stroke="white" y1="6.77485" x2="29.0295"/>
+   <line  stroke-width="0.72" stroke-linecap="round" y2="7.34832" x1="29.0295" stroke="white" y1="7.90106" x2="30.3355"/>
+   <line  stroke-width="0.72" stroke-linecap="round" y2="6.77485" x1="30.3355" stroke="white" y1="7.34832" x2="29.1959"/>
+   <circle  r="0.18" stroke-width="0.504" cy="5.76" stroke="white" cx="33.84" fill="none"/>
+   <g >
+    <title >text:GND</title>
+    <text  y="25.2" font-family="OCRA" style="dominant-baseline:central;" stroke-width="0.27" x="6.84" text-anchor="start" stroke="#ffffff" font-size="2.67264" fill="#ffffff">GND</text>
+   </g>
+   <g >
+    <title >text:VDD</title>
+    <text  y="32.4" font-family="OCRA" style="dominant-baseline:central;" stroke-width="0.27" x="6.84" text-anchor="start" stroke="#ffffff" font-size="2.67264" fill="#ffffff">VDD</text>
+   </g>
+   <g >
+    <title >text:SDA</title>
+    <text  y="39.6" font-family="OCRA" style="dominant-baseline:central;" stroke-width="0.27" x="6.84" text-anchor="start" stroke="#ffffff" font-size="2.67264" fill="#ffffff">SDA</text>
+   </g>
+   <g >
+    <title >text:SCL</title>
+    <text  y="46.8" font-family="OCRA" style="dominant-baseline:central;" stroke-width="0.27" x="6.84" text-anchor="start" stroke="#ffffff" font-size="2.67264" fill="#ffffff">SCL</text>
+   </g>
+   <g >
+    <title >text:LSM9DS1 Breakout</title>
+    <text  y="21.096" font-family="OCRA" style="dominant-baseline:text-before-edge;" stroke-width="0.3456" x="32.4" text-anchor="middle" stroke="#ffffff" font-size="4.176" fill="#ffffff">LSM9DS1 Breakout</text>
+   </g>
+   <g >
+    <title >text:DEN</title>
+    <text  y="3.6" font-family="OCRA" style="dominant-baseline:central;" stroke-width="0.27" x="58.32" text-anchor="end" stroke="#ffffff" font-size="2.67264" fill="#ffffff">DEN</text>
+   </g>
+   <g >
+    <title >text:INT2</title>
+    <text  y="10.8" font-family="OCRA" style="dominant-baseline:central;" stroke-width="0.27" x="58.32" text-anchor="end" stroke="#ffffff" font-size="2.67264" fill="#ffffff">INT2</text>
+   </g>
+   <g >
+    <title >text:INT1</title>
+    <text  y="18" font-family="OCRA" style="dominant-baseline:central;" stroke-width="0.27" x="58.32" text-anchor="end" stroke="#ffffff" font-size="2.67264" fill="#ffffff">INT1</text>
+   </g>
+   <g >
+    <title >text:INTM</title>
+    <text  y="25.2" font-family="OCRA" style="dominant-baseline:central;" stroke-width="0.27" x="58.32" text-anchor="end" stroke="#ffffff" font-size="2.67264" fill="#ffffff">INTM</text>
+   </g>
+   <g >
+    <title >text:CS M</title>
+    <text  y="39.6" font-family="OCRA" style="dominant-baseline:central;" stroke-width="0.27" x="58.32" text-anchor="end" stroke="#ffffff" font-size="2.67264" fill="#ffffff">CS M</text>
+   </g>
+   <g >
+    <title >text:CS AG</title>
+    <text  y="46.8" font-family="OCRA" style="dominant-baseline:central;" stroke-width="0.27" x="58.32" text-anchor="end" stroke="#ffffff" font-size="2.67264" fill="#ffffff">CS AG</text>
+   </g>
+   <g >
+    <title >text:SDO M</title>
+    <text  y="54" font-family="OCRA" style="dominant-baseline:central;" stroke-width="0.27" x="58.32" text-anchor="end" stroke="#ffffff" font-size="2.67264" fill="#ffffff">SDO M</text>
+   </g>
+   <g >
+    <title >text:SDO AG</title>
+    <text  y="61.2" font-family="OCRA" style="dominant-baseline:central;" stroke-width="0.27" x="58.32" text-anchor="end" stroke="#ffffff" font-size="2.67264" fill="#ffffff">SDO AG</text>
+   </g>
+   <g >
+    <title >text:X</title>
+    <text  y="3.96" font-family="OCRA" style="dominant-baseline:text-before-edge;" stroke-width="0.324" x="28.224" text-anchor="middle" stroke="#ffffff" font-size="3.3408" fill="#ffffff">X</text>
+   </g>
+   <g >
+    <title >text:Y</title>
+    <text  y="14.04" font-family="OCRA" style="dominant-baseline:text-before-edge;" stroke-width="0.324" x="38.016" text-anchor="middle" stroke="#ffffff" font-size="3.3408" fill="#ffffff">Y</text>
+   </g>
+   <g >
+    <title >text:Z</title>
+    <text  y="4.824" font-family="OCRA" style="dominant-baseline:text-before-edge;" stroke-width="0.324" x="38.016" text-anchor="middle" stroke="#ffffff" font-size="3.3408" fill="#ffffff">Z</text>
+   </g>
+   <g >
+    <title >text:RDY</title>
+    <text  y="32.4" font-family="OCRA" style="dominant-baseline:central;" stroke-width="0.27" x="58.68" text-anchor="end" stroke="#ffffff" font-size="2.67264" fill="#ffffff">RDY</text>
+   </g>
+   <g >
+    <title >element:C1</title>
+    <g >
+     <title >package:0603-CAP</title>
+     <line  stroke-width="1.584" stroke-linecap="round" y2="39.5135" x1="18" stroke="white" y1="39.6865" x2="18"/>
+    </g>
+   </g>
+   <g >
+    <title >element:C2</title>
+    <g >
+     <title >package:0603-CAP</title>
+     <line  stroke-width="1.584" stroke-linecap="round" y2="43.1135" x1="18" stroke="white" y1="43.2865" x2="18"/>
+    </g>
+   </g>
+   <g >
+    <title >element:C3</title>
+    <g >
+     <title >package:0603-CAP</title>
+     <line  stroke-width="1.584" stroke-linecap="round" y2="32.3135" x1="18" stroke="white" y1="32.4865" x2="18"/>
+    </g>
+   </g>
+   <g >
+    <title >element:C4</title>
+    <g >
+     <title >package:0603-CAP</title>
+     <line  stroke-width="1.584" stroke-linecap="round" y2="35.9135" x1="18" stroke="white" y1="36.0865" x2="18"/>
+    </g>
+   </g>
+   <g >
+    <title >element:C5</title>
+    <g >
+     <title >package:0603-CAP</title>
+     <line  stroke-width="1.584" stroke-linecap="round" y2="28.7135" x1="18" stroke="white" y1="28.8865" x2="18"/>
+    </g>
+   </g>
+   <g >
+    <title >element:FID1</title>
+    <g >
+     <title >package:FIDUCIAL-1X2</title>
+    </g>
+   </g>
+   <g >
+    <title >element:FID2</title>
+    <g >
+     <title >package:FIDUCIAL-1X2</title>
+    </g>
+   </g>
+   <g >
+    <title >element:JP1</title>
+    <g >
+     <title >package:1X04_NO_SILK</title>
+    </g>
+   </g>
+   <g >
+    <title >element:JP2</title>
+    <g >
+     <title >package:1X09_NO_SILK</title>
+    </g>
+   </g>
+   <g >
+    <title >element:LOGO1</title>
+    <g >
+     <title >package:SFE_LOGO_NAME_.1</title>
+    </g>
+   </g>
+   <g >
+    <title >element:LOGO2</title>
+    <g >
+     <title >package:SFE_LOGO_FLAME_.2</title>
+     <g >
+      <title >polygon</title>
+      <path  stroke-width="0.0144035" stroke-linecap="round" d="M9.92412,7.65072L9.92412,7.79242M9.92412,7.79242L9.95242,7.93418M9.95242,7.93418L9.92412,8.10425M9.92412,8.10425L9.89575,8.27431M9.89575,8.27431L9.81072,8.41608M9.81072,8.41608L9.66895,8.55778M9.66895,8.55778L9.47052,8.64281M9.47052,8.64281L9.27216,8.64281M9.27216,8.64281L9.07373,8.58614M9.07373,8.58614L8.8753,8.52948M8.8753,8.52948L8.6485,8.41608M8.6485,8.41608L8.45006,8.27431M8.45006,8.27431L8.25163,8.13262M8.25163,8.13262L8.0532,7.96255M8.0532,7.96255L7.9115,7.82078M7.9115,7.82078L7.76974,7.59398M7.76974,7.59398L7.65641,7.42392M7.65641,7.42392L7.59967,7.22549M7.59967,7.22549L7.5713,7.05543M7.5713,7.05543L7.59967,6.88535M7.59967,6.88535L7.65641,6.74362M7.65641,6.74362L7.74144,6.57354M7.74144,6.57354L7.85477,6.43181M7.85477,6.43181L8.08157,6.23339M8.08157,6.23339L8.30837,6.12M8.30837,6.12L8.5351,6.06331M8.5351,6.06331L8.79026,6.03496M8.79026,6.03496L9.15876,6.03496M9.15876,6.03496L9.27216,6.06331M9.27216,6.06331L9.30046,6.06331M9.30046,6.06331L9.21542,6.00661M9.21542,6.00661L9.01699,5.86488M9.01699,5.86488L8.67686,5.66646M8.67686,5.66646L8.25163,5.49638M8.25163,5.49638L7.74144,5.35465M7.74144,5.35465L7.17449,5.3263M7.17449,5.3263L6.55087,5.46803M6.55087,5.46803L5.8989,5.80819M5.8989,5.80819L5.41701,6.20504M5.41701,6.20504L5.1052,6.65858M5.1052,6.65858L4.93512,7.14047M4.93512,7.14047L4.93512,7.62235M4.93512,7.62235L5.07685,8.10425M5.07685,8.10425L5.33197,8.61451M5.33197,8.61451L5.70047,9.09641M5.70047,9.09641L6.18236,9.57823M6.18236,9.57823L6.55087,10.0035M6.55087,10.0035L6.74929,10.4287M6.74929,10.4287L6.74929,10.8255M6.74929,10.8255L6.63591,11.194M6.63591,11.194L6.38078,11.4774M6.38078,11.4774L6.04063,11.7042M6.04063,11.7042L5.64378,11.8176M5.64378,11.8176L5.19024,11.8176M5.19024,11.8176L4.87842,11.7326M4.87842,11.7326L4.62331,11.6476M4.62331,11.6476L4.42488,11.4774M4.42488,11.4774L4.2548,11.3074M4.2548,11.3074L4.16976,11.1373M4.16976,11.1373L4.11307,10.9389M4.11307,10.9389L4.11307,10.7405M4.11307,10.7405L4.16976,10.5704M4.16976,10.5704L4.2548,10.457M4.2548,10.457L4.36819,10.3436M4.36819,10.3436L4.50992,10.2303M4.50992,10.2303L4.62331,10.1452M4.62331,10.1452L4.76504,10.0885M4.76504,10.0885L4.87842,10.0318M4.87842,10.0318L4.93512,10.0035M4.93512,10.0035L4.96346,9.9751M4.96346,9.9751L4.93512,9.9751M4.93512,9.9751L4.85008,9.9468M4.85008,9.9468L4.70835,9.89006M4.70835,9.89006L4.50992,9.86177M4.50992,9.86177L3.99969,9.86177M3.99969,9.86177L3.71622,9.91843M3.71622,9.91843L3.40441,10.0035M3.40441,10.0035L3.12095,10.1169M3.12095,10.1169L2.86583,10.2869M2.86583,10.2869L2.63905,10.5137M2.63905,10.5137L2.44063,10.7688M2.44063,10.7688L2.27055,11.0807M2.27055,11.0807L2.15716,11.4774M2.15716,11.4774L2.10047,11.931M2.10047,11.931L2.07212,12.4696M2.07212,12.4696L2.07212,19.7546M2.07212,19.7546L2.10047,19.698M2.10047,19.698L2.21386,19.5846M2.21386,19.5846L2.38393,19.3861M2.38393,19.3861L2.58236,19.131M2.58236,19.131L2.83748,18.8476M2.83748,18.8476L3.12095,18.5074M3.12095,18.5074L3.43276,18.1673M3.43276,18.1673L3.77292,17.7988M3.77292,17.7988L4.14142,17.4019M4.14142,17.4019L4.45323,17.0334M4.45323,17.0334L4.76504,16.7216M4.76504,16.7216L5.0485,16.4665M5.0485,16.4665L5.33197,16.268M5.33197,16.268L5.64378,16.1263M5.64378,16.1263L5.95559,16.0412M5.95559,16.0412L7.0611,16.0412M7.0611,16.0412L7.74144,15.9562M7.74144,15.9562L8.36503,15.7861M8.36503,15.7861L8.93196,15.531M8.93196,15.531L9.47052,15.1908M9.47052,15.1908L9.95242,14.8224M9.95242,14.8224L10.3776,14.3688M10.3776,14.3688L10.7745,13.8586M10.7745,13.8586L11.3131,12.8097M11.3131,12.8097L11.5965,11.7893M11.5965,11.7893L11.6532,10.7972M11.6532,10.7972L11.5115,9.86177M11.5115,9.86177L11.228,9.06804M11.228,9.06804L10.8595,8.38771M10.8595,8.38771L10.3776,7.90582M10.3776,7.90582L9.92412,7.62235M9.92412,7.62235L9.92412,7.65072M2.07212,19.7422L2.07834,19.7422M2.07212,19.7278L2.08554,19.7278M2.07212,19.7134L2.09274,19.7134M2.07212,19.699L2.09995,19.699M2.07212,19.6846L2.11383,19.6846M2.07212,19.6702L2.12823,19.6702M2.07212,19.6558L2.14264,19.6558M2.07212,19.6414L2.15704,19.6414M2.07212,19.627L2.17145,19.627M2.07212,19.6126L2.18585,19.6126M2.07212,19.5982L2.20026,19.5982M2.07212,19.5838L2.21454,19.5838M2.07212,19.5694L2.22688,19.5694M2.07212,19.555L2.23923,19.555M2.07212,19.5406L2.25158,19.5406M2.07212,19.5262L2.26392,19.5262M2.07212,19.5118L2.27627,19.5118M2.07212,19.4974L2.28861,19.4974M2.07212,19.4829L2.30096,19.4829M2.07212,19.4685L2.3133,19.4685M2.07212,19.4541L2.32565,19.4541M2.07212,19.4397L2.338,19.4397M2.07212,19.4253L2.35035,19.4253M2.07212,19.4109L2.36269,19.4109M2.07212,19.3965L2.37504,19.3965M2.07212,19.3821L2.38707,19.3821M2.07212,19.3677L2.39826,19.3677M2.07212,19.3533L2.40947,19.3533M2.07212,19.3389L2.42067,19.3389M2.07212,19.3245L2.43187,19.3245M2.07212,19.3101L2.44308,19.3101M2.07212,19.2957L2.45428,19.2957M2.07212,19.2813L2.46547,19.2813M2.07212,19.2669L2.47668,19.2669M2.07212,19.2525L2.48789,19.2525M2.07212,19.2381L2.49908,19.2381M2.07212,19.2237L2.51029,19.2237M2.07212,19.2093L2.5215,19.2093M2.07212,19.1948L2.53269,19.1948M2.07212,19.1804L2.5439,19.1804M2.07212,19.166L2.55511,19.166M2.07212,19.1516L2.5663,19.1516M2.07212,19.1372L2.57751,19.1372M2.07212,19.1228L2.5897,19.1228M2.07212,19.1084L2.60268,19.1084M2.07212,19.094L2.61563,19.094M2.07212,19.0796L2.6286,19.0796M2.07212,19.0652L2.64156,19.0652M2.07212,19.0508L2.65452,19.0508M2.07212,19.0364L2.66749,19.0364M2.07212,19.022L2.68045,19.022M2.07212,19.0076L2.69342,19.0076M2.07212,18.9932L2.70638,18.9932M2.07212,18.9788L2.71934,18.9788M2.07212,18.9644L2.73231,18.9644M2.07212,18.95L2.74527,18.95M2.07212,18.9356L2.75823,18.9356M2.07212,18.9212L2.77119,18.9212M2.07212,18.9068L2.78415,18.9068M2.07212,18.8924L2.79712,18.8924M2.07212,18.878L2.81008,18.878M2.07212,18.8636L2.82305,18.8636M2.07212,18.8492L2.83601,18.8492M2.07212,18.8348L2.84812,18.8348M2.07212,18.8204L2.86012,18.8204M2.07212,18.806L2.87212,18.806M2.07212,18.7916L2.88413,18.7916M2.07212,18.7772L2.89613,18.7772M2.07212,18.7628L2.90813,18.7628M2.07212,18.7484L2.92014,18.7484M2.07212,18.734L2.93214,18.734M2.07212,18.7196L2.94414,18.7196M2.07212,18.7052L2.95615,18.7052M2.07212,18.6908L2.96815,18.6908M2.07212,18.6764L2.98015,18.6764M2.07212,18.662L2.99215,18.662M2.07212,18.6476L3.00416,18.6476M2.07212,18.6332L3.01616,18.6332M2.07212,18.6188L3.02816,18.6188M2.07212,18.6043L3.04016,18.6043M2.07212,18.5899L3.05217,18.5899M2.07212,18.5755L3.06417,18.5755M2.07212,18.5611L3.07618,18.5611M2.07212,18.5467L3.08818,18.5467M2.07212,18.5323L3.10018,18.5323M2.07212,18.5179L3.11219,18.5179M2.07212,18.5035L3.12451,18.5035M2.07212,18.4891L3.13772,18.4891M2.07212,18.4747L3.15092,18.4747M2.07212,18.4603L3.16412,18.4603M2.07212,18.4459L3.17733,18.4459M2.07212,18.4315L3.19053,18.4315M2.07212,18.4171L3.20373,18.4171M2.07212,18.4027L3.21693,18.4027M2.07212,18.3883L3.23014,18.3883M2.07212,18.3739L3.24334,18.3739M2.07212,18.3595L3.25655,18.3595M2.07212,18.3451L3.26974,18.3451M2.07212,18.3307L3.28296,18.3307M2.07212,18.3162L3.29615,18.3162M2.07212,18.3018L3.30936,18.3018M2.07212,18.2874L3.32256,18.2874M2.07212,18.273L3.33577,18.273M2.07212,18.2586L3.34896,18.2586M2.07212,18.2442L3.36217,18.2442M2.07212,18.2298L3.37537,18.2298M2.07212,18.2154L3.38858,18.2154M2.07212,18.201L3.40178,18.201M2.07212,18.1866L3.41499,18.1866M2.07212,18.1722L3.42819,18.1722M2.07212,18.1578L3.44146,18.1578M2.07212,18.1434L3.45475,18.1434M2.07212,18.129L3.46805,18.129M2.07212,18.1146L3.48134,18.1146M2.07212,18.1002L3.49463,18.1002M2.07212,18.0858L3.50793,18.0858M2.07212,18.0714L3.52122,18.0714M2.07212,18.057L3.53452,18.057M2.07212,18.0426L3.54781,18.0426M2.07212,18.0282L3.56111,18.0282M2.07212,18.0138L3.57441,18.0138M2.07212,17.9994L3.5877,17.9994M2.07212,17.985L3.601,17.985M2.07212,17.9706L3.6143,17.9706M2.07212,17.9562L3.62759,17.9562M2.07212,17.9418L3.64089,17.9418M2.07212,17.9274L3.65418,17.9274M2.07212,17.913L3.66747,17.913M2.07212,17.8986L3.68077,17.8986M2.07212,17.8842L3.69407,17.8842M2.07212,17.8698L3.70736,17.8698M2.07212,17.8554L3.72066,17.8554M2.07212,17.841L3.73396,17.841M2.07212,17.8266L3.74725,17.8266M2.07212,17.8122L3.76055,17.8122M2.07212,17.7978L3.77384,17.7978M2.07212,17.7834L3.78722,17.7834M2.07212,17.769L3.80059,17.769M2.07212,17.7546L3.81397,17.7546M2.07212,17.7402L3.82735,17.7402M2.07212,17.7257L3.84072,17.7257M2.07212,17.7113L3.8541,17.7113M2.07212,17.6969L3.86747,17.6969M2.07212,17.6825L3.88084,17.6825M2.07212,17.6681L3.89422,17.6681M2.07212,17.6537L3.90759,17.6537M2.07212,17.6393L3.92097,17.6393M2.07212,17.6249L3.93435,17.6249M2.07212,17.6105L3.94772,17.6105M2.07212,17.5961L3.96109,17.5961M2.07212,17.5817L3.97446,17.5817M2.07212,17.5673L3.98784,17.5673M2.07212,17.5529L4.00122,17.5529M2.07212,17.5385L4.01459,17.5385M2.07212,17.5241L4.02797,17.5241M2.07212,17.5097L4.04135,17.5097M2.07212,17.4953L4.05472,17.4953M2.07212,17.4809L4.06809,17.4809M2.07212,17.4665L4.08146,17.4665M2.07212,17.4521L4.09484,17.4521M2.07212,17.4376L4.10822,17.4376M2.07212,17.4232L4.12159,17.4232M2.07212,17.4088L4.13497,17.4088M2.07212,17.3944L4.14773,17.3944M2.07212,17.38L4.15992,17.38M2.07212,17.3656L4.1721,17.3656M2.07212,17.3512L4.18429,17.3512M2.07212,17.3368L4.19647,17.3368M2.07212,17.3224L4.20866,17.3224M2.07212,17.308L4.22085,17.308M2.07212,17.2936L4.23304,17.2936M2.07212,17.2792L4.24523,17.2792M2.07212,17.2648L4.25742,17.2648M2.07212,17.2504L4.2696,17.2504M2.07212,17.236L4.28178,17.236M2.07212,17.2216L4.29397,17.2216M2.07212,17.2072L4.30616,17.2072M2.07212,17.1928L4.31835,17.1928M2.07212,17.1784L4.33054,17.1784M2.07212,17.164L4.34273,17.164M2.07212,17.1495L4.35491,17.1495M2.07212,17.1351L4.3671,17.1351M2.07212,17.1207L4.37929,17.1207M2.07212,17.1063L4.39147,17.1063M2.07212,17.0919L4.40366,17.0919M2.07212,17.0775L4.41585,17.0775M2.07212,17.0631L4.42804,17.0631M2.07212,17.0487L4.44023,17.0487M2.07212,17.0343L4.45242,17.0343M2.07212,17.0199L4.46668,17.0199M2.07212,17.0055L4.48108,17.0055M2.07212,16.9911L4.49549,16.9911M2.07212,16.9767L4.50989,16.9767M2.07212,16.9623L4.52429,16.9623M2.07212,16.9479L4.53869,16.9479M2.07212,16.9335L4.5531,16.9335M2.07212,16.9191L4.5675,16.9191M2.07212,16.9047L4.5819,16.9047M2.07212,16.8903L4.59631,16.8903M2.07212,16.8759L4.61071,16.8759M2.07212,16.8615L4.62511,16.8615M2.07212,16.8471L4.63951,16.8471M2.07212,16.8327L4.65392,16.8327M2.07212,16.8183L4.66832,16.8183M2.07212,16.8039L4.68273,16.8039M2.07212,16.7895L4.69713,16.7895M2.07212,16.7751L4.71154,16.7751M2.07212,16.7607L4.72594,16.7607M2.07212,16.7463L4.74034,16.7463M2.07212,16.7319L4.75474,16.7319M2.07212,16.7175L4.7696,16.7175M2.07212,16.7031L4.78561,16.7031M2.07212,16.6887L4.80161,16.6887M2.07212,16.6743L4.81761,16.6743M2.07212,16.6599L4.83362,16.6599M2.07212,16.6455L4.84962,16.6455M2.07212,16.6311L4.86562,16.6311M2.07212,16.6167L4.88163,16.6167M2.07212,16.6023L4.89763,16.6023M2.07212,16.5879L4.91364,16.5879M2.07212,16.5735L4.92965,16.5735M2.07212,16.559L4.94564,16.559M2.07212,16.5446L4.96165,16.5446M2.07212,16.5302L4.97766,16.5302M2.07212,16.5158L4.99365,16.5158M2.07212,16.5014L5.00966,16.5014M2.07212,16.487L5.02566,16.487M2.07212,16.4726L5.04166,16.4726M2.07212,16.4582L5.0603,16.4582M2.07212,16.4438L5.08087,16.4438M2.07212,16.4294L5.10145,16.4294M2.07212,16.415L5.12203,16.415M2.07212,16.4006L5.1426,16.4006M2.07212,16.3862L5.16318,16.3862M2.07212,16.3718L5.18376,16.3718M2.07212,16.3574L5.20433,16.3574M2.07212,16.343L5.22491,16.343M2.07212,16.3286L5.24549,16.3286M2.07212,16.3142L5.26607,16.3142M2.07212,16.2998L5.28663,16.2998M2.07212,16.2854L5.30721,16.2854M2.07212,16.2709L5.32778,16.2709M2.07212,16.2565L5.35722,16.2565M2.07212,16.2421L5.38891,16.2421M2.07212,16.2277L5.42059,16.2277M2.07212,16.2133L5.45228,16.2133M2.07212,16.1989L5.48397,16.1989M2.07212,16.1845L5.51566,16.1845M2.07212,16.1701L5.54735,16.1701M2.07212,16.1557L5.57904,16.1557M2.07212,16.1413L5.61072,16.1413M2.07212,16.1269L5.64242,16.1269M2.07212,16.1125L5.69431,16.1125M2.07212,16.0981L5.74713,16.0981M2.07212,16.0837L5.79994,16.0837M2.07212,16.0693L5.85276,16.0693M2.07212,16.0549L5.90557,16.0549M2.07212,16.0405L7.0672,16.0405M2.07212,16.0261L7.18242,16.0261M2.07212,16.0117L7.29763,16.0117M2.07212,15.9973L7.4129,15.9973M2.07212,15.9828L7.5281,15.9828M2.07212,15.9684L7.6433,15.9684M2.07212,15.954L7.74929,15.954M2.07212,15.9396L7.80206,15.9396M2.07212,15.9252L7.85491,15.9252M2.07212,15.9108L7.90769,15.9108M2.07212,15.8964L7.96054,15.8964M2.07212,15.882L8.01331,15.882M2.07212,15.8676L8.06616,15.8676M2.07212,15.8532L8.11894,15.8532M2.07212,15.8388L8.17178,15.8388M2.07212,15.8244L8.22456,15.8244M2.07212,15.81L8.27741,15.81M2.07212,15.7956L8.33018,15.7956M2.07212,15.7812L8.37598,15.7812M2.07212,15.7668L8.40794,15.7668M2.07212,15.7524L8.43998,15.7524M2.07212,15.738L8.47195,15.738M2.07212,15.7236L8.50399,15.7236M2.07212,15.7092L8.53596,15.7092M2.07212,15.6948L8.568,15.6948M2.07212,15.6804L8.59997,15.6804M2.07212,15.666L8.63201,15.666M2.07212,15.6516L8.66405,15.6516M2.07212,15.6372L8.69602,15.6372M2.07212,15.6228L8.72806,15.6228M2.07212,15.6084L8.76002,15.6084M2.07212,15.594L8.79206,15.594M2.07212,15.5796L8.82403,15.5796M2.07212,15.5652L8.85607,15.5652M2.07212,15.5508L8.88804,15.5508M2.07212,15.5364L8.92008,15.5364M2.07212,15.522L8.94629,15.522M2.07212,15.5076L8.96911,15.5076M2.07212,15.4932L8.99194,15.4932M2.07212,15.4788L9.01469,15.4788M2.07212,15.4644L9.03751,15.4644M2.07212,15.45L9.06034,15.45M2.07212,15.4356L9.08316,15.4356M2.07212,15.4212L9.10591,15.4212M2.07212,15.4068L9.12874,15.4068M2.07212,15.3923L9.15156,15.3923M2.07212,15.3779L9.17438,15.3779M2.07212,15.3635L9.19714,15.3635M2.07212,15.3491L9.21996,15.3491M2.07212,15.3347L9.24278,15.3347M2.07212,15.3203L9.26561,15.3203M2.07212,15.3059L9.28836,15.3059M2.07212,15.2915L9.31118,15.2915M2.07212,15.2771L9.33401,15.2771M2.07212,15.2627L9.35683,15.2627M2.07212,15.2483L9.37958,15.2483M2.07212,15.2339L9.40241,15.2339M2.07212,15.2195L9.42523,15.2195M2.07212,15.2051L9.44806,15.2051M2.07212,15.1907L9.47081,15.1907M2.07212,15.1763L9.4896,15.1763M2.07212,15.1619L9.50846,15.1619M2.07212,15.1475L9.52726,15.1475M2.07212,15.1331L9.54612,15.1331M2.07212,15.1187L9.56498,15.1187M2.07212,15.1042L9.58378,15.1042M2.07212,15.0898L9.60264,15.0898M2.07212,15.0754L9.62143,15.0754M2.07212,15.061L9.6403,15.061M2.07212,15.0466L9.65916,15.0466M2.07212,15.0322L9.67795,15.0322M2.07212,15.0178L9.69682,15.0178M2.07212,15.0034L9.71561,15.0034M2.07212,14.989L9.73447,14.989M2.07212,14.9746L9.75334,14.9746M2.07212,14.9602L9.77213,14.9602M2.07212,14.9458L9.79099,14.9458M2.07212,14.9314L9.80978,14.9314M2.07212,14.917L9.82865,14.917M2.07212,14.9026L9.84751,14.9026M2.07212,14.8882L9.8663,14.8882M2.07212,14.8738L9.88517,14.8738M2.07212,14.8594L9.90396,14.8594M2.07212,14.845L9.92282,14.845M2.07212,14.8306L9.94169,14.8306M2.07212,14.8162L9.95825,14.8162M2.07212,14.8018L9.97171,14.8018M2.07212,14.7874L9.98525,14.7874M2.07212,14.773L9.99871,14.773M2.07212,14.7586L10.0122,14.7586M2.07212,14.7442L10.0257,14.7442M2.07212,14.7298L10.0392,14.7298M2.07212,14.7154L10.0527,14.7154M2.07212,14.701L10.0662,14.701M2.07212,14.6866L10.0797,14.6866M2.07212,14.6722L10.0932,14.6722M2.07212,14.6578L10.1068,14.6578M2.07212,14.6434L10.1202,14.6434M2.07212,14.629L10.1338,14.629M2.07212,14.6146L10.1472,14.6146M2.07212,14.6002L10.1608,14.6002M2.07212,14.5858L10.1742,14.5858M2.07212,14.5714L10.1878,14.5714M2.07212,14.557L10.2012,14.557M2.07212,14.5426L10.2148,14.5426M2.07212,14.5282L10.2283,14.5282M2.07212,14.5137L10.2418,14.5137M2.07212,14.4993L10.2553,14.4993M2.07212,14.4849L10.2688,14.4849M2.07212,14.4705L10.2823,14.4705M2.07212,14.4561L10.2958,14.4561M2.07212,14.4417L10.3093,14.4417M2.07212,14.4273L10.3228,14.4273M2.07212,14.4129L10.3363,14.4129M2.07212,14.3985L10.3498,14.3985M2.07212,14.3841L10.3633,14.3841M2.07212,14.3697L10.3769,14.3697M2.07212,14.3553L10.3882,14.3553M2.07212,14.3409L10.3994,14.3409M2.07212,14.3265L10.4106,14.3265M2.07212,14.3121L10.4218,14.3121M2.07212,14.2977L10.4329,14.2977M2.07212,14.2833L10.4442,14.2833M2.07212,14.2689L10.4554,14.2689M2.07212,14.2545L10.4666,14.2545M2.07212,14.2401L10.4778,14.2401M2.07212,14.2256L10.489,14.2256M2.07212,14.2112L10.5002,14.2112M2.07212,14.1968L10.5114,14.1968M2.07212,14.1824L10.5226,14.1824M2.07212,14.168L10.5338,14.168M2.07212,14.1536L10.545,14.1536M2.07212,14.1392L10.5562,14.1392M2.07212,14.1248L10.5674,14.1248M2.07212,14.1104L10.5786,14.1104M2.07212,14.096L10.5898,14.096M2.07212,14.0816L10.601,14.0816M2.07212,14.0672L10.6122,14.0672M2.07212,14.0528L10.6234,14.0528M2.07212,14.0384L10.6346,14.0384M2.07212,14.024L10.6458,14.024M2.07212,14.0096L10.657,14.0096M2.07212,13.9952L10.6682,13.9952M2.07212,13.9808L10.6794,13.9808M2.07212,13.9664L10.6906,13.9664M2.07212,13.952L10.7019,13.952M2.07212,13.9376L10.713,13.9376M2.07212,13.9231L10.7243,13.9231M2.07212,13.9087L10.7354,13.9087M2.07212,13.8943L10.7466,13.8943M2.07212,13.8799L10.7579,13.8799M2.07212,13.8655L10.769,13.8655M2.07212,13.8511L10.7783,13.8511M2.07212,13.8367L10.7857,13.8367M2.07212,13.8223L10.7931,13.8223M2.07212,13.8079L10.8005,13.8079M2.07212,13.7935L10.8078,13.7935M2.07212,13.7791L10.8153,13.7791M2.07212,13.7647L10.8227,13.7647M2.07212,13.7503L10.8301,13.7503M2.07212,13.7359L10.8374,13.7359M2.07212,13.7215L10.8449,13.7215M2.07212,13.7071L10.8523,13.7071M2.07212,13.6927L10.8597,13.6927M2.07212,13.6783L10.867,13.6783M2.07212,13.6639L10.8744,13.6639M2.07212,13.6495L10.8819,13.6495M2.07212,13.6351L10.8892,13.6351M2.07212,13.6207L10.8966,13.6207M2.07212,13.6063L10.904,13.6063M2.07212,13.5919L10.9115,13.5919M2.07212,13.5775L10.9188,13.5775M2.07212,13.5631L10.9262,13.5631M2.07212,13.5487L10.9336,13.5487M2.07212,13.5343L10.941,13.5343M2.07212,13.5199L10.9484,13.5199M2.07212,13.5055L10.9558,13.5055M2.07212,13.4911L10.9632,13.4911M2.07212,13.4767L10.9706,13.4767M2.07212,13.4623L10.978,13.4623M2.07212,13.4479L10.9854,13.4479M2.07212,13.4335L10.9928,13.4335M2.07212,13.4191L11.0002,13.4191M2.07212,13.4047L11.0076,13.4047M2.07212,13.3903L11.015,13.3903M2.07212,13.3759L11.0224,13.3759M2.07212,13.3615L11.0298,13.3615M2.07212,13.347L11.0372,13.347M2.07212,13.3326L11.0446,13.3326M2.07212,13.3182L11.052,13.3182M2.07212,13.3038L11.0593,13.3038M2.07212,13.2894L11.0668,13.2894M2.07212,13.275L11.0742,13.275M2.07212,13.2606L11.0815,13.2606M2.07212,13.2462L11.0889,13.2462M2.07212,13.2318L11.0964,13.2318M2.07212,13.2174L11.1038,13.2174M2.07212,13.203L11.1111,13.203M2.07212,13.1886L11.1185,13.1886M2.07212,13.1742L11.1259,13.1742M2.07212,13.1598L11.1334,13.1598M2.07212,13.1454L11.1407,13.1454M2.07212,13.131L11.1481,13.131M2.07212,13.1166L11.1555,13.1166M2.07212,13.1022L11.1629,13.1022M2.07212,13.0878L11.1703,13.0878M2.07212,13.0734L11.1777,13.0734M2.07212,13.059L11.1851,13.059M2.07212,13.0445L11.1925,13.0445M2.07212,13.0301L11.1999,13.0301M2.07212,13.0157L11.2073,13.0157M2.07212,13.0013L11.2146,13.0013M2.07212,12.9869L11.2221,12.9869M2.07212,12.9725L11.2295,12.9725M2.07212,12.9581L11.2369,12.9581M2.07212,12.9437L11.2442,12.9437M2.07212,12.9293L11.2517,12.9293M2.07212,12.9149L11.2591,12.9149M2.07212,12.9005L11.2665,12.9005M2.07212,12.8861L11.2738,12.8861M2.07212,12.8717L11.2812,12.8717M2.07212,12.8573L11.2887,12.8573M2.07212,12.8429L11.2961,12.8429M2.07212,12.8285L11.3034,12.8285M2.07212,12.8141L11.3108,12.8141M2.07212,12.7997L11.3159,12.7997M2.07212,12.7853L11.3198,12.7853M2.07212,12.7709L11.3239,12.7709M2.07212,12.7565L11.3278,12.7565M2.07212,12.7421L11.3319,12.7421M2.07212,12.7277L11.3359,12.7277M2.07212,12.7133L11.3399,12.7133M2.07212,12.6989L11.3439,12.6989M2.07212,12.6845L11.3478,12.6845M2.07212,12.6701L11.3519,12.6701M2.07212,12.6557L11.3558,12.6557M2.07212,12.6413L11.3599,12.6413M2.07212,12.6269L11.3639,12.6269M2.07212,12.6125L11.3679,12.6125M2.07212,12.5981L11.3719,12.5981M2.07212,12.5837L11.3759,12.5837M2.07212,12.5693L11.3799,12.5693M2.07212,12.5549L11.3838,12.5549M2.07212,12.5405L11.3879,12.5405M2.07212,12.5261L11.3919,12.5261M2.07212,12.5117L11.3959,12.5117M2.07212,12.4973L11.3999,12.4973M2.07212,12.4829L11.4039,12.4829M2.0722,12.4684L11.4079,12.4684M2.07295,12.454L11.4119,12.454M2.07371,12.4396L11.4159,12.4396M2.07446,12.4252L11.4198,12.4252M2.07523,12.4108L11.4239,12.4108M2.07598,12.3964L11.4279,12.3964M2.07674,12.382L11.4319,12.382M2.0775,12.3676L11.4359,12.3676M2.07826,12.3532L11.4399,12.3532M2.07901,12.3388L11.4439,12.3388M2.07977,12.3244L11.4479,12.3244M2.08053,12.31L11.4519,12.31M2.08128,12.2956L11.4559,12.2956M2.08205,12.2812L11.4599,12.2812M2.08281,12.2668L11.4639,12.2668M2.08356,12.2524L11.4679,12.2524M2.08432,12.238L11.4719,12.238M2.08508,12.2236L11.4759,12.2236M2.08584,12.2092L11.4799,12.2092M2.0866,12.1948L11.4839,12.1948M2.08735,12.1804L11.4879,12.1804M2.08812,12.1659L11.4919,12.1659M2.08887,12.1515L11.4959,12.1515M2.08963,12.1371L11.4999,12.1371M2.09038,12.1227L11.5039,12.1227M2.09115,12.1083L11.5079,12.1083M2.09191,12.0939L11.5119,12.0939M2.09266,12.0795L11.5159,12.0795M2.09342,12.0651L11.5199,12.0651M2.09418,12.0507L11.5239,12.0507M2.09493,12.0363L11.5279,12.0363M2.09569,12.0219L11.5319,12.0219M2.09645,12.0075L11.5359,12.0075M2.09722,11.9931L11.5399,11.9931M2.09796,11.9787L11.5439,11.9787M2.09873,11.9643L11.5479,11.9643M2.09948,11.9499L11.5519,11.9499M2.10024,11.9355L11.5559,11.9355M2.10172,11.9211L11.56,11.9211M2.10352,11.9067L11.5639,11.9067M2.10532,11.8923L11.568,11.8923M2.10712,11.8778L11.5719,11.8778M2.10892,11.8634L11.5759,11.8634M2.11072,11.849L11.5799,11.849M2.11252,11.8346L11.5839,11.8346M2.11432,11.8202L11.5879,11.8202M2.11612,11.8058L5.14704,11.8058M5.68501,11.8058L11.5919,11.8058M2.11792,11.7914L5.09423,11.7914M5.73543,11.7914L11.596,11.7914M2.11972,11.777L5.04142,11.777M5.78584,11.777L11.5973,11.777M2.12152,11.7626L4.98861,11.7626M5.83626,11.7626L11.598,11.7626M2.12332,11.7482L4.93579,11.7482M5.88666,11.7482L11.5988,11.7482M2.12512,11.7338L4.88298,11.7338M5.93708,11.7338L11.5997,11.7338M2.12692,11.7194L4.83893,11.7194M5.98749,11.7194L11.6005,11.7194M2.12872,11.705L4.79573,11.705M6.0379,11.705L11.6014,11.705M2.13053,11.6906L4.75251,11.6906M6.06107,11.6906L11.6022,11.6906M2.13232,11.6762L4.7093,11.6762M6.08267,11.6762L11.603,11.6762M2.13412,11.6618L4.66609,11.6618M6.10428,11.6618L11.6038,11.6618M2.13592,11.6474L4.62315,11.6474M6.12588,11.6474L11.6047,11.6474M2.13773,11.633L4.60634,11.633M6.14749,11.633L11.6055,11.633M2.13953,11.6186L4.58954,11.6186M6.16909,11.6186L11.6063,11.6186M2.14132,11.6042L4.57273,11.6042M6.1907,11.6042L11.6071,11.6042M2.14312,11.5898L4.55593,11.5898M6.2123,11.5898L11.6079,11.5898M2.14493,11.5754L4.53912,11.5754M6.23391,11.5754L11.6088,11.5754M2.14673,11.561L4.52232,11.561M6.25551,11.561L11.6096,11.561M2.14853,11.5466L4.50552,11.5466M6.27712,11.5466L11.6104,11.5466M2.15032,11.5322L4.48872,11.5322M6.29873,11.5322L11.6112,11.5322M2.15213,11.5178L4.47191,11.5178M6.32033,11.5178L11.612,11.5178M2.15393,11.5034L4.45511,11.5034M6.34193,11.5034L11.6129,11.5034M2.15573,11.489L4.4383,11.489M6.36354,11.489L11.6137,11.489M2.158,11.4746L4.42197,11.4746M6.38341,11.4746L11.6145,11.4746M2.16212,11.4602L4.40757,11.4602M6.39637,11.4602L11.6153,11.4602M2.16623,11.4458L4.39317,11.4458M6.40933,11.4458L11.6162,11.4458M2.17035,11.4314L4.37877,11.4314M6.4223,11.4314L11.617,11.4314M2.17446,11.417L4.36436,11.417M6.43526,11.417L11.6178,11.417M2.17858,11.4026L4.34996,11.4026M6.44823,11.4026L11.6186,11.4026M2.18269,11.3882L4.33555,11.3882M6.46119,11.3882L11.6194,11.3882M2.18681,11.3738L4.32115,11.3738M6.47415,11.3738L11.6203,11.3738M2.19092,11.3594L4.30674,11.3594M6.48711,11.3594L11.6211,11.3594M2.19504,11.345L4.29234,11.345M6.50007,11.345L11.622,11.345M2.19915,11.3306L4.27794,11.3306M6.51304,11.3306L11.6227,11.3306M2.20326,11.3162L4.26354,11.3162M6.526,11.3162L11.6235,11.3162M2.20738,11.3018L4.25197,11.3018M6.53896,11.3018L11.6244,11.3018M2.2115,11.2873L4.24477,11.2873M6.55193,11.2873L11.6252,11.2873M2.21561,11.2729L4.23757,11.2729M6.56489,11.2729L11.6261,11.2729M2.21973,11.2585L4.23036,11.2585M6.57786,11.2585L11.6268,11.2585M2.22384,11.2441L4.22316,11.2441M6.59082,11.2441L11.6277,11.2441M2.22796,11.2297L4.21596,11.2297M6.60378,11.2297L11.6285,11.2297M2.23207,11.2153L4.20876,11.2153M6.61674,11.2153L11.6293,11.2153M2.23619,11.2009L4.20155,11.2009M6.6297,11.2009L11.6302,11.2009M2.24031,11.1865L4.19435,11.1865M6.63822,11.1865L11.631,11.1865M2.24442,11.1721L4.18715,11.1721M6.64266,11.1721L11.6318,11.1721M2.24854,11.1577L4.17995,11.1577M6.64708,11.1577L11.6326,11.1577M2.25265,11.1433L4.17275,11.1433M6.65151,11.1433L11.6335,11.1433M2.25677,11.1289L4.16735,11.1289M6.65595,11.1289L11.6343,11.1289M2.26088,11.1145L4.16324,11.1145M6.66038,11.1145L11.6351,11.1145M2.265,11.1001L4.15912,11.1001M6.66481,11.1001L11.6359,11.1001M2.26912,11.0857L4.15501,11.0857M6.66924,11.0857L11.6367,11.0857M2.27565,11.0713L4.15089,11.0713M6.67368,11.0713L11.6376,11.0713M2.28351,11.0569L4.14678,11.0569M6.67811,11.0569L11.6384,11.0569M2.29137,11.0425L4.14266,11.0425M6.68254,11.0425L11.6392,11.0425M2.29923,11.0281L4.13855,11.0281M6.68697,11.0281L11.64,11.0281M2.30708,11.0137L4.13443,11.0137M6.6914,11.0137L11.6409,11.0137M2.31494,10.9992L4.13032,10.9992M6.69583,10.9992L11.6417,10.9992M2.3228,10.9848L4.1262,10.9848M6.70027,10.9848L11.6425,10.9848M2.33065,10.9704L4.12209,10.9704M6.7047,10.9704L11.6433,10.9704M2.33851,10.956L4.11798,10.956M6.70913,10.956L11.6441,10.956M2.34637,10.9416L4.11386,10.9416M6.71357,10.9416L11.645,10.9416M2.35423,10.9272L4.11307,10.9272M6.718,10.9272L11.6458,10.9272M2.36208,10.9128L4.11307,10.9128M6.72242,10.9128L11.6466,10.9128M2.36993,10.8984L4.11307,10.8984M6.72686,10.8984L11.6474,10.8984M2.37779,10.884L4.11307,10.884M6.73129,10.884L11.6482,10.884M2.38565,10.8696L4.11307,10.8696M6.73572,10.8696L11.6491,10.8696M2.3935,10.8552L4.11307,10.8552M6.74015,10.8552L11.6499,10.8552M2.40136,10.8408L4.11307,10.8408M6.74459,10.8408L11.6508,10.8408M2.40922,10.8264L4.11307,10.8264M6.74901,10.8264L11.6515,10.8264M2.41708,10.812L4.11307,10.812M6.74929,10.812L11.6524,10.812M2.42493,10.7976L4.11307,10.7976M6.74929,10.7976L11.6532,10.7976M2.43279,10.7832L4.11307,10.7832M6.74929,10.7832L11.6511,10.7832M2.44065,10.7688L4.11307,10.7688M6.74929,10.7688L11.649,10.7688M2.45185,10.7544L4.11307,10.7544M6.74929,10.7544L11.6467,10.7544M2.46305,10.74L4.11323,10.74M6.74929,10.74L11.6446,10.74M2.47426,10.7256L4.11803,10.7256M6.74929,10.7256L11.6424,10.7256M2.48546,10.7112L4.12284,10.7112M6.74929,10.7112L11.6402,10.7112M2.49666,10.6968L4.12763,10.6968M6.74929,10.6968L11.638,10.6968M2.50786,10.6824L4.13243,10.6824M6.74929,10.6824L11.6358,10.6824M2.51907,10.668L4.13724,10.668M6.74929,10.668L11.6337,10.668M2.53027,10.6536L4.14204,10.6536M6.74929,10.6536L11.6315,10.6536M2.54147,10.6392L4.14684,10.6392M6.74929,10.6392L11.6293,10.6392M2.55268,10.6248L4.15164,10.6248M6.74929,10.6248L11.6271,10.6248M2.56388,10.6104L4.15644,10.6104M6.74929,10.6104L11.6249,10.6104M2.57508,10.596L4.16124,10.596M6.74929,10.596L11.6227,10.596M2.58628,10.5816L4.16604,10.5816M6.74929,10.5816L11.6206,10.5816M2.59749,10.5672L4.17219,10.5672M6.74929,10.5672L11.6184,10.5672M2.60869,10.5528L4.183,10.5528M6.74929,10.5528L11.6162,10.5528M2.61989,10.5384L4.1938,10.5384M6.74929,10.5384L11.614,10.5384M2.63109,10.524L4.20461,10.524M6.74929,10.524L11.6118,10.524M2.64322,10.5096L4.2154,10.5096M6.74929,10.5096L11.6096,10.5096M2.65762,10.4952L4.22621,10.4952M6.74929,10.4952L11.6075,10.4952M2.67203,10.4808L4.23701,10.4808M6.74929,10.4808L11.6053,10.4808M2.68643,10.4664L4.24781,10.4664M6.74929,10.4664L11.6031,10.4664M2.70084,10.452L4.25989,10.452M6.74929,10.452L11.6009,10.452M2.71524,10.4376L4.27429,10.4376M6.74929,10.4376L11.5988,10.4376M2.72964,10.4232L4.28869,10.4232M6.7467,10.4232L11.5965,10.4232M2.74404,10.4087L4.3031,10.4087M6.73998,10.4087L11.5944,10.4087M2.75845,10.3943L4.3175,10.3943M6.73326,10.3943L11.5922,10.3943M2.77285,10.3799L4.33191,10.3799M6.72654,10.3799L11.59,10.3799M2.78726,10.3655L4.34631,10.3655M6.71981,10.3655L11.5878,10.3655M2.80166,10.3511L4.36072,10.3511M6.71309,10.3511L11.5857,10.3511M2.81606,10.3367L4.37684,10.3367M6.70638,10.3367L11.5834,10.3367M2.83046,10.3223L4.39485,10.3223M6.69965,10.3223L11.5813,10.3223M2.84487,10.3079L4.41285,10.3079M6.69293,10.3079L11.5791,10.3079M2.85927,10.2935L4.43086,10.2935M6.6862,10.2935L11.5769,10.2935M2.8776,10.2791L4.44886,10.2791M6.67948,10.2791L11.5747,10.2791M2.8992,10.2647L4.46687,10.2647M6.67277,10.2647L11.5726,10.2647M2.92081,10.2503L4.48487,10.2503M6.66604,10.2503L11.5704,10.2503M2.94242,10.2359L4.50288,10.2359M6.65932,10.2359L11.5682,10.2359M2.96402,10.2215L4.52161,10.2215M6.65259,10.2215L11.566,10.2215M2.98562,10.2071L4.54082,10.2071M6.64587,10.2071L11.5638,10.2071M3.00723,10.1927L4.56003,10.1927M6.63916,10.1927L11.5616,10.1927M3.02884,10.1783L4.57923,10.1783M6.63243,10.1783L11.5595,10.1783M3.05044,10.1639L4.59843,10.1639M6.62571,10.1639L11.5573,10.1639M3.07205,10.1495L4.61764,10.1495M6.61899,10.1495L11.5551,10.1495M3.09365,10.1351L4.64869,10.1351M6.61226,10.1351L11.5529,10.1351M3.11526,10.1206L4.68469,10.1206M6.60555,10.1206L11.5507,10.1206M3.14747,10.1062L4.7207,10.1062M6.59882,10.1062L11.5486,10.1062M3.18349,10.0918L4.75672,10.0918M6.5921,10.0918L11.5464,10.0918M3.21949,10.0774L4.78719,10.0774M6.58538,10.0774L11.5442,10.0774M3.2555,10.063L4.81599,10.063M6.57865,10.063L11.542,10.063M3.29151,10.0486L4.8448,10.0486M6.57194,10.0486L11.5398,10.0486M3.32752,10.0342L4.87361,10.0342M6.56522,10.0342L11.5376,10.0342M3.36353,10.0198L4.90242,10.0198M6.55849,10.0198L11.5355,10.0198M3.39954,10.0054L4.93122,10.0054M6.55177,10.0054L11.5332,10.0054M3.45008,9.99101L4.94757,9.99101M6.54007,9.99101L11.5311,9.99101M3.50289,9.97661L4.96197,9.97661M6.52758,9.97661L11.5289,9.97661M3.55571,9.96221L4.89637,9.96221M6.51511,9.96221L11.5267,9.96221M3.60852,9.94781L4.85316,9.94781M6.50262,9.94781L11.5245,9.94781M3.66134,9.93341L4.81664,9.93341M6.49013,9.93341L11.5224,9.93341M3.71415,9.91901L4.78063,9.91901M6.47765,9.91901L11.5201,9.91901M3.7854,9.90461L4.74462,9.90461M6.46517,9.90461L11.518,9.90461M3.85742,9.89021L4.70861,9.89021M6.45269,9.89021L11.5158,9.89021M3.92944,9.87581L4.60827,9.87581M6.4402,9.87581L11.5137,9.87581M6.42772,9.86141L11.5114,9.86141M6.41524,9.84701L11.5062,9.84701M6.40276,9.83254L11.5011,9.83254M6.39027,9.81814L11.496,9.81814M6.37778,9.80374L11.4908,9.80374M6.3653,9.78934L11.4857,9.78934M6.35282,9.77494L11.4805,9.77494M6.34034,9.76054L11.4754,9.76054M6.32786,9.74614L11.4702,9.74614M6.31537,9.73174L11.4651,9.73174M6.30289,9.71734L11.46,9.71734M6.29041,9.70294L11.4548,9.70294M6.27792,9.68854L11.4497,9.68854M6.26545,9.67414L11.4445,9.67414M6.25296,9.65974L11.4394,9.65974M6.24047,9.64534L11.4342,9.64534M6.22799,9.63094L11.4291,9.63094M6.21551,9.61654L11.424,9.61654M6.20303,9.60214L11.4188,9.60214M6.19054,9.58774L11.4137,9.58774M6.1774,9.57334L11.4085,9.57334M6.163,9.55894L11.4034,9.55894M6.14859,9.54446L11.3982,9.54446M6.13419,9.53006L11.3931,9.53006M6.11978,9.51566L11.3879,9.51566M6.10538,9.50126L11.3828,9.50126M6.09098,9.48686L11.3777,9.48686M6.07658,9.47246L11.3725,9.47246M6.06217,9.45806L11.3674,9.45806M6.04777,9.44366L11.3622,9.44366M6.03337,9.42926L11.3571,9.42926M6.01896,9.41486L11.3519,9.41486M6.00456,9.40046L11.3468,9.40046M5.99016,9.38606L11.3417,9.38606M5.97576,9.37166L11.3365,9.37166M5.96135,9.35726L11.3314,9.35726M5.94695,9.34286L11.3262,9.34286M5.93254,9.32846L11.3211,9.32846M5.91814,9.31406L11.3159,9.31406M5.90373,9.29966L11.3108,9.29966M5.88933,9.28526L11.3056,9.28526M5.87493,9.27086L11.3005,9.27086M5.86053,9.25646L11.2953,9.25646M5.84612,9.24199L11.2902,9.24199M5.83172,9.22759L11.2851,9.22759M5.81731,9.21319L11.2799,9.21319M5.80291,9.19879L11.2748,9.19879M5.7885,9.18439L11.2696,9.18439M5.7741,9.16999L11.2645,9.16999M5.7597,9.15559L11.2593,9.15559M5.7453,9.14119L11.2542,9.14119M5.73089,9.12679L11.249,9.12679M5.71649,9.11239L11.2439,9.11239M5.70208,9.09799L11.2388,9.09799M5.69069,9.08359L11.2336,9.08359M5.67967,9.06919L11.2285,9.06919M5.66865,9.05479L11.2208,9.05479M5.65764,9.04039L11.2131,9.04039M5.64663,9.02599L11.2053,9.02599M5.63561,9.01159L11.1974,9.01159M5.6246,8.99719L11.1897,8.99719M5.61358,8.98279L11.1818,8.98279M5.60257,8.96839L11.174,8.96839M5.59156,8.95392L11.1663,8.95392M5.58054,8.93952L11.1584,8.93952M5.56953,8.92512L11.1506,8.92512M5.55851,8.91072L11.1429,8.91072M5.5475,8.89632L11.135,8.89632M5.53649,8.88192L11.1272,8.88192M5.52547,8.86752L11.1195,8.86752M5.51446,8.85312L11.1116,8.85312M5.50344,8.83872L11.1038,8.83872M5.49243,8.82432L11.096,8.82432M5.48141,8.80992L11.0882,8.80992M5.47039,8.79552L11.0804,8.79552M5.45939,8.78112L11.0726,8.78112M5.44837,8.76672L11.0648,8.76672M5.43735,8.75232L11.057,8.75232M5.42634,8.73792L11.0492,8.73792M5.41532,8.72352L11.0414,8.72352M5.40431,8.70912L11.0336,8.70912M5.3933,8.69472L11.0258,8.69472M5.38228,8.68032L11.018,8.68032M5.37126,8.66585L11.0102,8.66585M5.36026,8.65145L11.0024,8.65145M5.34924,8.63705L9.252,8.63705M9.48398,8.63705L10.9946,8.63705M5.33822,8.62265L9.20153,8.62265M9.51761,8.62265L10.9868,8.62265M5.32886,8.60825L9.15113,8.60825M9.55123,8.60825L10.979,8.60825M5.32166,8.59385L9.10073,8.59385M9.58478,8.59385L10.9712,8.59385M5.31446,8.57945L9.05033,8.57945M9.61841,8.57945L10.9634,8.57945M5.30726,8.56505L8.99993,8.56505M9.65203,8.56505L10.9556,8.56505M5.30005,8.55065L8.94953,8.55065M9.67615,8.55065L10.9478,8.55065M5.29285,8.53625L8.89906,8.53625M9.69055,8.53625L10.94,8.53625M5.28565,8.52185L8.8601,8.52185M9.70495,8.52185L10.9322,8.52185M5.27845,8.50745L8.83123,8.50745M9.71935,8.50745L10.9244,8.50745M5.27124,8.49305L8.80243,8.49305M9.73375,8.49305L10.9166,8.49305M5.26404,8.47865L8.77363,8.47865M9.74815,8.47865L10.9088,8.47865M5.25684,8.46425L8.74483,8.46425M9.76255,8.46425L10.9009,8.46425M5.24964,8.44985L8.71603,8.44985M9.77695,8.44985L10.8932,8.44985M5.24244,8.43545L8.68723,8.43545M9.79135,8.43545L10.8854,8.43545M5.23524,8.42105L8.65843,8.42105M9.80575,8.42105L10.8775,8.42105M5.22804,8.40665L8.63532,8.40665M9.81641,8.40665L10.8698,8.40665M5.22084,8.39225L8.61516,8.39225M9.82505,8.39225L10.862,8.39225M5.21363,8.37785L8.59493,8.37785M9.83369,8.37785L10.8496,8.37785M5.20643,8.36338L8.57477,8.36338M9.84233,8.36338L10.8352,8.36338M5.19923,8.34898L8.55461,8.34898M9.85097,8.34898L10.8208,8.34898M5.19203,8.33458L8.53445,8.33458M9.85961,8.33458L10.8064,8.33458M5.18482,8.32018L8.51429,8.32018M9.86825,8.32018L10.792,8.32018M5.17762,8.30578L8.49413,8.30578M9.87689,8.30578L10.7776,8.30578M5.17042,8.29138L8.47397,8.29138M9.88553,8.29138L10.7632,8.29138M5.16322,8.27698L8.45381,8.27698M9.89417,8.27698L10.7488,8.27698M5.15601,8.26258L8.43365,8.26258M9.8977,8.26258L10.7344,8.26258M5.14881,8.24818L8.41349,8.24818M9.90007,8.24818L10.72,8.24818M5.14161,8.23378L8.39333,8.23378M9.90252,8.23378L10.7056,8.23378M5.13441,8.21938L8.37317,8.21938M9.9049,8.21938L10.6912,8.21938M5.12721,8.20498L8.35301,8.20498M9.90734,8.20498L10.6768,8.20498M5.12001,8.19058L8.33285,8.19058M9.90972,8.19058L10.6624,8.19058M5.11281,8.17618L8.31262,8.17618M9.9121,8.17618L10.648,8.17618M5.10561,8.16178L8.29246,8.16178M9.91454,8.16178L10.6335,8.16178M5.0984,8.14738L8.2723,8.14738M9.91692,8.14738L10.6191,8.14738M5.0912,8.13298L8.25214,8.13298M9.9193,8.13298L10.6047,8.13298M5.084,8.11858L8.23529,8.11858M9.92174,8.11858L10.5903,8.11858M5.07681,8.10418L8.21844,8.10418M9.92412,8.10418L10.5759,8.10418M5.07258,8.08978L8.20166,8.08978M9.9265,8.08978L10.5615,8.08978M5.06835,8.0753L8.18489,8.0753M9.92894,8.0753L10.5471,8.0753M5.06411,8.0609L8.16804,8.0609M9.93132,8.0609L10.5327,8.0609M5.05987,8.0465L8.15126,8.0465M9.9337,8.0465L10.5183,8.0465M5.05564,8.0321L8.13442,8.0321M9.93614,8.0321L10.5039,8.0321M5.0514,8.0177L8.11764,8.0177M9.93852,8.0177L10.4895,8.0177M5.04716,8.0033L8.10086,8.0033M9.9409,8.0033L10.4751,8.0033M5.04292,7.9889L8.08402,7.9889M9.94334,7.9889L10.4607,7.9889M5.03869,7.9745L8.06724,7.9745M9.94572,7.9745L10.4463,7.9745M5.03446,7.9601L8.05082,7.9601M9.9481,7.9601L10.4319,7.9601M5.03022,7.9457L8.03642,7.9457M9.95054,7.9457L10.4175,7.9457M5.02597,7.9313L8.02202,7.9313M9.95184,7.9313L10.4031,7.9313M5.02174,7.9169L8.00762,7.9169M9.94896,7.9169L10.3887,7.9169M5.01751,7.9025L7.99322,7.9025M9.94608,7.9025L10.3723,7.9025M5.01327,7.8881L7.97882,7.8881M9.9432,7.8881L10.3493,7.8881M5.00903,7.8737L7.96442,7.8737M9.94032,7.8737L10.3262,7.8737M5.0048,7.8593L7.95002,7.8593M9.93744,7.8593L10.3032,7.8593M5.00057,7.8449L7.93562,7.8449M9.93456,7.8449L10.2802,7.8449M4.99633,7.8305L7.92115,7.8305M9.93168,7.8305L10.2571,7.8305M4.99208,7.8161L7.90855,7.8161M9.9288,7.8161L10.234,7.8161M4.98785,7.8017L7.89955,7.8017M9.92592,7.8017L10.211,7.8017M4.98362,7.78723L7.89055,7.78723M9.92412,7.78723L10.1879,7.78723M4.97938,7.77283L7.88155,7.77283M9.92412,7.77283L10.1649,7.77283M4.97514,7.75843L7.87255,7.75843M9.92412,7.75843L10.1418,7.75843M4.97091,7.74403L7.86355,7.74403M9.92412,7.74403L10.1188,7.74403M4.96667,7.72963L7.85455,7.72963M9.92412,7.72963L10.0958,7.72963M4.96243,7.71523L7.84555,7.71523M9.92412,7.71523L10.0727,7.71523M4.95819,7.70083L7.83655,7.70083M9.92412,7.70083L10.0497,7.70083M4.95396,7.68643L7.82755,7.68643M9.92412,7.68643L10.0266,7.68643M4.94973,7.67203L7.81855,7.67203M9.92412,7.67203L10.0036,7.67203M4.94549,7.65763L7.80955,7.65763M9.92412,7.65763L9.98057,7.65763M4.94124,7.64323L7.80055,7.64323M9.92412,7.64323L9.95746,7.64323M4.93701,7.62883L7.79155,7.62883M9.92412,7.62883L9.93442,7.62883M4.93512,7.61443L7.78255,7.61443M4.93512,7.60003L7.77355,7.60003M4.93512,7.58563L7.76419,7.58563M4.93512,7.57123L7.75454,7.57123M4.93512,7.55683L7.74497,7.55683M4.93512,7.54243L7.73539,7.54243M4.93512,7.52803L7.72574,7.52803M4.93512,7.51363L7.71617,7.51363M4.93512,7.49923L7.70652,7.49923M4.93512,7.48476L7.69694,7.48476M4.93512,7.47036L7.68737,7.47036M4.93512,7.45596L7.67772,7.45596M4.93512,7.44156L7.66814,7.44156M4.93512,7.42716L7.65857,7.42716M4.93512,7.41276L7.65317,7.41276M4.93512,7.39836L7.64906,7.39836M4.93512,7.38396L7.64496,7.38396M4.93512,7.36956L7.64086,7.36956M4.93512,7.35516L7.63675,7.35516M4.93512,7.34076L7.63265,7.34076M4.93512,7.32636L7.62847,7.32636M4.93512,7.31196L7.62437,7.31196M4.93512,7.29756L7.62026,7.29756M4.93512,7.28316L7.61616,7.28316M4.93512,7.26876L7.61206,7.26876M4.93512,7.25436L7.60795,7.25436M4.93512,7.23996L7.60385,7.23996M4.93512,7.22556L7.59967,7.22556M4.93512,7.21116L7.5973,7.21116M4.93512,7.19672L7.59492,7.19672M4.93512,7.18232L7.59247,7.18232M4.93512,7.16792L7.5901,7.16792M4.93512,7.15351L7.58772,7.15351M4.93561,7.13911L7.58527,7.13911M4.94069,7.1247L7.5829,7.1247M4.94577,7.1103L7.58052,7.1103M4.95085,7.0959L7.57807,7.0959M4.95593,7.0815L7.5757,7.0815M4.96102,7.06709L7.57332,7.06709M4.96611,7.05269L7.57181,7.05269M4.97119,7.03828L7.57418,7.03828M4.97627,7.02388L7.57656,7.02388M4.98136,7.00947L7.57901,7.00947M4.98645,6.99507L7.58138,6.99507M4.99153,6.98067L7.58376,6.98067M4.99661,6.96627L7.58621,6.96627M5.00169,6.95186L7.58858,6.95186M5.00677,6.93746L7.59096,6.93746M5.01186,6.92305L7.59341,6.92305M5.01694,6.90865L7.59578,6.90865M5.02203,6.89424L7.59823,6.89424M5.02711,6.87984L7.6019,6.87984M5.0322,6.86544L7.60766,6.86544M5.03727,6.85104L7.61342,6.85104M5.04235,6.83663L7.61918,6.83663M5.04744,6.82223L7.62494,6.82223M5.05253,6.80782L7.6307,6.80782M5.05761,6.79342L7.63646,6.79342M5.06269,6.77902L7.64222,6.77902M5.06778,6.76462L7.64798,6.76462M5.07286,6.75022L7.65374,6.75022M5.07795,6.73581L7.6603,6.73581M5.08303,6.72141L7.6675,6.72141M5.08811,6.707L7.6747,6.707M5.09319,6.6926L7.6819,6.6926M5.09828,6.67819L7.6891,6.67819M5.10336,6.66379L7.6963,6.66379M5.11152,6.64939L7.7035,6.64939M5.12142,6.63499L7.7107,6.63499M5.13133,6.62058L7.7179,6.62058M5.14123,6.60618L7.7251,6.60618M5.15114,6.59177L7.7323,6.59177M5.16103,6.57737L7.7395,6.57737M5.17093,6.56297L7.74986,6.56297M5.18084,6.54857L7.76138,6.54857M5.19074,6.53416L7.7729,6.53416M5.20065,6.51976L7.78442,6.51976M5.21055,6.50535L7.79594,6.50535M5.22045,6.49095L7.80746,6.49095M5.23035,6.47654L7.81898,6.47654M5.24025,6.46214L7.8305,6.46214M5.25015,6.44774L7.84202,6.44774M5.26005,6.43334L7.85362,6.43334M5.26996,6.41893L7.86953,6.41893M5.27986,6.40453L7.88602,6.40453M5.28977,6.39012L7.90243,6.39012M5.29967,6.37572L7.91892,6.37572M5.30958,6.36132L7.93534,6.36132M5.31947,6.34692L7.95182,6.34692M5.32938,6.33251L7.96831,6.33251M5.33928,6.31811L7.98473,6.31811M5.34918,6.3037L8.00122,6.3037M5.35908,6.2893L8.0177,6.2893M5.36899,6.27489L8.03412,6.27489M5.37889,6.26049L8.05061,6.26049M5.3888,6.24609L8.06702,6.24609M5.39869,6.23169L8.08495,6.23169M5.40859,6.21728L8.11375,6.21728M5.41964,6.20288L8.14262,6.20288M5.43712,6.18847L8.17142,6.18847M5.45462,6.17407L8.20022,6.17407M5.47211,6.15966L8.22902,6.15966M5.48959,6.14526L8.25782,6.14526M5.50709,6.13086L8.28662,6.13086M5.52457,6.11646L8.32255,6.11646M5.54207,6.10205L8.38015,6.10205M5.55955,6.08765L8.43775,6.08765M5.57705,6.07324L8.49535,6.07324M5.59454,6.05884L8.57527,6.05884M9.25423,6.05884L9.29376,6.05884M5.61203,6.04444L8.70494,6.04444M9.19663,6.04444L9.27216,6.04444M5.62951,6.03004L9.25056,6.03004M5.647,6.01563L9.22896,6.01563M5.6645,6.00123L9.20786,6.00123M5.68199,5.98682L9.1877,5.98682M5.69948,5.97242L9.16754,5.97242M5.71697,5.95801L9.14738,5.95801M5.73445,5.94361L9.12722,5.94361M5.75195,5.92921L9.10706,5.92921M5.76943,5.91481L9.0869,5.91481M5.78693,5.9004L9.06674,5.9004M5.80442,5.886L9.04658,5.886M5.82191,5.8716L9.02642,5.8716M5.83939,5.85719L9.00382,5.85719M5.85688,5.84279L8.97912,5.84279M5.87438,5.82839L8.95442,5.82839M5.89186,5.81399L8.92973,5.81399M5.9154,5.79958L8.90503,5.79958M5.94301,5.78518L8.88034,5.78518M5.97061,5.77077L8.85571,5.77077M5.99823,5.75637L8.83102,5.75637M6.02583,5.74196L8.80632,5.74196M6.05344,5.72756L8.78162,5.72756M6.08104,5.71316L8.75693,5.71316M6.10865,5.69876L8.73223,5.69876M6.13626,5.68435L8.70754,5.68435M6.16387,5.66995L8.68284,5.66995M6.19147,5.65554L8.64958,5.65554M6.21908,5.64114L8.61358,5.64114M6.24668,5.62674L8.57758,5.62674M6.2743,5.61234L8.54158,5.61234M6.30189,5.59793L8.5055,5.59793M6.32951,5.58353L8.4695,5.58353M6.35711,5.56912L8.4335,5.56912M6.38472,5.55472L8.3975,5.55472M6.41232,5.54031L8.3615,5.54031M6.43993,5.52591L8.3255,5.52591M6.46754,5.51151L8.2895,5.51151M6.49515,5.49711L8.2535,5.49711M6.52275,5.4827L8.20238,5.4827M6.55036,5.4683L8.15054,5.4683M6.61308,5.45389L8.0987,5.45389M6.67645,5.43949L8.04686,5.43949M6.73983,5.42508L7.99502,5.42508M6.8032,5.41068L7.94318,5.41068M6.86658,5.39628L7.89127,5.39628M6.92996,5.38188L7.83943,5.38188M6.99333,5.36747L7.78759,5.36747M7.05671,5.35307L7.7099,5.35307M7.12008,5.33866L7.42183,5.33866" stroke="white" fill="none"/>
+     </g>
+    </g>
+   </g>
+   <g >
+    <title >element:LOGO3</title>
+    <g >
+     <title >package:OSHW-LOGO-S</title>
+     <g >
+      <title >polygon</title>
+      <path  stroke-width="0.425197" stroke-linecap="round" d="M7.23881,60.3009L7.66915,60.0792M7.66915,60.0792L8.73778,60.9505M8.73778,60.9505L9.47052,60.2178M9.47052,60.2178L8.59918,59.1492M8.59918,59.1492L8.82086,58.7187M8.82086,58.7187L8.96854,58.2576M8.96854,58.2576L10.3402,58.1182M10.3402,58.1182L10.3402,57.0818M10.3402,57.0818L8.96854,56.9424M8.96854,56.9424L8.82086,56.4813M8.82086,56.4813L8.59918,56.0508M8.59918,56.0508L9.47052,54.9822M9.47052,54.9822L8.73778,54.2495M8.73778,54.2495L7.66915,55.1208M7.66915,55.1208L7.23874,54.8991M7.23874,54.8991L6.77764,54.7515M6.77764,54.7515L6.63817,53.3798M6.63817,53.3798L5.60183,53.3798M5.60183,53.3798L5.46236,54.7515M5.46236,54.7515L5.00127,54.8991M5.00127,54.8991L4.57087,55.1208M4.57087,55.1208L3.5022,54.2495M3.5022,54.2495L2.76945,54.9822M2.76945,54.9822L3.64082,56.0508M3.64082,56.0508L3.41911,56.4813M3.41911,56.4813L3.27146,56.9424M3.27146,56.9424L1.89978,57.0818M1.89978,57.0818L1.89978,58.1182M1.89978,58.1182L3.27146,58.2576M3.27146,58.2576L3.41911,58.7187M3.41911,58.7187L3.64082,59.1492M3.64082,59.1492L2.76945,60.2178M2.76945,60.2178L3.5022,60.9505M3.5022,60.9505L4.57087,60.0792M4.57087,60.0792L5.00116,60.3009M5.00116,60.3009L5.61146,58.8277M5.61146,58.8277L5.33889,58.6751M5.33889,58.6751L5.10949,58.4631M5.10949,58.4631L4.93592,58.2033M4.93592,58.2033L4.82781,57.9102M4.82781,57.9102L4.79112,57.6M4.79112,57.6L4.82926,57.2842M4.82926,57.2842L4.94135,56.9866M4.94135,56.9866L5.12096,56.7241M5.12096,56.7241L5.35782,56.5118M5.35782,56.5118L5.63833,56.3619M5.63833,56.3619L5.94644,56.283M5.94644,56.283L6.26448,56.2795M6.26448,56.2795L6.57423,56.3517M6.57423,56.3517L6.85793,56.4955M6.85793,56.4955L7.09934,56.7026M7.09934,56.7026L7.2846,56.9611M7.2846,56.9611L7.40311,57.2563M7.40311,57.2563L7.44811,57.5711M7.44811,57.5711L7.41701,57.8876M7.41701,57.8876L7.31153,58.1877M7.31153,58.1877L7.13776,58.4541M7.13776,58.4541L6.90566,58.6716M6.90566,58.6716L6.62854,58.8277M6.62854,58.8277L7.23881,60.3009M3.12803,60.5764L3.96109,60.5764M8.27892,60.5764L9.11196,60.5764M2.82377,60.1512L4.48256,60.1512M4.71062,60.1512L5.06316,60.1512M7.17683,60.1512L7.5294,60.1512M7.75742,60.1512L9.41623,60.1512M3.17047,59.726L5.23931,59.726M7.00068,59.726L9.06955,59.726M3.51716,59.3008L5.41547,59.3008M6.82453,59.3008L8.72287,59.3008M3.4999,58.8756L5.59161,58.8756M6.64838,58.8756L8.74008,58.8756M3.33318,58.4504L5.10103,58.4504M7.1402,58.4504L8.90683,58.4504M1.89978,58.0252L4.87022,58.0252M7.36862,58.0252L10.3402,58.0252M1.89978,57.6L4.79112,57.6M7.4453,57.6L10.3402,57.6M1.89978,57.1748L4.87046,57.1748M7.37042,57.1748L10.3402,57.1748M3.33319,56.7496L5.1035,56.7496M7.13301,56.7496L8.90683,56.7496M3.49991,56.3244L5.78472,56.3244M6.45695,56.3244L8.74008,56.3244M3.51716,55.8992L8.7228,55.8992M3.17046,55.474L9.06955,55.474M2.82376,55.0488L4.48257,55.0488M4.71064,55.0488L7.5294,55.0488M7.75742,55.0488L9.41623,55.0488M3.12803,54.6236L3.9611,54.6236M5.47537,54.6236L6.76464,54.6236M8.27892,54.6236L9.11196,54.6236M5.51859,54.1984L6.72142,54.1984M5.56183,53.7732L6.67818,53.7732" stroke="white" fill="none"/>
+     </g>
+    </g>
+   </g>
+   <g >
+    <title >element:R1</title>
+    <g >
+     <title >package:0603-RES</title>
+     <rect  y="33.48" stroke-width="0" x="49.752" width="1.296" stroke="none" height="2.16" fill="white"/>
+    </g>
+   </g>
+   <g >
+    <title >element:R2</title>
+    <g >
+     <title >package:0603-RES</title>
+     <rect  y="33.48" stroke-width="0" x="46.152" width="1.296" stroke="none" height="2.16" fill="white"/>
+    </g>
+   </g>
+   <g >
+    <title >element:R3</title>
+    <g >
+     <title >package:0603-RES</title>
+     <rect  y="44.28" stroke-width="0" x="49.752" width="1.296" stroke="none" height="2.16" fill="white"/>
+    </g>
+   </g>
+   <g >
+    <title >element:R4</title>
+    <g >
+     <title >package:0603-RES</title>
+     <rect  y="44.28" stroke-width="0" x="46.152" width="1.296" stroke="none" height="2.16" fill="white"/>
+    </g>
+   </g>
+   <g >
+    <title >element:R5</title>
+    <g >
+     <title >package:0603-RES</title>
+     <rect  y="51.48" stroke-width="0" x="31.752" width="1.296" stroke="none" height="2.16" fill="white"/>
+    </g>
+   </g>
+   <g >
+    <title >element:R6</title>
+    <g >
+     <title >package:0603-RES</title>
+     <rect  y="51.48" stroke-width="0" x="28.152" width="1.296" stroke="none" height="2.16" fill="white"/>
+    </g>
+   </g>
+   <g >
+    <title >element:SJ1</title>
+    <g >
+     <title >package:PAD-JUMPER-3-3OF3_NC_BY_TRACE_YES_SILK_FULL_BOX</title>
+    </g>
+   </g>
+   <g >
+    <title >element:SJ2</title>
+    <g >
+     <title >package:PAD-JUMPER-3-3OF3_NC_BY_TRACE_YES_SILK_FULL_BOX</title>
+    </g>
+   </g>
+   <g >
+    <title >element:SJ3</title>
+    <g >
+     <title >package:PAD-JUMPER-3-3OF3_NC_BY_TRACE_YES_SILK_FULL_BOX</title>
+    </g>
+   </g>
+   <g >
+    <title >element:STANDOFF1</title>
+    <g >
+     <title >package:STAND-OFF</title>
+    </g>
+   </g>
+   <g >
+    <title >element:STANDOFF2</title>
+    <g >
+     <title >package:STAND-OFF</title>
+    </g>
+   </g>
+   <g >
+    <title >element:STANDOFF3</title>
+    <g >
+     <title >package:STAND-OFF</title>
+    </g>
+   </g>
+   <g >
+    <title >element:STANDOFF4</title>
+    <g >
+     <title >package:STAND-OFF</title>
+    </g>
+   </g>
+   <g >
+    <title >element:U1</title>
+    <g >
+     <title >package:LGA24-8X4</title>
+     <line  stroke-width="0.288" stroke-linecap="round" y2="27.1559" x1="27.8646" stroke="white" y1="37.6441" x2="27.8646"/>
+     <line  stroke-width="0.288" stroke-linecap="round" y2="27.1559" x1="27.8646" stroke="white" y1="27.1559" x2="36.9354"/>
+     <line  stroke-width="0.288" stroke-linecap="round" y2="37.6441" x1="36.9354" stroke="white" y1="27.1559" x2="36.9354"/>
+     <line  stroke-width="0.288" stroke-linecap="round" y2="37.6441" x1="36.9354" stroke="white" y1="37.6441" x2="27.8646"/>
+     <circle  r="0.566929" stroke-width="0" cy="38.211" stroke="white" cx="27.2976" fill="none"/>
+    </g>
+   </g>
+  </g>
+  <rect  y="31.32" fill-opacity="0.15" stroke-width="0" x="49.752" width="1.296" stroke="none" height="2.16" fill="#ffffff"/>
+  <rect  y="31.32" fill-opacity="0.15" stroke-width="0" x="46.152" width="1.296" stroke="none" height="2.16" fill="#ffffff"/>
+  <rect  y="42.12" fill-opacity="0.15" stroke-width="0" x="49.752" width="1.296" stroke="none" height="2.16" fill="#ffffff"/>
+  <rect  y="42.12" fill-opacity="0.15" stroke-width="0" x="46.152" width="1.296" stroke="none" height="2.16" fill="#ffffff"/>
+  <rect  y="49.32" fill-opacity="0.15" stroke-width="0" x="31.752" width="1.296" stroke="none" height="2.16" fill="#ffffff"/>
+  <rect  y="49.32" fill-opacity="0.15" stroke-width="0" x="28.152" width="1.296" stroke="none" height="2.16" fill="#ffffff"/>
+  <rect  y="27.1559" fill-opacity="0.15" stroke-width="0" x="26.7307" width="10.2047" stroke="none" height="11.622" fill="#ffffff"/>
+  <circle  r="2.052" stroke-width="1.224" cy="25.2" id="connector12pin" gorn="0.1.0.9" connectorname="GND" stroke="#9A916C" cx="3.6" fill="none"/>
+  <rect  y="23.148" stroke-width="1.224" x="1.548" width="4.104" stroke="#9A916C" height="4.104" fill="none"/>
+  <circle  r="2.052" stroke-width="1.224" cy="32.4" id="connector13pin" gorn="0.1.0.11" connectorname="VDD" stroke="#9A916C" cx="3.6" fill="none"/>
+  <circle  r="2.052" stroke-width="1.224" cy="39.6" id="connector14pin" gorn="0.1.0.12" connectorname="SDA" stroke="#9A916C" cx="3.6" fill="none"/>
+  <circle  r="2.052" stroke-width="1.224" cy="46.8" id="connector15pin" gorn="0.1.0.13" connectorname="SCL" stroke="#9A916C" cx="3.6" fill="none"/>
+  <circle  r="2.052" stroke-width="1.224" cy="61.2" id="connector16pin" gorn="0.1.0.14" connectorname="SDO_A/G" stroke="#9A916C" cx="61.2" fill="none"/>
+  <circle  r="2.052" stroke-width="1.224" cy="54" id="connector17pin" gorn="0.1.0.15" connectorname="SDO_M" stroke="#9A916C" cx="61.2" fill="none"/>
+  <circle  r="2.052" stroke-width="1.224" cy="46.8" id="connector18pin" gorn="0.1.0.16" connectorname="CS_A/G" stroke="#9A916C" cx="61.2" fill="none"/>
+  <circle  r="2.052" stroke-width="1.224" cy="39.6" id="connector19pin" gorn="0.1.0.17" connectorname="CS_M" stroke="#9A916C" cx="61.2" fill="none"/>
+  <circle  r="2.052" stroke-width="1.224" cy="32.4" id="connector20pin" gorn="0.1.0.18" connectorname="DRDY_M" stroke="#9A916C" cx="61.2" fill="none"/>
+  <circle  r="2.052" stroke-width="1.224" cy="25.2" id="connector21pin" gorn="0.1.0.19" connectorname="INT_M" stroke="#9A916C" cx="61.2" fill="none"/>
+  <circle  r="2.052" stroke-width="1.224" cy="18" id="connector22pin" gorn="0.1.0.20" connectorname="INT1_A/G" stroke="#9A916C" cx="61.2" fill="none"/>
+  <circle  r="2.052" stroke-width="1.224" cy="10.8" id="connector23pin" gorn="0.1.0.21" connectorname="INT2_A/G" stroke="#9A916C" cx="61.2" fill="none"/>
+  <circle  r="2.052" stroke-width="1.224" cy="3.6" id="connector24pin" gorn="0.1.0.22" connectorname="DEN_A/G" stroke="#9A916C" cx="61.2" fill="none"/>
+ </g>
+ <g transform="matrix(1, 0, 0, 1, 46.923, 31.0147)">
+  <g >
+   <g  id="0603-res" gorn="0.1.1.0">
+    <g transform="matrix(0, 1, -1, 0, 5.386, -2.552)">
+     <g >
+      <g >
+       <g >
+        <g >
+         <rect  x="-0.019" width="7.96601" height="2.834" fill="#333333"/>
+         <rect  opacity="0.2" enable-background="new    " x="-0.019" width="7.96601" height="0.046" fill="#FFFFFF"/>
+         <rect  y="2.802" opacity="0.2" enable-background="new    " x="-0.019" width="7.96601" height="0.032"/>
+        </g>
+        <g >
+         <path  d="M6.79,0L6.79,0L6.79,0L6.697,0l0,0C6.617,0.251,6.562,0.796003,6.562,1.075c0,0.291,0.048,1.41,0.135,1.673l0,0l0,0L7.92,2.748L7.92,0L6.79,0z" fill="#DCDCDC"/>
+         <path  d="M1.226,0.104L1.226,0L0.004,0l0,2.748l1.223,0C1.315,2.485,1.42,1.371,1.42,1.076C1.42,0.730001,1.345,0.405,1.226,0.104z" fill="#DCDCDC"/>
+         <path  d="M7.92698,2.854L6.704,2.854L6.697,2.748L7.92,2.748L7.92698,2.854z" fill="#999999"/>
+         <path  d="M0.01,2.855l1.223,0L1.226,2.748L0.004,2.748L0.01,2.855z" fill="#999999"/>
+         <rect  opacity="0.5" enable-background="new    " x="0.004" width="1.223" height="0.046" fill="#FFFFFF"/>
+         <rect  opacity="0.5" enable-background="new    " x="6.698" width="1.224" height="0.046" fill="#FFFFFF"/>
+         <line  y2="2.834" x1="0.742997" y1="2.834" fill="none" x2="0.742997"/>
+        </g>
+       </g>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+ <g transform="matrix(1, 0, 0, 1, 42.339, 30.9513)">
+  <g >
+   <g  id="0603-res" gorn="0.1.2.0">
+    <g transform="matrix(0, -1, 1, 0, 2.552, 5.386)">
+     <g >
+      <g >
+       <g >
+        <g >
+         <rect  x="-0.019" width="7.96601" height="2.834" fill="#333333"/>
+         <rect  opacity="0.2" enable-background="new    " x="-0.019" width="7.96601" height="0.046" fill="#FFFFFF"/>
+         <rect  y="2.802" opacity="0.2" enable-background="new    " x="-0.019" width="7.96601" height="0.032"/>
+        </g>
+        <g >
+         <path  d="M6.79,0L6.79,0L6.79,0L6.697,0l0,0C6.617,0.251,6.562,0.796003,6.562,1.075c0,0.291,0.048,1.41,0.135,1.673l0,0l0,0L7.92,2.748L7.92,0L6.79,0z" fill="#DCDCDC"/>
+         <path  d="M1.226,0.104L1.226,0L0.004,0l0,2.748l1.223,0C1.315,2.485,1.42,1.371,1.42,1.076C1.42,0.730001,1.345,0.405,1.226,0.104z" fill="#DCDCDC"/>
+         <path  d="M7.92698,2.854L6.704,2.854L6.697,2.748L7.92,2.748L7.92698,2.854z" fill="#999999"/>
+         <path  d="M0.01,2.855l1.223,0L1.226,2.748L0.004,2.748L0.01,2.855z" fill="#999999"/>
+         <rect  opacity="0.5" enable-background="new    " x="0.004" width="1.223" height="0.046" fill="#FFFFFF"/>
+         <rect  opacity="0.5" enable-background="new    " x="6.698" width="1.224" height="0.046" fill="#FFFFFF"/>
+         <line  y2="2.834" x1="0.742997" y1="2.834" fill="none" x2="0.742997"/>
+        </g>
+       </g>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+ <g transform="matrix(1, 0, 0, 1, 46.923, 41.8147)">
+  <g >
+   <g  id="0603-res" gorn="0.1.3.0">
+    <g transform="matrix(0, 1, -1, 0, 5.386, -2.552)">
+     <g >
+      <g >
+       <g >
+        <g >
+         <rect  x="-0.019" width="7.96601" height="2.834" fill="#333333"/>
+         <rect  opacity="0.2" enable-background="new    " x="-0.019" width="7.96601" height="0.046" fill="#FFFFFF"/>
+         <rect  y="2.802" opacity="0.2" enable-background="new    " x="-0.019" width="7.96601" height="0.032"/>
+        </g>
+        <g >
+         <path  d="M6.79,0L6.79,0L6.79,0L6.697,0l0,0C6.617,0.251,6.562,0.796003,6.562,1.075c0,0.291,0.048,1.41,0.135,1.673l0,0l0,0L7.92,2.748L7.92,0L6.79,0z" fill="#DCDCDC"/>
+         <path  d="M1.226,0.104L1.226,0L0.004,0l0,2.748l1.223,0C1.315,2.485,1.42,1.371,1.42,1.076C1.42,0.730001,1.345,0.405,1.226,0.104z" fill="#DCDCDC"/>
+         <path  d="M7.92698,2.854L6.704,2.854L6.697,2.748L7.92,2.748L7.92698,2.854z" fill="#999999"/>
+         <path  d="M0.01,2.855l1.223,0L1.226,2.748L0.004,2.748L0.01,2.855z" fill="#999999"/>
+         <rect  opacity="0.5" enable-background="new    " x="0.004" width="1.223" height="0.046" fill="#FFFFFF"/>
+         <rect  opacity="0.5" enable-background="new    " x="6.698" width="1.224" height="0.046" fill="#FFFFFF"/>
+         <line  y2="2.834" x1="0.742997" y1="2.834" fill="none" x2="0.742997"/>
+        </g>
+       </g>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+ <g transform="matrix(1, 0, 0, 1, 42.339, 41.7513)">
+  <g >
+   <g  id="0603-res" gorn="0.1.4.0">
+    <g transform="matrix(0, -1, 1, 0, 2.552, 5.386)">
+     <g >
+      <g >
+       <g >
+        <g >
+         <rect  x="-0.019" width="7.96601" height="2.834" fill="#333333"/>
+         <rect  opacity="0.2" enable-background="new    " x="-0.019" width="7.96601" height="0.046" fill="#FFFFFF"/>
+         <rect  y="2.802" opacity="0.2" enable-background="new    " x="-0.019" width="7.96601" height="0.032"/>
+        </g>
+        <g >
+         <path  d="M6.79,0L6.79,0L6.79,0L6.697,0l0,0C6.617,0.251,6.562,0.796003,6.562,1.075c0,0.291,0.048,1.41,0.135,1.673l0,0l0,0L7.92,2.748L7.92,0L6.79,0z" fill="#DCDCDC"/>
+         <path  d="M1.226,0.104L1.226,0L0.004,0l0,2.748l1.223,0C1.315,2.485,1.42,1.371,1.42,1.076C1.42,0.730001,1.345,0.405,1.226,0.104z" fill="#DCDCDC"/>
+         <path  d="M7.92698,2.854L6.704,2.854L6.697,2.748L7.92,2.748L7.92698,2.854z" fill="#999999"/>
+         <path  d="M0.01,2.855l1.223,0L1.226,2.748L0.004,2.748L0.01,2.855z" fill="#999999"/>
+         <rect  opacity="0.5" enable-background="new    " x="0.004" width="1.223" height="0.046" fill="#FFFFFF"/>
+         <rect  opacity="0.5" enable-background="new    " x="6.698" width="1.224" height="0.046" fill="#FFFFFF"/>
+         <line  y2="2.834" x1="0.742997" y1="2.834" fill="none" x2="0.742997"/>
+        </g>
+       </g>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+ <g transform="matrix(1, 0, 0, 1, 27.939, 48.9513)">
+  <g >
+   <g  id="0603-res" gorn="0.1.5.0">
+    <g transform="matrix(0, -1, 1, 0, 2.552, 5.386)">
+     <g >
+      <g >
+       <g >
+        <g >
+         <rect  x="-0.019" width="7.96601" height="2.834" fill="#333333"/>
+         <rect  opacity="0.2" enable-background="new    " x="-0.019" width="7.96601" height="0.046" fill="#FFFFFF"/>
+         <rect  y="2.802" opacity="0.2" enable-background="new    " x="-0.019" width="7.96601" height="0.032"/>
+        </g>
+        <g >
+         <path  d="M6.79,0L6.79,0L6.79,0L6.697,0l0,0C6.617,0.251,6.562,0.796003,6.562,1.075c0,0.291,0.048,1.41,0.135,1.673l0,0l0,0L7.92,2.748L7.92,0L6.79,0z" fill="#DCDCDC"/>
+         <path  d="M1.226,0.104L1.226,0L0.004,0l0,2.748l1.223,0C1.315,2.485,1.42,1.371,1.42,1.076C1.42,0.730001,1.345,0.405,1.226,0.104z" fill="#DCDCDC"/>
+         <path  d="M7.92698,2.854L6.704,2.854L6.697,2.748L7.92,2.748L7.92698,2.854z" fill="#999999"/>
+         <path  d="M0.01,2.855l1.223,0L1.226,2.748L0.004,2.748L0.01,2.855z" fill="#999999"/>
+         <rect  opacity="0.5" enable-background="new    " x="0.004" width="1.223" height="0.046" fill="#FFFFFF"/>
+         <rect  opacity="0.5" enable-background="new    " x="6.698" width="1.224" height="0.046" fill="#FFFFFF"/>
+         <line  y2="2.834" x1="0.742997" y1="2.834" fill="none" x2="0.742997"/>
+        </g>
+       </g>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+ <g transform="matrix(1, 0, 0, 1, 24.339, 48.9513)">
+  <g >
+   <g  id="0603-res" gorn="0.1.6.0">
+    <g transform="matrix(0, -1, 1, 0, 2.552, 5.386)">
+     <g >
+      <g >
+       <g >
+        <g >
+         <rect  x="-0.019" width="7.96601" height="2.834" fill="#333333"/>
+         <rect  opacity="0.2" enable-background="new    " x="-0.019" width="7.96601" height="0.046" fill="#FFFFFF"/>
+         <rect  y="2.802" opacity="0.2" enable-background="new    " x="-0.019" width="7.96601" height="0.032"/>
+        </g>
+        <g >
+         <path  d="M6.79,0L6.79,0L6.79,0L6.697,0l0,0C6.617,0.251,6.562,0.796003,6.562,1.075c0,0.291,0.048,1.41,0.135,1.673l0,0l0,0L7.92,2.748L7.92,0L6.79,0z" fill="#DCDCDC"/>
+         <path  d="M1.226,0.104L1.226,0L0.004,0l0,2.748l1.223,0C1.315,2.485,1.42,1.371,1.42,1.076C1.42,0.730001,1.345,0.405,1.226,0.104z" fill="#DCDCDC"/>
+         <path  d="M7.92698,2.854L6.704,2.854L6.697,2.748L7.92,2.748L7.92698,2.854z" fill="#999999"/>
+         <path  d="M0.01,2.855l1.223,0L1.226,2.748L0.004,2.748L0.01,2.855z" fill="#999999"/>
+         <rect  opacity="0.5" enable-background="new    " x="0.004" width="1.223" height="0.046" fill="#FFFFFF"/>
+         <rect  opacity="0.5" enable-background="new    " x="6.698" width="1.224" height="0.046" fill="#FFFFFF"/>
+         <line  y2="2.834" x1="0.742997" y1="2.834" fill="none" x2="0.742997"/>
+        </g>
+       </g>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+</g>
+</g></g></g><g partID='854104410'><line stroke-linecap='round' stroke='#000000' x1='104.464' y1='61.3663' x2='138.6' y2='63' stroke-width='3.2' /><line stroke-linecap='round' stroke='#404040' x1='104.464' y1='61.3663' x2='138.6' y2='63' stroke-width='1.6' /></g><g partID='854104270'><line stroke-linecap='round' stroke='#000000' x1='61.2' y1='147.6' x2='104.464' y2='147.654' stroke-width='3.2' /><line stroke-linecap='round' stroke='#404040' x1='61.2' y1='147.6' x2='104.464' y2='147.654' stroke-width='1.6' /></g><g partID='854104480'><line stroke-linecap='round' stroke='#000000' x1='104.464' y1='147.654' x2='104.464' y2='61.3663' stroke-width='3.2' /><line stroke-linecap='round' stroke='#404040' x1='104.464' y1='147.654' x2='104.464' y2='61.3663' stroke-width='1.6' /></g><g partID='854104340'><line stroke-linecap='round' stroke='#8c0000' x1='138.6' y1='70.2' x2='97.0016' y2='68.3625' stroke-width='3.2' /><line stroke-linecap='round' stroke='#cc1414' x1='138.6' y1='70.2' x2='97.0016' y2='68.3625' stroke-width='1.6' /></g><g partID='854104550'><line stroke-linecap='round' stroke='#8c0000' x1='97.0016' y1='68.3625' x2='97.0016' y2='140.191' stroke-width='3.2' /><line stroke-linecap='round' stroke='#cc1414' x1='97.0016' y1='68.3625' x2='97.0016' y2='140.191' stroke-width='1.6' /></g><g partID='854104620'><line stroke-linecap='round' stroke='#8c0000' x1='97.0016' y1='140.191' x2='61.2' y2='140.4' stroke-width='3.2' /><line stroke-linecap='round' stroke='#cc1414' x1='97.0016' y1='140.191' x2='61.2' y2='140.4' stroke-width='1.6' /></g><g partID='854104760'><line stroke-linecap='round' stroke='#d6d63a' x1='147.375' y1='133.195' x2='145.8' y2='127.8' stroke-width='3.2' /><line stroke-linecap='round' stroke='#fff800' x1='147.375' y1='133.195' x2='145.8' y2='127.8' stroke-width='1.6' /></g><g partID='854104690'><line stroke-linecap='round' stroke='#d6d63a' x1='61.2' y1='133.2' x2='147.375' y2='133.195' stroke-width='3.2' /><line stroke-linecap='round' stroke='#fff800' x1='61.2' y1='133.2' x2='147.375' y2='133.195' stroke-width='1.6' /></g><g partID='854104830'><line stroke-linecap='round' stroke='#ad6a38' x1='61.2' y1='126' x2='138.6' y2='127.8' stroke-width='3.2' /><line stroke-linecap='round' stroke='#ef6100' x1='61.2' y1='126' x2='138.6' y2='127.8' stroke-width='1.6' /></g></svg>
