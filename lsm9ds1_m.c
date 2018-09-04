@@ -231,7 +231,6 @@ const struct iio_buffer_setup_ops lsm9ds1_m_buffer_setup_ops = {
 
 
 static const struct iio_info lsm9ds1_m_info = {
-	.driver_module	= THIS_MODULE,
         .attrs          = &lsm9ds1_m_attribute_group,
 	.read_raw	= lsm9ds1_m_read_raw,
 };

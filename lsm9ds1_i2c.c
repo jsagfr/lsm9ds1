@@ -17,6 +17,7 @@
  *
  *****************************************************************************/
 
+#include <linux/module.h>
 #include <linux/i2c.h>
 #include <linux/slab.h>
 #include "lsm9ds1.h"
@@ -90,3 +91,7 @@ static int lsm9ds1_i2c_write_reg_mask_8(struct iio_dev *indio_dev, u8 addr, u8 d
         return (ret < 0) ? ret : 0;
 }
 EXPORT_SYMBOL(lsm9ds1_i2c_write_reg_mask_8);
+
+MODULE_AUTHOR("Jérôme Guéry <jerome.guery@gmail.com>");
+MODULE_DESCRIPTION("common i2c routines for the IMU LSM9DS1");
+MODULE_LICENSE("GPL");
